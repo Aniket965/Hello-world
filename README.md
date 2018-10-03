@@ -1,5 +1,5 @@
 # Welcome to Hacktoberfest 2018 Hello-world :clipboard:
-> this Project aims to help you to get started by using github you can find a tutorial [here](https://guides.github.com/activities/hello-world/)
+> This Project aims to help you to get started with using Github. You can find a tutorial [here](https://guides.github.com/activities/hello-world/)
 
 ## Steps to follow :scroll:
 
