@@ -1,6 +1,9 @@
 # Welcome to Hacktoberfest 2018 Hello-world :clipboard:
 > This Project aims to help you to get started with using Github. You can find a tutorial [here](https://guides.github.com/activities/hello-world/)
 
+# What is Hacktoberfest?
+Hacktoberfest is a program by Digital Ocean and Github, where you can easily win a T-Shirt just by making 5 pull requests in the month of October to any open source projects on Github.
+
 ## Steps to follow :scroll:
 
 ### 1. Register for Hacktoberfest
