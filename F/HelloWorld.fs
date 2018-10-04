@@ -1,7 +1,7 @@
-let f ()= 
-    printfn "Hello World"
+open System
 
 [<EntryPoint>]
 let main argv = 
-    f()
+    printfn "Hello World" 
+    Console.ReadLine() |> ignore
     0
