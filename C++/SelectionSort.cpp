@@ -27,9 +27,13 @@ void SelectionSort(int input[],int size){
 }
 int main()
 {
-    cout<<"Om Kumar"<<endl;
-    cout<<"05220802716"<<endl;
-    int input[] = {10,2,8,15,63,4};
+    int n;
+    cout<<"Enter the number of elements to be inserted: ";
+    cin>>n;
+    int input[n];
+    cout<<"Enter the elements to be sorted: ";
+    for(int i=0;i<n;i++)
+     cin>>input[i];
     int size = sizeof(input)/sizeof(input[0]);
     SelectionSort(input,size);
     for(int i:input){
