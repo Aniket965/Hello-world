@@ -1,2 +1,0 @@
--- MSSQL
-print 'Hello World'
