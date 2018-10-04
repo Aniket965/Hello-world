@@ -24,4 +24,5 @@ int main ()
 	    }
         printf ("\n");
     }
+printf("Thank you bro");
 }
