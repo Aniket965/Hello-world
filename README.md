@@ -24,7 +24,7 @@ main branch, if there is no language folder, make one, then add into it.
 Once you have completed these steps, you are ready to start contributing 
 by checking our `Help Wanted` issues and creating [pull requests](https://github.com/Hacktoberfest-2018/Hello-world/pulls).
 
-### 5. Give this a Project Start :star:
+### 5. Give this Project a Star :star:
 
 If you liked working on this project, please share this project as much 
 as you can and star this project to help as many people in opensource as you can.
