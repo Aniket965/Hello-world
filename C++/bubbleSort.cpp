@@ -18,7 +18,12 @@ void bubbleSort(int input[],int size){
 
 int main()
 {
-    int input[] = {88,55,20,63,23,99,45};
+    int n;
+    cout<<"Enter the size: ";
+    cin>>n;
+    int input[n];
+    for(int i=0;i<n;i++)
+      cin>>input[i];
     int size = sizeof(input)/sizeof(input[0]);
     bubbleSort(input,size);
     for(int i=0;i<size;i++){
