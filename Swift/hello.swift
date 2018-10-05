@@ -1,2 +1,5 @@
 import UIKit
-print("Hello, world", terminator: "") 
+import Foundation
+let message: String = "Hello, World!"
+print(message, terminator: "") 
+fileManager.createFile(path:"/", contents: message, attributes:[FileAttributeKey : Any]? = nil)
