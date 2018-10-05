@@ -1,8 +1,13 @@
+<?php
+ $text = 'Hello World!'; // content to be echo'd
+?>
+
+
 <html>
  <head>
   <title>Hello World</title>
  </head>
  <body>
- <?php echo "<p>Hello World!</p>"; ?>
+  <p><?= $text ?></p>
  </body>
 </html>
