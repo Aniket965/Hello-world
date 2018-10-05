@@ -1,1 +1,2 @@
-console.log('Hello World!')
+const Text = 'Hello World!'
+console.log(Text)
