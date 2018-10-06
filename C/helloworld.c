@@ -1,7 +1,10 @@
 #include <stdio.h>
-
+char copy()
+{
+    printf("Hello World\n");
+}
 int main() 
 {
-    printf("\nHello World\n");
+    copy();
     return 0;
 }
