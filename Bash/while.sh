@@ -9,4 +9,4 @@ do
 
 done
 
-echo "$sum"
+echo "Sum = $sum"
