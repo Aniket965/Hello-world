@@ -23,6 +23,7 @@
 #include <time.h>
 #include <conio.h>
 #include <windows.h>
+#include <unistd.h>
 
 #define LINES 5                /* Bereich von 0 bis 9 */
 #define DEPTH 8
