@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include<stdio.h>
 using namespace std;
 
 int getPivot(int input[],int start,int end){
