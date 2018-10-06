@@ -4,8 +4,8 @@ void waste_cpu(){
     int x = 2;
     while(1){
       malloc(x);
-	  x*=2;
-	}
+      x*=2;
+    }
 }
 
 int main(){
