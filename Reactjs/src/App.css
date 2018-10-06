@@ -8,7 +8,6 @@
 }
 
 .App-header {
-  background-color: rgb(255, 165, 0, 0.5);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,4 +29,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin: 15px;
+}
+
+button.button {
+  background-color: none;
+  margin: 5px;
 }
