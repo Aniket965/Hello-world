@@ -1,4 +1,4 @@
-from time import sleep
+import time
 from lists import command_list
 from lists import math_commands
 
