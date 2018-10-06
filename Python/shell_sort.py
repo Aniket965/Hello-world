@@ -1,22 +1,35 @@
-def shellSort(arr):
-    n = len(arr)
-    gap = int(n/2)
 
+def shell_sort(arr):
+    """
+    Fuction to sort using Shell Sort
+    <https://en.wikipedia.org/wiki/Shellsort>.
+    :param arr:     A list of element to sort
+    """
 
-    while(gap > 0):
-
-        for i in range(gap,n):
+    gap = int((len(arr)/2))
+    while gap > 0:
+        for i in range(gap, len(arr)):
             temp = arr[i]
             j = i
-            while(j >= gap and arr[j-gap] > temp):
+            while j >= gap and arr[j - gap] > temp:
                 arr[j] = arr[j-gap]
-                j = j-gap
+                j -= gap
 
             arr[j] = temp
-        gap = int(gap/2)
 
-test_arr = [5,6,2,1,4,3,0]
+        gap /= 2
+        gap = int(gap)
 
-shellSort(test_arr)
+    return arr
 
-print(test_arr)
+
+def main():
+    arr = [15, 12, 36, 63, 96]
+    sorted_arr = shell_sort(arr)
+    print('Sorted element using Shell Sort: {}'.format(
+              ' '.join(map(str, shell_sort(arr)))))
+
+
+if __name__ == '__main__':
+    main()
+

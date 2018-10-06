@@ -1,10 +1,13 @@
+<?php
+ $text = 'Hello World!'; // content to be echo'd
+?>
+
+
 <html>
-  <head>
-    <title>Hello World</title>
-  </head>
-  <body>
-    <?php
-      echo "Hello World!";
-    ?>
-  </body>
+ <head>
+  <title>Hello World</title>
+ </head>
+ <body>
+  <p><?= $text ?></p>
+ </body>
 </html>
