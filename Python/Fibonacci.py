@@ -1,3 +1,5 @@
+import time
+
 fibonacci = [1, 1]
 n = int(input())
 while len(fibonacci) < n:
