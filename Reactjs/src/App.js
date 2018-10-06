@@ -1,3 +1,5 @@
+# Importing react modules
+
 import React, { Component } from "react";
 import ducky from "././images/HalloweenDuck.jpg";
 import "./App.css";
