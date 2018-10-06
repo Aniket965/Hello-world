@@ -3,7 +3,7 @@
 int main(){
     // Find Maximum element in an array
     int arr[10];
-    int i=0,max=0,size=0;
+    int i=0,max=0,size=0,a=1;
 
     printf("Enter the size of the array ");
     scanf("%d",&size);
@@ -16,7 +16,7 @@ int main(){
 
     for(i=0;i<size;i++)
     {
-        if(max<arr[i])
+        if(max<arr[i]&&a)
         {
             max= arr[i];
         }        
