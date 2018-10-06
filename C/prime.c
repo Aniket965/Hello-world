@@ -14,8 +14,7 @@ if(num%i+2==0)
 arr[i] = num;
 }
 }
-for(i=0;i<)
-
+for(i=0;){
 printf("\n");
-return 0;
 }
+return 0;
