@@ -1,8 +1,13 @@
-import java.util.*;
-import java.util.stream.*;
-import java.math.*;
+import java.util.Scanner;
+import java.util.stream.Stream;
+import java.math.BigInteger;
 
+/**
+ * The FibonacciStream class prints out n terms of the fibonacci using java 
+ * stream api.
+ */
 public class FibonacciStream {
+
   public static void main(String[] args) {
     System.out.print("Enter number of terms: ");
     Scanner scan = new Scanner(System.in);
