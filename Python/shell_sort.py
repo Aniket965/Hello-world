@@ -15,11 +15,8 @@ def shellSort(arr):
             arr[j] = temp
         gap = int(gap/2)
 
-arr = []
-for i in range(0,5):
-    b = int(input())
-    arr.append(b)
+test_arr = [5,6,2,1,4,3,0]
 
-shellSort(arr)
+shellSort(test_arr)
 
-print(arr)
+print(test_arr)
