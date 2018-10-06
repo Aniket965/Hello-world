@@ -4,10 +4,12 @@ int main(){
 
     // 1/1 + 1/2 + 1/3 + n
     // Sum also
-    float sum=0,i,n;
-    printf("Enter the end value ");
+    float sum=0;
+    float i=1;
+    float n;
+    printf("Enter the end value of the series: ");
     scanf("%f",&n);
-    i=1;
+    
     while(i<=n)
     {
         printf("1/%f +",i);
