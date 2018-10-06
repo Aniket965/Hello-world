@@ -4,6 +4,6 @@
 
 int main()
 {
-    printf("नमस्ते !! हक्टुबर फेस्ट की अपको  ढेर सारी  बधाई !!!! :)");
+    printf("Welcome to the Hacktoberfest-2018");
     return 0;
 }
