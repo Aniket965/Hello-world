@@ -22,10 +22,13 @@ int main()
     cout<<"Om Kumar"<<endl;
     cout<<"05220802716"<<endl;
     int input[] = {10,2,8,15,63,4};
+  int s=2;
     int size = sizeof(input)/sizeof(input[0]);
     shellSort(input,size);
+  if(s==2){  
     for(int i:input){
-        cout<<i<<" ";
-    }
+          cout<<i<<" ";
+      }
+  }
     return 0;
 }
