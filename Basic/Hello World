@@ -1,0 +1,9 @@
+10 PRINT "HELLO WORLD"
+
+(Obviously optional, but included 99.999% of the time...)
+ 20 GOTO 10
+ RUN (AWAY, LAUGHING)
+
+Poor old Basic - everybody's forgotten you...
+ 10 FORI=1to100000:NEXT
+ 20 PRINT CHR$(7):GOTO20
