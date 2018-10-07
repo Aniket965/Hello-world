@@ -3,7 +3,7 @@
 int main(){
 
     int num=0;
-    printf("Enter a Number to check ");
+    printf("Enter a Number to check \n");
     scanf("%d",&num);
 
     if(num>0)
@@ -14,7 +14,7 @@ int main(){
     {
         printf("Number is non Negative nor positive");
     }
-    if(num<0)
+    else
     {
         printf("Number is a negative Number");
     }
