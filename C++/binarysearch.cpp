@@ -1,58 +1,26 @@
 #include<iostream>
-#include<math.h>
-#include<fstream>
-#include<vector>
-#include<sstream>
-#include<algorithm>
-
 using namespace std;
-
-int counter = 0;
-
-int binarySearch(vector<int> &arr, unsigned int low, unsigned int high, int num){
-
-	if(low > high)
-		return -1;
-	else
-	{
-		int mid = (low + high) / 2;
-		counter++;
-
-		if(arr[mid] == num)
-			return mid;
-		else if(arr[mid] < num)
-				return binarySearch(arr, mid + 1, high, num);
-		else
-				return binarySearch(arr, low, mid, num);
-		}
+bool BinarySearch(int arr[], int n, int k){
+    int s=0;int e=n-1;
+    while (s<=e){
+        int mid=(s+e)/2;
+        if (arr[mid]==k) return true;
+        if (arr[mid]<k){
+            s=mid+1;
+        } else {
+            e=mid-1;
+        }
+    }
+    return false;
 }
 
-int main(int argc, char*argv[]){
-	int x;
-	vector<int> arr;
-	int result;
-	string line, line2;
-	fstream file;
-	ifstream infile(argv[1]);
-	file.open(argv[2], ios::out);
-
-
-	getline(infile, line);
-	istringstream buffer{line};
-
-	while(buffer >> x){
-		arr.push_back(x);
-
-		if(buffer.peek() == ',') // >> std::ws)
-			buffer.ignore();
-	}
-	sort(arr.begin(), arr.end());
-	int y;
-	while(infile >> y)
-	{
-		result = binarySearch(arr, 1, arr.size() + 1, y);
-		(result == -1) ? file<<to_string(y)+" not found"<<endl : file<<to_string(y)+" found at position "<<result<<" after "<<counter<<" comparisons"<<endl;
-	}
-	// sort(arr.begin(), arr.end());
-
-}
+int main(){
+    int n,target;
+	cout<<"Enter the size of the array"<<endl;
+	int arr[n];
+	cout<<<"Enter elements of the array"<<endl;
+	for (int i=0;i<n;i++) cin>>arr[i];
+	cout<<"enter the number you want to search";
+	cin>>target;
+	if(BinarySearch(arr,n,target) cout<<"The number exists"<<endl;
+	else cout<<"The number doesn't exists"<<endl;
