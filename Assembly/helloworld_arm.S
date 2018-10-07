@@ -1,5 +1,5 @@
 msg:                                                                                    
-        .ascii "hi system call\n"                                                       
+        .ascii "Hello, World!\n"       
 len = . - msg                                                                           
                                                                                         
 .text                                                                                   
