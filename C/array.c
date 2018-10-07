@@ -6,17 +6,16 @@ void main(){
     int size,max=0,i;
     printf("Enter the size of the array=");
     scanf("%d",&size);
-    if(size<=10)
-    {
     printf("Enter %d elements in the array\n=",size);
-    for(i=0;i<size;i++)
+    for(i=1;i<=size;i++)
+    {
         scanf("%d",&arr[i]);
-     for(i=0;i<size;i++)
+    }
+     for(i=1;i<=size;i++)
       {
         if(max>arr[i])
             max=arr[i];
-       }
-
+     }
     printf("Maximum value in the array is %d=",max);
 
 
