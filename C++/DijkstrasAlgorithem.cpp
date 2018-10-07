@@ -1,70 +1,67 @@
-#include<limits.h>
-#include<stdio.h>
-#define max 50
+#include<iostream>
+#include<list>
+#include<queue>
+using namespace std;
+typedef pair<int,int> pii;
 
-//global variables
-int graph[max][max];
-bool isvisited[max];
-int dist[max];
-
-int minDistance(int n,int src){
-    int min = INT_MAX , min_vertex;
-    for(int v=0;v<n;v++){
-        if(!isvisited[v] && dist[v] <= min)
-            min=dist[v],min_vertex = v;        
+class comp{ /// comparission in priority queue
+public:
+    bool operator()(pii a, pii b){
+        return a.second>b.second;
     }
-    return min_vertex;
-}
+};
 
-void display(int src,int n){
-    printf("\nVertex \t Distances from source %d\n",src);
-    for(int i=0;i<n;i++){
-        printf("%d \t\t %d\n",i,dist[i]);
+class Graphs{
+private:
+    list<pii> *adjList;
+    int V;
+public:
+    Graphs(int n){
+        V=n;
+        adjList=new list<pii>[V];
     }
-}
-
-void dijkstra(int src,int n){
-    //set all distances to infinity and isvisited to false
-    for(int i = 0;i<n;i++)
-        dist[i] =INT_MAX,isvisited[i]=false;
-    
-    //self loops distance is zero
-    dist[src] = 0;
-
-    //to find shortest path from src to all vertices
-    for(int i=0;i<n-1;i++){
-        int minV =minDistance(n,src);
-        isvisited[minV] =true;
-        printf("%d",minV);
-        for(int v=0;v<n;v++){
-            if(!isvisited[v] && graph[minV][v] && dist[minV] != INT_MIN && dist[minV] + graph[minV][v] < dist[v])
-                dist[v] = dist[minV] + graph[minV][v];
+    void addEdge(int s, int d, int wt){
+        adjList[s].push_back(make_pair(d,wt)); 
+    }
+    int dijikstra(int s, int d){ ///algorigthm to find shortest distance
+        priority_queue<pii,vector<pii>,comp> pq;
+        int * distance=new int[V];
+        for (int i=0;i<V;i++) distance[i]=100000; 
+        distance[s]=0;
+        pq.push(make_pair(s,0));
+        while (!pq.empty()){
+            pii f=pq.top();
+            pq.pop();
+            int curVer=f.first;
+            int curDist=f.second;
+            if (distance[curVer]!=curDist) continue;
+                 it!=adjList[curVer].end();it++){
+                int childDist=it->second+curDist;
+                if (childDist<distance[it->first]){ ///check the distance shortest ahi tabhi update krna
+                    pq.push(make_pair(it->first,childDist));
+                    distance[it->first]=childDist;
+                }
+            }
         }
+        for (int i=0;i<V;i++){
+            cout<<"Distance of vertex - "<<i<<" is "<<distance[i]<<endl;
+        }
+        cout<<endl;
+        return distance[d];
     }
-    display(src,n);
-}
+};
 
 int main(){
-    int sizeOfGraph,Edges,src;
-    printf("Enetr no of vertices:");
-    scanf("%d",&sizeOfGraph);
-    for(int i = 0;i<sizeOfGraph;i++)
-        for(int j=0;j<sizeOfGraph;j++){
-            graph[i][j] = 0;
-        }
-    printf("Enter the no of edges:");
-    scanf("%d",&Edges);
-    char ch = 'A';
-    int j,k;
-    for(int i= 0;i<Edges;i++){
-        printf("Enter the end vertices of edge %c : ",ch++);
-        scanf("%d %d",&j,&k);
-        printf("Enter the distance of %d - %d : ",j,k);
-        scanf("%d",&graph[j][k]);
-        graph[k][j] = graph[j][k];
-    }    
-    printf("Enter the source:");
-    scanf("%d",&src);    
-    dijkstra(src,sizeOfGraph);    
-    return 0;    
+    Graphs g(7);
+    g.addEdge(0,1,20);
+    g.addEdge(0,2,10);
+    g.addEdge(1,4,20);
+    g.addEdge(1,3,10);
+    g.addEdge(2,3,25);
+    g.addEdge(2,5,27);
+    g.addEdge(3,4,5);
+    g.addEdge(3,5,10);
+    g.addEdge(4,6,5);
+    g.addEdge(5,6,7);
+    cout<<"The shortest path is "<<endl<<g.dijikstra(0,6)<<endl;
 }
