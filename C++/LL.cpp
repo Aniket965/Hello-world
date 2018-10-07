@@ -3,16 +3,18 @@ using namespace std;
 
 class node
 {
-public:
+private:
     int data;
     node* next;
     node*prev;
+   public:
     node(int d)
     {
         data=d;
         next=NULL;
         prev=NULL;
     }
+   friend class LinkedList;
 };
 
 class LinkedList
