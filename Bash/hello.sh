@@ -1,4 +1,4 @@
 #Program to print hello world in Bash
-echo "Hello World!"
+echo "Hey! There World!"
 read -p "Your name ?" name ;echo " Welcome Dear $name"
 
