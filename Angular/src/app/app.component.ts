@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hacktoberfest';
+  hackForm: FormGroup;
+
+  constructor() {
+    this.hackForm = new FormGroup({
+      firstName: new FormControl(''),
+      lastName: new FormControl('')
+    });
+  }
+
+  onSubmit() {
+    console.warn(this.hackForm.value);
+  }
+
 }
