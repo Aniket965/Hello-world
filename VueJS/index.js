@@ -1,6 +1,11 @@
 var app = new Vue({
   el: '#app',
   data: {
-    seen: true
-  }
+    seen: false
+  },
+  methods: {
+    toggle() {
+      this.seen = !this.seen;
+    },
+  },
 })
