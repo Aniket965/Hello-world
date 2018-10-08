@@ -12,11 +12,11 @@
 
 - The form editor
 
-![](screenshots\screenshot1.png)
+![](screenshots/screenshot1.png)
 
 - The source code editor
 
-  ![](screenshots\screenshot2.png)
+  ![](screenshots/screenshot2.png)
 
   The code text in file `你好世界.e` :
 
@@ -37,4 +37,4 @@
 
 - debugging
 
-  ![](screenshots\screenshot3.png)
+  ![](screenshots/screenshot3.png)
