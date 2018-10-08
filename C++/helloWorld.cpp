@@ -1,7 +1,10 @@
-#include <iostream>
+#include <iostream.h>
+#include<conio.h>
 
-int main()
+void main()
 {
-    std::cout << "Hello, world!\n";
-    return 0;
+   clrscr();
+  cout << "Hello, world!";
+  getch();
+ 
 }
