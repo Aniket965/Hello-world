@@ -18,7 +18,7 @@ int main()
     cout << "\nit is a palindrome" << endl;
     }
     else{
-    cout << "\nit is not a palindrome" << endl;
+    cout << "\n it is not a palindrome" << endl;
     }
     return 0;
 }
