@@ -1,12 +1,12 @@
 # Get three test score
-round1 = int(raw_input("Enter score for round 1: "))
+r1 = int(raw_input("Enter score for round 1: "))
 
-round2 = int(raw_input("Enter score for round 2: "))
+r2 = int(raw_input("Enter score for round 2: "))
 
-round3 = int(raw_input("Enter score for round 3: "))
+r3 = int(raw_input("Enter score for round 3: "))
    
 # Calculate the average
-average = (round1 + round2 + round3) / 3
+average = (r1 + r2 + r3) / 3
 
 # Print out the test score
-print "the average score is: ", average
+print ("the average score is: ", average)
