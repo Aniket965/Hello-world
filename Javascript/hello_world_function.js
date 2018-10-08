@@ -1,4 +1,4 @@
 //function declaration
-const hello = () => console.log("Hello World!");
+const hello = () => doocument.write("Hello World!");
 //function invocation
 hello();
