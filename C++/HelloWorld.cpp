@@ -1,6 +1,10 @@
-#include<iostream>
-using namespace std;
-int main(){
-  cout<<"Hello Open Source\n";
-  return 0;
+#include <iostream.h>
+#include<conio.h>
+
+void main()
+{
+   clrscr();
+  cout << "Hello, world!";
+  getch();
+ 
 }
