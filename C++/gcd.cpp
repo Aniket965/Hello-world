@@ -1,23 +1,50 @@
-#include <iostream>
-using namespace std;
+#include <bits/stdc++.h>
+    using namespace std;
 
-int gcd(int a ,int b)
-{ if(a==b)
-return a;
-if(a%b==0)
-    return b;
-if(b%a==0)
-    return a ;
-if(a>b)
-    return gcd(a%b,b);
-else
-    return gcd(a,b%a);
+    const int MOD = 1e9 + 7;
 
-}
-int main()
-{   int a,b;
-    cout <<"enter the numbers"<<endl;
-    cin>>a>>b;
-    int z =gcd(a,b);
-    cout<<"the gcd of given numbers is"<<z<<endl;
-}
+    long long bpow(long long a, long long b, long long mod = MOD)
+    {
+        long long res = 1;
+
+        while(b)
+        {
+            if(b & 1)
+                res = ((__int128)res * a) % mod;
+            a = ((__int128)a * a) % mod;
+
+            b >>= 1;
+        }
+
+        return res;
+    }
+
+    void solve()
+    {
+        long long a, b, n;
+
+        cin >> a >> b >> n;
+
+        if(a == b)
+        {
+            cout << (bpow(a, n) + bpow(b, n)) % MOD << '\n';
+        }else
+        {
+            long long d = (bpow(a, n, a - b) + bpow(b, n, a - b)) % (a - b);
+
+            cout << __gcd(d, a - b) << '\n';
+        }
+    }
+
+    int main()
+    {
+    //    freopen("input.txt", "r", stdin);
+
+        int t;
+        cin >> t;
+
+        while(t --> 0)
+            solve();
+
+        return 0;
+    }
