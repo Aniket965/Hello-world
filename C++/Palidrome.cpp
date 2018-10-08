@@ -7,14 +7,16 @@ int main()
     cout << "\nPlease enter a number";
     cin >> num;
     b = num;
-    while( n > 0)
+    rev=0
+    while( num > 0)
     {
-    a = n % 10;
-    n = n / 10;
-    s = s * 10 + a;
+    rem = num % 10;
+     rev = (rev * 10) + rem;
+    num= num / 10;
+   
     }
    
-    if( b == s){
+    if( b == rev){
     cout << "\nit is a palindrome" << endl;
     }
     else{
