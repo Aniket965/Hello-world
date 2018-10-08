@@ -1,8 +1,0 @@
-
-
-Elm uses type inference to detect corner cases and give friendly hints. 
-For example, what if someone provides invalid inputs? NoRedInk switched to Elm about two years ago, 
-and 250k+ lines later, 
-they still have not had to scramble to fix a confusing runtime exception in production.
-
-GO HERE : https://elm-lang.org/

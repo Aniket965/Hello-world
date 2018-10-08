@@ -1,5 +1,0 @@
-/* To try it, just go to about:blank and add the style */
-
-body:after {
-	content: "Hello world";
-}
