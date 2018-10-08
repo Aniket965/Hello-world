@@ -1,15 +1,8 @@
-    #include<iostream>
-        using namespace std;
-        class Message
-    {
-      public:
-             void display() {
-          cout << "Hello World\n";
-        }
-    };
-         int main()
-    {
-        Message c;    
-        c.display(); 
-             return 0;
-    }
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    cout << "Hello, World!";
+    return 0;
+}
