@@ -1,2 +1,0 @@
-all:
-	@echo "HACKTOBERFEST 2018"

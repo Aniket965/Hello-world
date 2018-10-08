@@ -1,2 +1,0 @@
-h=.'Hello World'
-h
