@@ -9,10 +9,9 @@ class App extends Component {
   state = {
     isDark: false
   };
-  
 
   toggleDark = () => {
-    this.setState(previousState => { isDark: !previousState.isDark });
+    this.setState(previousState => ({ isDark: !previousState.isDark }));
   };
 
   render() {
