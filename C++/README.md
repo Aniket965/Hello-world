@@ -1,1 +1,1 @@
-Welcome! This directory consists of al the basic programs of programming in c++. :)
+Welcome! This directory consists of all the basic programs of programming in c++. :)
