@@ -1,8 +1,0 @@
-// Step 1 - Create a new button.
-// Step 2 - Edit button script.
-
-on mouseUp
-  answer "Hello World." with "OK"
-end mouseUp
-
-// Step 3 - Click the button.
