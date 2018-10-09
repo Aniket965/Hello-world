@@ -1,6 +1,6 @@
 ## Execute
 
-`java -cp AnyaBasic.jar net.phatcode.rel.main.AnyaBasicMain filename.ext`
+`java -cp AnyaBasic.jar net.phatcode.rel.main.AnyaBasicMain hello.abs`
 
 ## Language documentation
 
