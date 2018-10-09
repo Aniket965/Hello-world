@@ -23,4 +23,6 @@ int main()
         cout<<"\n";
 
    }
+    int a = pow(2, n);
+	cout<<"total number of stars used = "<<a<<endl;
 }
