@@ -9,7 +9,7 @@
 <body>
 <h1><em><center><u>HELLO  WORLD!</u></center></em></h1>
 <p>
-   <h2><strong>Hactoberfest'18 </strong></h2>
+   <h2><strong>Hacktoberfest'18 </strong></h2>
 </p>
 </body>
 </html>
