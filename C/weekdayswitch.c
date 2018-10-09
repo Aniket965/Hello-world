@@ -15,7 +15,7 @@ int main(){
             break;
         case 3: printf("Its Wednesday");
             break;
-        case 4: printf("Its Thursday
+        case 4: printf("Its Thursday");
                        break;
         case 5: printf("Its Friday");
                        break;
