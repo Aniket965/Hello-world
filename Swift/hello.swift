@@ -14,7 +14,18 @@ print("Hello, World!")
       override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.addSubview(helloLabel)
+        setupViews()
+
+        view.addSubview(helloworldLabel)
+      }
+
+
+      func setupViews() {
+
+        view.addSubview(helloWorldLabel)
+
+        helloWorldLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        helloWorldLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
       }
 
 }
