@@ -3,12 +3,11 @@
 int main(){
 
     // Factors of a value
-    int num,i=2,l=1;
+    int num,i=1;
 
     printf("Enter a value to calculate ");
     scanf("%d",&num);
-    if(l==1){
-        while(i<num)
+        while(i<=num)
         {
             if(num%i==0)
             {
@@ -16,7 +15,6 @@ int main(){
             }
             i++;
         }
-    } 
     printf("\n");
     return 0;
 }
