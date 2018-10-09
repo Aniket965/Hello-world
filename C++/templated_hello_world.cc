@@ -1,7 +1,7 @@
 #include <iostream>
 
 
-template<typename ReturnT, typename ArgT>
+template<typename ReturnT, typename...  ArgT>
 using Function = ReturnT(*)(ArgT...);
 
 
