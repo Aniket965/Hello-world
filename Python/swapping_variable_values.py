@@ -1,7 +1,6 @@
-#We take 2 variables with certain values:
-a= 10
-b= 20
-
+#We add any two variables with certain values:
+a= int(raw_input("enter any  number"))
+b= int(raw_input("enter any number"))
 # Swapping the values of the variables:
 b= a + b
 a= b - a
