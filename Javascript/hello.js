@@ -4,8 +4,9 @@
 
   <p>Before the script...</p>
 
-  <script>
-    alert( 'Hello, world!' );
+  <script Language="javascript">
+    alert("hello world")
+
   </script>
 
   <p>...After the script.</p>
