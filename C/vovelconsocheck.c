@@ -2,18 +2,16 @@
 
 int main(){
 
-    char letters;
+    char letter;
     printf("Enter a Character Please ");
-    scanf("%c",&letters);
+    scanf("%c",&letter);
 
-    if(letters == 'a' || letters == 'A' || letters == 'e' || letters =='E' || letters == 'i' || letters =='I'|| letters == 'o' || letters =='O'|| letters == 'u' || letters == 'U' )
+    if(letter == 'a' || letter == 'A' || letter == 'e' || letter =='E' || letter == 'i' || letter =='I'|| letter == 'o' || letter =='O'|| letters == 'u' || letter == 'U' )
     {
-        printf("The character is a vovel");
+        printf("%c is a vowel\n",letter);
     }
     else{
-        printf("This Character is a consonent");
+        printf("%c is a consonent\n",letter);
     }
-
-printf("\n");
 return 0;
 }
