@@ -1,1 +1,2 @@
-write('Hello'),write('World!'), nl.
+write('Hello'),nl.
+write('World!'), nl.
