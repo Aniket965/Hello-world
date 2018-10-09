@@ -11,6 +11,8 @@ print("Hello, World!")
         return label
     }()
 
+    var array = []
+
       override func viewDidLoad() {
         super.viewDidLoad()
 
