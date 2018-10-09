@@ -84,8 +84,8 @@ const ErrorHandler = {
     console.log(`Error handled: ${error.message}`);
 
     return handlerInput.responseBuilder
-      .speak('Sorry, I can\'t understand the command. Please say again.')
-      .reprompt('Sorry, I can\'t understand the command. Please say again.')
+      .speak('Sorry, I can\'t understand the command, say again.')
+      .reprompt('Sorry, I can\'t understand the command, say again.')
       .getResponse();
   },
 };

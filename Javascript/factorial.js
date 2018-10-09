@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<script>
-function show(){
-
+<script Language="javascript">
+function show()
+{
 var i, no, fact;
 fact=1;
 no=Number(document.getElementById("num").value);

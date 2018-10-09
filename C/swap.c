@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c;
+    int a,m,c;
 
     scanf("%d" , &a);
-    scanf("%d" , &b);
+    scanf("%d" , &m);
     printf("First Number:%d",a);
-    printf("Second Number:%d",b);
+    printf("Second Number:%d",m);
     
     c=a;
-    a=b;
-    b=c;
+    a=m;
+    m=c;
     printf("First Number:%d",a);
-    printf("Second Number:%d",b);
+    printf("Second Number:%d",m);
 
-
+return 0;
 }

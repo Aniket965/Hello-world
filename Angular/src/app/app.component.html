@@ -1,6 +1,16 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
+<h1>{{title}}</h1>
+<form [formGroup]="hackForm"
+      (ngSubmit)="onSubmit()">
+  <label>
+    First Name:
+    <input type="text"
+           formControlName="firstName">
+  </label>
+  <label>
+    Last Name:
+    <input type="text"
+           formControlName="lastName">
+  </label>
+  <button type="submit"
+          [disabled]="!hackForm.valid">Submit</button>
+</form>

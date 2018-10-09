@@ -3,13 +3,12 @@
 
 int main(){
 
-    int a,b,c;
+    int a,b;
+    int sum;
     a=5;b=10;
-    c=a+b;
+    sum=a+b;
 
-    printf("The addition of two numbers is %d",c);
-    printf("\n%d",0%1);
-
+    printf("The addition of two numbers is %d",sum);
     printf("\n");
     return 0;
 }
