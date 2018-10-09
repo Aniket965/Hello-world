@@ -22,7 +22,7 @@ sayHello();
 
 return EXIT_SUCCESS;
 }
-catch {
+catch(...) {
 
 std::clog << "Bye, cruel world!" ;
 
