@@ -11,7 +11,7 @@ public:
 class derived:public abc
 {
 public:
-    void show()
+    void show() override
     {
         cout<<"Derived\n";
     }
