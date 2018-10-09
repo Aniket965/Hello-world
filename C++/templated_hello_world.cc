@@ -8,7 +8,7 @@ using Function = ReturnT(*)(ArgT...);
 
 void greetWorld() {
 
-std::cout<< "Hello, World!";
+std::cout<< "Hello, World!" << std::endl;
 
 };
 
