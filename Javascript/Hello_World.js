@@ -1,2 +1,1 @@
-#!/usr/bin/env node
-console.log("hello world with node")
+document.write("hello, world")
