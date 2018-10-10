@@ -1,50 +1,24 @@
-#include <bits/stdc++.h>
-    using namespace std;
 
-    const int MOD = 1e9 + 7;
+#include<iostream>
+using namespace std;
 
-    long long bpow(long long a, long long b, long long mod = MOD)
-    {
-        long long res = 1;
+long long int calculate_gcd(long long int a,long long int b)
+{
+  if(b==0)
+    return a;
+  else
+    return calculate_gcd(b,a%b);
+}
 
-        while(b)
-        {
-            if(b & 1)
-                res = ((__int128)res * a) % mod;
-            a = ((__int128)a * a) % mod;
 
-            b >>= 1;
-        }
+int main()
+{
+    long long int n1,n2;
+    cout<<"Enter the two numbers:";
+    cin>>n1>>n2;
 
-        return res;
-    }
+    cout<<calculate_gcd(n1,n2)<<endl;
+    return 0;
+}
 
-    void solve()
-    {
-        long long a, b, n;
-
-        cin >> a >> b >> n;
-
-        if(a == b)
-        {
-            cout << (bpow(a, n) + bpow(b, n)) % MOD << '\n';
-        }else
-        {
-            long long d = (bpow(a, n, a - b) + bpow(b, n, a - b)) % (a - b);
-
-            cout << __gcd(d, a - b) << '\n';
-        }
-    }
-
-    int main()
-    {
-    //    freopen("input.txt", "r", stdin);
-
-        int t;
-        cin >> t;
-
-        while(t --> 0)
-            solve();
-
-        return 0;
-    }
+    
