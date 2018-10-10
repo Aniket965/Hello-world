@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ball</title>
+	<style type="text/css">
+		.ball {
+			height: 100px;
+			width: 100px;
+			background-color: black;
+			border-radius: 50%;
+			animation-name: bounce;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			margin: auto;
+			position: relative;
+		}
+
+		@keyframes bounce {
+			0% {
+				top: 0;
+			}
+			50% {
+				top: 400px;
+				height: 90px;
+				width: 110px;
+				background-color: grey;
+			}
+			100% {
+				top: 0;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="ball"></div>
+</body>
+</html>
