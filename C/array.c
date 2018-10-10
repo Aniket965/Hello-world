@@ -13,7 +13,7 @@ void main(){
     }
      for(i=1;i<=size;i++)
       {
-        if(max>arr[i])
+        if(arr[i]>=max)
             max=arr[i];
      }
     printf("Maximum value in the array is %d=",max);
