@@ -3,9 +3,9 @@
 
 int main (int argc,char **argv)
 {
-	char s[20];
+	char s[30];
 
-	printf("write your name\n");
+	printf("please write your name\n");
 
 	scanf("%s",s);
 
