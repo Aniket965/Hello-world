@@ -10,22 +10,25 @@ public class BubbleSort {
 		int input[]=new int [n];
 		for(int i=0;i<n;i++)
 		{
-		input[i]=s.nextInt();	
+		input[i]=s.nextInt();
 		}
 		return input;
 	}
-	
+
 	public static void printArray(int [] input) {
 		for(int i=0;i<input.length;i++)
 		{
-		System.out.print(input[i]+ " ");	
+		System.out.print(input[i]+ " ");
 		}
+		System.out.println();
 	}
-	
+
 	public static void bubbleSort(int[] arr){
 		//write your code here
-           	for(int i=0;i<arr.length-1;i++)
+		int flag;
+    for(int i=0;i<arr.length-1;i++)
 		{
+			flag = 0;
 			for(int j=0;j<arr.length-1-i;j++)
 			{
 				if(arr[j]>arr[j+1])
@@ -33,8 +36,11 @@ public class BubbleSort {
 				int temp=arr[j];
 				arr[j]=arr[j+1];
 				arr[j+1]=temp;
+				flag = 1;
 				}
 			}
+			if(flag==0)
+				return;
 		}
 	}
 

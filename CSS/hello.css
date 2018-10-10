@@ -1,0 +1,8 @@
+body{
+    background-color: aqua
+}
+
+body:after {
+    content: "Hello world!";
+    font-weight: bold;
+}

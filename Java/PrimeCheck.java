@@ -6,24 +6,19 @@ public class PrimeCheck{
         
         Scanner scan = new Scanner(System.in);
         int value = scan.nextInt();
-        boolean flag=true;
+            if((value > 2 && value % 2 == 0) || value == 1) {
+           System.out.println("Not a Prime number");
+                return ;
+        }
 
-        for(int i = 2;i<value;i++)
-            {
-                if(value%i==0)
-                    {
-                        flag = false;
-                    }
+        for (int i = 3; i <= (int)Math.sqrt(value); i += 2) {
+
+            if (value % i == 0) {
+              System.out.println("Not a Prime number");
+                return ;
             }
-        
-            if(flag == true)
-                {
-                    System.out.println("Yes it is a Prime Number");
-                }
-            else
-                {
-                    System.out.println("No it is not a Prime Number");
-                }
+        }
 
+       System.out.println(" Prime number");
     }
 }
