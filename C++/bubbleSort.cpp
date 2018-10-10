@@ -18,6 +18,7 @@ void bubbleSort(int input[],int size){
 
 int main()
 {
+    std::ios::sync_with_stdio(false);
     int n;
     cout<<"Enter the size: ";
     cin>>n;
