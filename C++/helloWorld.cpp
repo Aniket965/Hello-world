@@ -1,10 +1,8 @@
-#include <iostream.h>
-#include<conio.h>
+#include <iostream>
+using namespace std;
 
-void main()
+int main()
 {
-   clrscr();
   cout << "Hello, world!";
-  getch();
- 
+  return 0; 
 }
