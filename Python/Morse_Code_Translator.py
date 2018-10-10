@@ -1,5 +1,7 @@
+import sys
 '''
 This code provides an English to Morse Code translator
+example usage: python3 Morse_Code_Translator.py HELLO
 '''
 
 code = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
@@ -20,8 +22,8 @@ def translate(inp):
 
     return s
 
-
-inp = input("Enter a string: ")
+# use system args to parse the value you are converting
+inp = str(sys.argv[1])
 inp = inp.upper()
 print("Your String: " + inp)
 s = ""
