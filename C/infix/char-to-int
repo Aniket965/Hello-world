@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(){
+char character;//a vraible character
+int ans;//a vriable which will store ASCII value of character
+scanf("%c",&character);
+ans=character;
+printf("%d",ans);
+
+}
