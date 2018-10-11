@@ -6,3 +6,5 @@ print("Go Brewers! Go Stros!")
 print("Beat them Dodgers!!")
 
 ```
+
+welcome to October baseball!
