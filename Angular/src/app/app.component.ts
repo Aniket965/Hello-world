@@ -7,7 +7,7 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hacktoberfest-2018';
+  title = 'Hacktoberfest-2018 (Hello World in every Language!)';
   hackForm: FormGroup;
 
   constructor() {
