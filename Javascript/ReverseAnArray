@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<title>My Example</title>
+
+
+<p id="msg"></p>
+
+<script>
+  var cities =  ["Sydney", "Tokyo", "Brisbane", "Auckland", "London", "Cairns"];
+      cities.reverse();
+  document.getElementById("msg").innerHTML = cities;
+</script>
