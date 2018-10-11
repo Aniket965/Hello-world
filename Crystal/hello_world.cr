@@ -1,1 +1,3 @@
-puts "Hello, world!"
+# Hello world in Crystal
+
+puts "Hello World"
