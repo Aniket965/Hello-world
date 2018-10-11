@@ -5,9 +5,11 @@ CFLAGS += -Wall -O2
 CSRCS = $(shell find . -iname '*.c' | sed 's/ /\\ /g')
 BINS = $(shell echo '$(CSRCS)' | sed -e 's/.\/\([^.]*\).c\( \|$$\)/\1.a.out\2/g')
 
-all: $(BINS)
+all: $(BINS) world
 clean:
 	rm -I $(BINS)
+world:
+	@echo "Hello, world"
 
 %.a.out: %.c
 	-$(CC) $(CFLAGS) $< -o "$@"
@@ -22,5 +24,5 @@ implementation\ in\ C.a.out: implementation\ in\ C.c
 Producer\ Consumer.a.out: Producer\ Consumer.c
 ABCDE\ reverse\ pyramid.a.out: ABCDE\ reverse\ pyramid.c
 
-.PHONY: all clean
+.PHONY: all clean world
 
