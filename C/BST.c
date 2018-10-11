@@ -4,6 +4,7 @@
 struct node
 {
     int key;
+    // These are left and right pointers for instance of this structure
     struct node *left, *right;
 };
 struct node *root;
