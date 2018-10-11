@@ -89,7 +89,7 @@ services:
         - 3306:3306
       image: mysql
       environment:
-        MYSQL_ROOT_PASSWORD: Rio@2015
+        MYSQL_ROOT_PASSWORD: password
       command: --default-authentication-plugin=mysql_native_password
       hostname: mysqlnode
 
@@ -150,7 +150,7 @@ services:
         - 3666:3306
       image: mysql
       environment:
-        MYSQL_ROOT_PASSWORD: Rio@2015
+        MYSQL_ROOT_PASSWORD: password
       command: --default-authentication-plugin=mysql_native_password
       hostname: mysqltestenode
 
