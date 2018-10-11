@@ -1,2 +1,3 @@
-  program = ["Hello Wolrd"]
-  print(program[0])
+#Printing Hello World
+a = "Hello World!"
+print(a)
