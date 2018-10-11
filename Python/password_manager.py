@@ -1,13 +1,24 @@
-import sys
-import pyperclip
+"""
+Password management script -- Not safe
+"""
 
-account = {'facebook': '12345', 'gmail': '123456'}
+
+import sys, pyperclip
+
+
+PASSWORDS = {'email': 'dssjdopjap9scancfHCPIWDFHASDCOKDSC',
+             'blog': 'cdcpwdekdjw0efunwtvtvnninrf9mask3xcSXAs',
+             'lugagge': '24355'
+            }
+
 if len(sys.argv) < 2:
-    print('Please enter the account for password')
+    print('Usage: python password_manager.py - copy account password')
     sys.exit()
-password = sys.argv[1]
-if password in account:
-    pyperclip.copy(account[password])
-    print('Your password is copied')
+
+account = sys.argv[1]
+
+if account in PASSWORDS:
+    pyperclip.copy(PASSWORDS[account])
+    print('Password for ' + account + ' copied to clipboard')
 else:
-    print("You did't saved your password here")
+    print("There's no account named " + account)
