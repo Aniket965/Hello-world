@@ -32,7 +32,7 @@ by checking our `Help Wanted` issues and creating [pull requests](https://github
 ### 5. Give this Project a Star :star:
 
 If you liked working on this project, please share this project as much 
-as you can and star this project to help as many people in opensource as you can.
+as you can and star this project to help as many people in opensource as you can and add to our growing community.
 
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
