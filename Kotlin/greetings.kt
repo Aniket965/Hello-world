@@ -4,6 +4,7 @@ fun sayHello( name:String){
 
 fun main(args:Array<String>){
 
+// add here your name 
     var name = "your name"
 
     sayHello(name)
