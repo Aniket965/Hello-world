@@ -1,0 +1,4 @@
+import sys, os
+
+if __name__ == '__main__':
+    print(open(os.path.basename(sys.argv[0]), 'r').read()) # argv[0] is the filename
