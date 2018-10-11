@@ -1,0 +1,174 @@
+version: '3'
+
+services:
+
+#Ambiente de produção>>>>
+
+
+  adminermanager:
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+      ports:
+        - 8888:80
+      image: adminer
+      hostname: adminernode
+
+
+
+  apacheserver:
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+      ports:
+        - 9090:80
+      image: apache2
+      hostname: apachenode
+
+
+  nginxclustermaster:
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+      ports:
+        - 8080:80
+      image: nginx
+      hostname: masternode
+
+
+  nginxclusterslave:
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+      ports:
+        - 800:80
+      image: nginx
+      hostname: slavenode
+
+
+  mysqlcluster:
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+      ports:
+        - 3306:3306
+      image: mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: password
+      command: --default-authentication-plugin=mysql_native_password
+      hostname: mysqlnode
+
+
+
+#Ambiente de desenvolvimento e teste>>>>     
+
+
+
+  nginxtesteclusterteste:
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+      image: nginx
+      ports:
+        - "8001:80"
+      hostname: nginxtestenode
+
+
+
+  apachehttpdclusterteste:
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+      image: httpd
+      ports:
+        - "8002:80"
+      hostname: apachetestenode
+
+
+
+  mysqlclusterteste:
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+      ports:
+        - 3666:3306
+      image: mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: password
+      command: --default-authentication-plugin=mysql_native_password
+      hostname: mysqltestenode
+
+
+
+
+  grafanacluster:
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+      image: grafana/grafana
+      ports:
+        - "3000:3000"
+      hostname: grafananode
