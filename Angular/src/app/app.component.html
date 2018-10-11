@@ -1,16 +1,14 @@
 <h1>{{title}}</h1>
-<form [formGroup]="hackForm"
-      (ngSubmit)="onSubmit()">
+<h3>Hello World!</h3>
+<form [formGroup]="hackForm" (ngSubmit)="onSubmit()">
   <label>
     First Name:
-    <input type="text"
-           formControlName="firstName">
+    <input type="text" formControlName="firstName">
   </label>
   <label>
     Last Name:
-    <input type="text"
-           formControlName="lastName">
+    <input type="text" formControlName="lastName">
   </label>
-  <button type="submit"
-          [disabled]="!hackForm.valid">Submit</button>
+  <button type="submit" [disabled]="!hackForm.valid">Submit</button>
 </form>
+<app-post></app-post>
