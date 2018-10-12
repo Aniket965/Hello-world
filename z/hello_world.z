@@ -1,0 +1,11 @@
+function main()
+{
+    // say hello
+    hello()
+}
+
+function hello()
+{
+    // print "Hello world."
+    print("Hello world.\n")
+}
