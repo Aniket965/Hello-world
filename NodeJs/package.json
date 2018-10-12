@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json2csv": "^4.2.1",
+    "wkhtmltopdf": "^0.3.4"
+  }
 }
