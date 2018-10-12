@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+        var svg = d3.select("body").append("svg")
+            .attr("width", 800)
+            .attr("height", 800);
+        
+            var data = ["H", "E", "L", "L", "O", "W", "O", "R", "L", "D", "!"];
+
+        var linearScale = d3.scaleLinear()
+            .domain([0, 12])
+            .range([0, 600]);
+
+        var ordinalScale = d3.scaleOrdinal()
+            .domain(data)
+            .range(d3.schemePaired)
+
+        var text = svg.selectAll("text")
+            .data(data)
+            .enter()
+            .append("text")
+                .attr("x", (d, i) => {return linearScale(i)})
+                .attr("y", 100)
+                .text((d) => {return d})
+                .style("fill", (d) => {return ordinalScale(d)});
+    </script>
+</body>
+</html>
