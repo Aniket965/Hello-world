@@ -1,0 +1,1 @@
+print(u"Olá mundo!")
