@@ -43,9 +43,9 @@ ancient game of Go.</p>
 team explained it in their paper <a href="http://airesearch.com/wp-content/uploads/2016/01/deepmind-mastering-go.pdf">Mastering the Game of Go with Deep
 Neural Networks and Tree
 Search:</a>
-<p><i>The game of Go has long been viewed as the most challenging of classic
+<p><i><strong>The game of Go has long been viewed as the most challenging of classic
 games for artificial intelligence due to its enormous search space and
-the difficulty of evaluating board positions and moves.</i></p>
+the difficulty of evaluating board positions and moves.</strong></i></p>
 <p> Put another way,winning at Go is a kind of Holy Grail for those who strive to create
 machines that can “think” on their own, because success at this uniquely
 complex game seems to require something more than just skill, knowledge,
