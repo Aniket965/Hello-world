@@ -13,8 +13,8 @@ def nxt(l):
                 break
         return l
 
-a=input("Enter number with each digit as one element of a list")
+a = input("Enter number with each digit as one element of a list")
 
-b=nxt(a)
+b = nxt(a)
 
-print b
+print(b)
