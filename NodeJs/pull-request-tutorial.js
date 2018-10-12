@@ -6,7 +6,7 @@ const terminal = readline.createInterface({
   output: process.stdout
 });
 
-const question1 = () => {
+const askName = () => {
   return new Promise((resolve, reject) => {
     terminal.question("What is your name?: ", name => {
       console.log(
@@ -17,7 +17,7 @@ const question1 = () => {
   });
 };
 
-const question2 = name => {
+const instruction1 = name => {
   return new Promise((resolve, reject) => {
     console.log(
       'First, you need to fork the repository you want to contribute to by pressing\n' +
@@ -31,7 +31,7 @@ const question2 = name => {
   });
 };
 
-const question3 = name => {
+const instruction2 = name => {
   return new Promise((resolve, reject) => {
     console.log(
       'Next, clone your newly forked repository to your computer. To do this click the green\n' +
@@ -47,7 +47,7 @@ const question3 = name => {
   });
 };
 
-const question4 = name => {
+const instruction3 = name => {
   return new Promise((resolve, reject) => {
     console.log(
       'Make the code changes you want to, but be sure to adhere to the standards and guidelines\n' +
@@ -64,13 +64,13 @@ const question4 = name => {
   });
 };
 
-const question5 = name => {
+const instruction4 = name => {
   return new Promise((resolve, reject) => {
     console.log(
       `Now your changes are pushed to your forked repository, it's time to make your pull request!\n` +
       `Go to your forked repository on GitHub in your browser, and click the 'New pull request' button.\n` +
-      `...` +
-      '\n\n[Almost there now, tap enter!]'
+      `Now click the big, green 'Create pull request' button.` +
+      `\n\n[Almost there now ${name}, tap enter!]`
     );
 
     terminal.on("line", () => {
@@ -80,11 +80,12 @@ const question5 = name => {
 };
 
 const main = async () => {
-  let name = await question1();
-  await question2(name);
-  await question3(name);
-  await question4(name);
-  await question5(name);
+  let name = await askName();
+  await instruction1(name);
+  await instruction2(name);
+  await instruction3(name);
+  await instruction4(name);
+  console.log(`💚 💚 💚 💚  You made a pull request! Well done, ${name}!  💚 💚 💚 💚`);
   terminal.close();
 };
 
