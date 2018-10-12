@@ -28,24 +28,28 @@ class stack
 
     int pop()
     {
-        node *temp;
         if (top == nullptr)
         {
-            cout << "Stack Underflow";
+            cout << "Stack Underflow\n";
             return 0;
         }
-        temp = top;
+        int data = top->data;
+        auto current = top;
         top = top->next;
-        return temp->data;
+        delete current;
+        return data;
     }
 
     void show()
     {
-        if (top != nullptr) {
+        if (top != nullptr)
+        {
             auto current = top;
-            while (current != nullptr) {
+            while (current != nullptr)
+            {
                 std::cout << current->data;
-                if (current->next != nullptr) {
+                if (current->next != nullptr)
+                {
                     std::cout << ">>";
                 }
 
@@ -63,6 +67,9 @@ int main()
     s.push(2);
     s.push(3);
     s.show();
-    cout<< "Element is "<<s.pop()<<endl;
-    cout<< "Element is "<<s.pop()<<endl;
+    cout << "Element is " << s.pop() << endl;
+    cout << "Element is " << s.pop() << endl;
+    cout << "Element is " << s.pop() << endl;
+    cout << "Element is " << s.pop() << endl;
+    return 0;
 }
