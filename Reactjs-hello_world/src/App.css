@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
+.App {
+  text-align: center;
+  position: absolute;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  background-position: center center;
+
+}
+.App-Overviews { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: opacity 5s;
+  z-index: 20;
+}
+.App-Display {
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  overflow: hidden; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+
+.App-header {
+  background-color: rgba(81, 41, 59, 0.9);
+  width: 100%;
+  padding: 2% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-bottom: 0.1rem solid #21ffff; 
+  z-index: 1;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Display, .Splash {
+  height: 100%;
+  width: 100%;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vw;
+}
+.Splash {
+  background: rgba(0,0,0,0.7);
+  animation: fade 4s linear forwards;
+  position: absolute;
+  height: 100%;
+}
+
+.Display {
+  opacity: 0;
+  animation: fadeIn 1s linear forwards 5s;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.Display > label {
+  font-family: 'Cinzel Decorative', cursive;
+  text-shadow: 0.3rem 0.3rem 0.7rem black;
+  display: flex;
+  width: 100%;
+  flex:1;
+  padding: 0 2rem;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.Display > label > p {
+  max-width: 100%;
+  overflow: hidden;
+  transition: color 1s;
+}
+.Display > label > p:hover {
+  color: #21ffff;
+  cursor: pointer;
+}
+
+
+
+.cursor {
+  animation: blink 0.4s infinite alternate;
+  font-size: calc(1rem + 3vw);
+}
+@keyframes blink {
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes fade {
+  0%{opacity: 0 }
+  20%{opacity: 1;}
+  40%{opacity: 1;}
+  100%{opacity: 0; display: none}
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,22 @@
+.Anim-Matrix-top {
+  transition: 5s top;
+  
+}
+
+.Anim-Matrix-bottom {
+  transition: 5s bottom;
+}
+.blue {
+  background: blue;
+}
+
+@keyframes slide_top {
+  0%{top: -200%; opacity: 0;}
+  70%{opacity: 1;}
+  100%{top:200%; opacity: 1;}
+}
+@keyframes slide_bottom {
+  0%{bottom: -200%; opacity: 0;}
+  70%{opacity: 1;}
+  100%{bottom:200%; opacity: 0;}
+}
