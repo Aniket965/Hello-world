@@ -1,17 +1,14 @@
 package day4;
 
-import java.util.Scanner;
+javax.swing.JOptionPane;
 
 
 public class Fibonacci {
 
-	 static Scanner userInput = new Scanner(System.in); 
-	
 	public static void main(String[] args) {
-        
-		System.out.println("Enter number of terms :");
 		
-		int n = userInput.nextInt();
+		int n = Integer.parseInt(JOptionPane.showInputDialog("Enter number of terms :"));
+		String serie = "";
 		
 		int[] fibonacci = new int[n];
 		
@@ -24,11 +21,15 @@ public class Fibonacci {
 			fibonacci[i] = fibonacci[i-1] + fibonacci[i-2];
 			
 		}
+		for(int j=0;j<n;j++){
+                   if(j == n-1){
+			 serie += (fibonacci[j]);
+                   }else{
+                       serie += (fibonacci[j] + " , ");
+                   }
+		}
+                JOptionPane.showMessageDialog(null , "The series is: \n" + serie);
 		
-		System.out.println("The series is:");
-		
-		for(int j=0;j<n;j++)
-			System.out.print(fibonacci[j] + " , ");
 	}
 
 }
