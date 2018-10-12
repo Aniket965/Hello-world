@@ -1,2 +1,0 @@
-// Refer to https://docs.microsoft.com/en-us/azure/kusto/query/ for syntax.
-datatable(word1:string, word2:string)['Hello', 'World'] | project strcat(word1, ' ', word2);
