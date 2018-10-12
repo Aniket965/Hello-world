@@ -1,6 +1,9 @@
 #include <iostream>
 
-int main(){
- 
-     cout << "Hello World" ;
+using namesapce std;
+
+int main()
+{ 
+     cout << "Hello World\n"; //prints Hello World
+     return 0;
 }
