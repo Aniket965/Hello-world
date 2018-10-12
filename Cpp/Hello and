@@ -1,8 +1,12 @@
 #include<iostream>
+
 using namespace std;
+
 int main()
 {
-  for(int i=0;i<10;i++)
-  cout<<"HELLO WORLD : "<<(i+1)<<endl;
+  for(int i=0;i<10;i++) //Loop runs for 10 times
+  {
+      cout<<"HELLO WORLD\n"; //prints HELLO WORLD
+  }
   return 0;
 }
