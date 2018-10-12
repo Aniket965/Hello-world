@@ -1,0 +1,3 @@
+<%
+  Response.write "Hello World!"
+%>
