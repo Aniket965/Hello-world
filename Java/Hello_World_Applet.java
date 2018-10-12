@@ -2,13 +2,7 @@ import java.awt.*;
 import javax.swing.*;
 @SuppressWarnings("serial")
 public class AboutMeApplet extends JApplet {
-	static String Heading = "Computer Science:";
-	static String A1 = "A: Hard working, persistant, kind, intellegent.";
-    static String B2 = "B: Messy Handwriting.";
-	static String C3 = "C: Individualized approach";
-    static String D4 = "D: Lecturing";
-	static String E5 = "E: To learn more about java and good programming habits.";
-
+	static String Heading = "Hello World";
 /**
      * Called by the browser or applet viewer to inform this JApplet that it
      * has been loaded into the system. It is always called before the first 
@@ -62,15 +56,7 @@ public class AboutMeApplet extends JApplet {
         g.setColor(Color.black);
         g.drawString(Heading, 20, 20);
         g.setColor(Color.WHITE);
-        g.drawString(A1, 20, 40);
-        g.setColor(Color.PINK);
-        g.drawString(B2, 20, 60);
-        g.setColor(Color.RED);
-        g.drawString(C3, 20, 80);
-        g.setColor(Color.ORANGE);
-        g.drawString(D4, 20, 100);
-        g.setColor(Color.MAGENTA);
-        g.drawString(E5, 20, 120);
+        g.drawString("Hello World!", 20, 40);
     }
 
     /**
