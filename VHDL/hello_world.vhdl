@@ -5,7 +5,7 @@
   begin
     stimulus : process
     begin
-      assert false report "Hello World By Deepak"
+      assert false report "Hello World By XLR"
       severity note;
     wait;
     end process stimulus;
