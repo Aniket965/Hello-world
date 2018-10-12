@@ -1,0 +1,97 @@
+<html>
+
+  <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+      .header {
+        text-align: center;
+        border-radius: 10px;
+        margin: 5%;
+      }
+
+      .wrapper {
+       margin: 5%;
+      }
+
+      .content {
+        text-align: center;
+        width: 50%;
+      }
+
+      #box {
+        margin: 2%;
+      }
+
+      .output {
+        width: 50%;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        height: 30%;
+      }
+
+      .footer {
+        background-color: #f0f0f0;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: 3%;
+      }
+    </style>
+
+  </head>
+
+  <body>
+     <div class="jumbotron container-fluid header">
+       <h1>Reverse a String!</h1>
+     </div>
+
+  <div class="row wrapper">
+     <div class="content container-fluid col-md-6">
+
+   <p><em>It's fast! It's easy! It's free!</em></p><p>Try it below!</p>
+
+       <div class="form-group">
+
+     <p><input id="box" type="text" placeholder="Type something!">
+         </input></p>
+
+         <p><button class="btn btn-primary" onclick="replaceText()">Submit
+           </button></p>
+
+      </div>
+  </div>
+
+     <div class="output container-fluid col-md-6">
+       <h3>Your Output:</h3>
+       <p id="reversed_string">Waiting for your string...</p>
+     </div>
+   </div>
+
+
+  <div class="footer center-block">Coded by Sorey!</div>
+
+  <script>  var stringHolder = [];
+
+    function reverseString(str) {
+
+      var splitString = str.split("");
+
+      for (i = str.length; i > 0; i--) {
+          stringHolder += splitString.pop();
+      }
+
+      return stringHolder;
+
+      }
+
+  	function replaceText() {
+  		reverseString(document.getElementById("box").value);
+  		document.getElementById("reversed_string").innerHTML = stringHolder;
+      stringHolder = [];
+  	}
+    </script>
+   </body>
+
+</html>
