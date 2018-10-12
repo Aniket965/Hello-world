@@ -1,0 +1,30 @@
+function [root] = besselroots(xn)
+% besselroots: a function to return a specified root,
+%              which also plots n vs roots  
+
+%  Input:
+%     xn      - the # of the root we want to find
+%
+%  Output:
+%     root    - the numeric root value
+
+y = @(x) besselj(0,x);
+n = 1000;
+rootarr = [];
+narr = [1:1:n];
+
+for c = 1:n 
+    d = bisection2(y, [0 + (pi * (c-1)), 4 + (pi * (c-1))]);
+    rootarr = [rootarr d];
+    %display(rootarr); %if we wanted to see all the roots from 1 to n 
+end
+
+rootarr(xn) % to return the root we want
+ 
+% for plotting n vs roots
+plot (narr, rootarr)
+axis([1 n 0 (n * pi)])
+xlabel('n')
+ylabel('x_n')
+grid on
+title('Function of n vs x_n at n = 1000')
