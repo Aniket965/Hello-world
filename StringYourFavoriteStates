@@ -1,0 +1,22 @@
+var states = ['Hawaii', 'Cali', 'NY', 'TX', 'WA', 'FL'];
+var moreStates = ['Idaho', 'NM', 'Utah', 'AZ', 'VA']
+
+
+var newStates = [];
+console.log(newStates) //pre function
+
+function oddStates(y){
+  for(var i = 0; i<y.length; i++ ){
+    console.log(y[i])
+    if(i%2 === 1){ 
+      //console.log(y[i]) //it works!
+      newStates.push(y[i])
+    }
+  }
+  
+
+}
+
+oddStates(states) //actual input 
+
+console.log(newStates) //after function
