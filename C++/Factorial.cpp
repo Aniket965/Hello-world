@@ -1,12 +1,17 @@
 #include<iostream>
 using namespace std;
+int factorial(int n)
+{
+    if(n==1 || n==0)
+        return 1;
+    else
+        return n*factorial(n-1);
+}
 int main()
 {
-    int n, fact = 1;
+    int n;
     cout << "Enter a positive integer: ";
     cin >> n;
-    for(int i = n; i > 1; i--)
-        fact = (fact * i) % 1000000007;
-    cout << "Factorial of " << n << " = " << fact << endl;
+    cout << "Factorial of " << n << " = " << factorial(n)<<endl;
     return 0;
 }
