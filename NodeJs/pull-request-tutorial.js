@@ -21,7 +21,7 @@ const instruction1 = name => {
   return new Promise((resolve, reject) => {
     console.log(
       'First, you need to fork the repository you want to contribute to by pressing\n' +
-      `the 'Fork' button at the top-right of the repository's page. Try that now, ${name}.` +
+      `the 'Fork' button at the top-right of the repository's GitHub page. Try that now, ${name}.` +
       '\n\n[Press enter to continue]'
     );
 
