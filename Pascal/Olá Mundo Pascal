@@ -1,0 +1,6 @@
+//FPC 2.6.2
+
+program Olá Mundo;
+begin 
+      writeln('Olá Mundo');
+end.    
