@@ -79,12 +79,27 @@ const instruction4 = name => {
   });
 };
 
+const instruction5 = name => {
+  return new Promise((resolve, reject) => {
+    console.log(
+      `Finally, give your pull request a descriptive title, and describe it using the text box.\n` +
+      `Now press the green 'Create pull request' button.` +
+      `\n\n[Last time, give it some welly! 😤 ]`
+    );
+
+    terminal.on("line", () => {
+      resolve();
+    });
+  });
+};
+
 const main = async () => {
   let name = await askName();
   await instruction1(name);
   await instruction2(name);
   await instruction3(name);
   await instruction4(name);
+  await instruction5(name);
   console.log(`💚 💚 💚 💚  You made a pull request! Well done, ${name}!  💚 💚 💚 💚`);
   terminal.close();
 };
