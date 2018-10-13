@@ -1,8 +1,8 @@
-10 PRINT "HELLO AMERICA";
-15 REM (Obviously optional, but included 99.9999% of the time...)
+10 PRINT "HELLO WORLD";
+15 REM (We are aliens...)
 20 GOTO 10
-30 REM RUN (AWAY, LAUGHING)
-40 REM Poor old Basic - everybody's forgotten you...
+30 REM RUN (AWAY, otherwise get killed)
+40 REM You will DİE
 50 REM From the terminal enter RUN 100 to run the following code:
 60 REM ASCII code 7 is the physical bell on the old teletype terminals, this next code rings the bell as fast as possible
 100 PRINT CHR$(7)
