@@ -18,9 +18,9 @@ function convertToRoman(num) {
     return numerals;
 }
 
-function repeatString(_string, repeats){
+function repeatString(_string, _repeats){
     var result = "";
-    for(var i = 0; i < repeats; i++){
+    for(var i = 0; i < _repeats; i++){
         result += _string;
     }
     return result;
