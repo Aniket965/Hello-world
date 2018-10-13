@@ -1,2 +1,10 @@
-const Text = 'Hello World!' // Declaring a constant variable with the text "Hello World"
-console.log(Text) //output the constant variable
+//starting server with express
+\const express = require('express');
+
+const app = express();
+
+app.get('/',(req,res) => {
+res.send('hello world');
+});
+
+app.listen(3000);
