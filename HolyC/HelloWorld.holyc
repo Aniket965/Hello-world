@@ -1,5 +1,5 @@
 U0 Main()
 {
-	"Hello World";
+	"Hello World!";
 }
 Main;
