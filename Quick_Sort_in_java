@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class QuickSort {
+	public static int partition(int a[], int s, int e) {
+		int count=0;
+		for(int i=s;i<=e;i++) {
+			if(a[s]>a[i]) {
+				count++;
+			}
+		}
+		int pvt;
+		pvt=s+count;
+		int x;
+		x=a[s];
+		a[s]=a[pvt];
+		a[pvt]=x;
+		while(s<pvt) {
+			if(a[s]>=a[pvt]) {
+				int temp;
+				temp=a[s];
+				a[s]=a[e];
+				a[e]=temp;
+				e--;
+			}
+			else {
+				s++;
+			}
+		}
+		return pvt;
+	}
+	public static void Quicksort(int a[], int s, int e) {
+		if (s < e)
+	    {
+	       int  p = partition(a, s, e);
+	        Quicksort(a, s, p - 1);
+	        Quicksort(a, p + 1, e);
+	    }
+	}
+	public static void Qsort(int a[]) {
+		int s;
+		int e;
+		Quicksort(a,0,a.length-1);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int a[]=new int [n];
+		for(int i=0; i < a.length ;i++) {
+			a[i]=s.nextInt();
+		}
+		Qsort(a);
+		for(int i=0; i < a.length ;i++) {
+			System.out.print(a[i]+" ");
+		}
+		/*partition(a,0,a.length-1);
+		for(int i=0 ; i<a.length;i++) {
+			System.out.print(a[i]+" ");
+		}*/
+	}
+
+}
