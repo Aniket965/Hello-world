@@ -1,26 +1,26 @@
 #include <iostream>
 using namespace std;
-int palindrome(int n)
-{
-     while( n > 0){
-    a = n % 10;
-    n = n / 10;
-    s = s * 10 + a;
-    }
-    return s;
-}
+
 int main()
 {
-    int a,n,b,s=0;
-    cout << "Please enter a number" << endl;
-    cin >> n;
-    b = n;
-   s=palindrome(n);
-    if( b == s){
-    cout << "Yes" << endl;
+    int a,num,b,s=0;
+    cout << "\nPlease enter a number";
+    cin >> num;
+    b = num;
+    rev=0
+    while( num > 0)
+    {
+    rem = num % 10;
+     rev = (rev * 10) + rem;
+    num= num / 10;
+   
+    }
+   
+    if( b == rev){
+    cout << "\nit is a palindrome" << endl;
     }
     else{
-    cout << "No" << endl;
+    cout << "\nit is not a palindrome" << endl;
     }
     return 0;
 }

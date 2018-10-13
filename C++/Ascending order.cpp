@@ -1,20 +1,41 @@
-#include <bits/stdc++.h>
+#include<iostream.h>
+#include<conio.h>
 
-using namespace std;
-
-int main()
+void  main()
 {
-    int n,N;
-    cin >> n;
-    int ascending[n];
-    for(int i = 0; i < n; i++){
-    cin >> ascending[i];
+    clrscr();
+    int n,a[100]][100], temp;
+    cout<<"\nenter the size of array";
+    cin>>n;
+    cout<<"\nenter the array";
+    for(i=0;i<n;i++)
+    for(j=0;j<n;j++)
+    {
+        cin>>a[i][j];
     }
-    N = sizeof(ascending)/sizeof(ascending[0]);
-    sort(ascending, ascending + N);
-    for(int j = 0; j < N; j++){
-    cout << ascending[j] << endl;
+    
+    for(i=0;i<n;i++)
+    {
+        int flag = 0;
+        for(j=0;j<n-i+1;j++)
+        {
+            if(a[i]>a[j])
+            {
+                a[i]=a[i]^a[j];
+                a[j]=a[i]^a[j];
+                a[i]=a[i]^a[j];
+                flag = 1;
+            }
+        }
+        // Break out of loop if no swaps are made in a particular outer iteration
+        if(!flag)
+            break;
     }
-
-    return 0;
+    cout<<"\nSORTED ARRAY";
+    for(i=0;i<n;i++)
+    for(j=0;j<n;j++)
+    {
+        cout>>a[i][j];
+    }
+    getch();
 }

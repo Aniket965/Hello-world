@@ -1,0 +1,22 @@
+#include<stdio.h>
+int factorial(int num);
+int main(){
+  int num;
+ 
+  printf("Enter a number you want to find factorial of: ");
+  scanf("%d",&num);
+ 
+ fact = factorial(num)
+ printf("Factorial of the number is %d ",fact);
+ return 0;
+ }
+ int factorial(int num)
+ {
+ int f;
+ if(f==1)
+ return 1;
+ 
+ else
+ return(f*factorial(f-1);
+ }
+ 

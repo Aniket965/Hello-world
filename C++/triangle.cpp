@@ -6,8 +6,13 @@ using namespace std;
 int main()
 {
     int n,k,l=-1,r;
-    cout<<"enter the value of rows:\n";
-    cin>>n;
+    cout<<"enter the value of rows(above 0):\n";
+	while(1){
+		cin>>n;
+		if(n>0)
+			break;
+		cout<<"make sure that the rows is more than 0\n\n";
+	}
 
     for(int i=1;i<=n;i++)
     {
@@ -23,4 +28,6 @@ int main()
         cout<<"\n";
 
    }
+    int a = pow(2, n);
+	cout<<"total number of stars used = "<<a<<endl;
 }

@@ -1,0 +1,1 @@
+print("Hello world! Have a good Hacktoberfest!")

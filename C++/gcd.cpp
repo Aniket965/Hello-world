@@ -1,23 +1,24 @@
-#include <iostream>
+
+#include<iostream>
 using namespace std;
 
-int gcd(int a ,int b)
-{ if(a==b)
-return a;
-if(a%b==0)
-    return b;
-if(b%a==0)
-    return a ;
-if(a>b)
-    return gcd(a%b,b);
-else
-    return gcd(a,b%a);
+long long int calculate_gcd(long long int a,long long int b)
+{
+  if(b==0)
+    return a;
+  else
+    return calculate_gcd(b,a%b);
+}
 
-}
+
 int main()
-{   int a,b;
-    cout <<"enter the numbers"<<endl;
-    cin>>a>>b;
-    int z =gcd(a,b);
-    cout<<"the gcd of given numbers is"<<z<<endl;
+{
+    long long int n1,n2;
+    cout<<"Enter the two numbers:";
+    cin>>n1>>n2;
+
+    cout<<calculate_gcd(n1,n2)<<endl;
+    return 0;
 }
+
+    

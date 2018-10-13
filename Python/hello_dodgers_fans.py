@@ -1,0 +1,5 @@
+print("hello Dodger fans")
+print("I know you haven't won a world series in a while")
+print("but the rest of the NL West fans don't care")
+print("Go Brewers!")
+print("Even though you beat the Rockies")

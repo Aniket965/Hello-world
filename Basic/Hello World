@@ -1,9 +1,9 @@
-10 PRINT "HELLO WORLD"
-
-(Obviously optional, but included 99.999% of the time...)
- 20 GOTO 10
- RUN (AWAY, LAUGHING)
-
-Poor old Basic - everybody's forgotten you...
- 10 FORI=1to100000:NEXT
- 20 PRINT CHR$(7):GOTO20
+10 PRINT "HELLO AMERICA";
+15 REM (Obviously optional, but included 99.9999% of the time...)
+20 GOTO 10
+30 REM RUN (AWAY, LAUGHING)
+40 REM Poor old Basic - everybody's forgotten you...
+50 REM From the terminal enter RUN 100 to run the following code:
+60 REM ASCII code 7 is the physical bell on the old teletype terminals, this next code rings the bell as fast as possible
+100 PRINT CHR$(7)
+110 GOTO 100

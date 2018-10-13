@@ -1,0 +1,2 @@
+// this is the portion of code that barks
+bark "Hello world!\n"

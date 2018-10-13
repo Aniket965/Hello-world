@@ -8,5 +8,8 @@ def main():
     # wordCount stores the no of words in your senetence
     wordCount = len(words)
     # Printing the number of words
-    print ("Your word count is:", wordCount)
+    print("Your word count is:", wordCount) 
+    # Printing "Your word count"
 main()
+
+

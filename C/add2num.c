@@ -1,15 +1,8 @@
 #include <stdio.h>
-
-
 int main(){
-
-    int a,b,c;
+    int a,b;
     a=5;b=10;
-    c=a+b;
-
-    printf("The addition of two numbers is %d",c);
-    printf("\n%d",0%1);
-
+    printf("The addition of two numbers is %d",a+b);
     printf("\n");
     return 0;
 }
