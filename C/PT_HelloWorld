@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+
+ //Hello World in Portuguese
+ 
+    printf("Ola Mundo");
+
+
+    return 0;
+}
