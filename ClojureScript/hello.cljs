@@ -1,3 +1,6 @@
+(ns hacktoberfest.hello)
+
 (defn hello-world []
-   (println "Hello World"))
+   (js/console.log "Hello World"))
+
 (hello-world)
