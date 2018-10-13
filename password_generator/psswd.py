@@ -1,22 +1,5 @@
-import random
-
-print('''
-Password Generator
-==================
-''')
-
-chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@&0123456789'
-
-number = input('number of passwords?')
-number = int(number)
-
-length = input('password length?')
-length = int(length)
-
-print('\nhere are your passwords:')
-
-for pwd in range(number):
-  password = ''
-  for c in range(length):
-    password += random.choice(chars)
-  print(password)
+import string
+from random import *
+characters = string.ascii_letters + string.punctuation +string.digits
+password = ".join(choice(characters) for x in range((randint(8,16)))
+print password
