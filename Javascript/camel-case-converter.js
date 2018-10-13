@@ -30,5 +30,5 @@ function toCamelCase(str){
   var ans1 = toCamelCase(instance1);
   var ans2 = toCamelCase(instance2);
 
-  console.log(ans1);
-  console.log(ans2);
+  console.log(ans1); // helloWorld
+  console.log(ans2); // HelloWorld
