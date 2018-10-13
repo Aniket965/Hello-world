@@ -4,9 +4,9 @@ namespace Hello
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World in C# Language!");
+            Console.WriteLine("Hello World in C#");
             Console.ReadKey();
         }
     }
