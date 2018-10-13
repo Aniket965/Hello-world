@@ -1,0 +1,15 @@
+CREATE OR REPLACE FUNCTION hello_world()
+RETURNS TEXT
+AS $$
+	plpy.notice('Hello World, Hacktoberfest!')
+$$ LANGUAGE plpythonu;
+
+#Then run it
+#teoria_tst=# SELECT hello_world();
+#hello_world
+#---------------
+#Hello World, Hacktoberfest!
+#(1 row)
+
+Find more on: (Slovak language only, Sorry)
+https://www.matkulcik.eu/skola/
