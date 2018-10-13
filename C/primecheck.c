@@ -4,7 +4,7 @@ int main(){
     // Prime numbers who are divisible by themselfs only or 1
 
     int num,i=2,flag=0;
-    printf("Enter a value to check ");
+    printf("Enter a value to check:\n");
     scanf("%d",&num);
 
     while(i<num)
