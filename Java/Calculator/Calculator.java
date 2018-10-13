@@ -12,7 +12,7 @@ public class Calculator {
     public Calculator() {
     }
 
-    // Methode Addition
+    // Method Addition
 //    public int addition(int number1, int number2) {
 //        return number1 + number2;
 //    }
@@ -21,17 +21,17 @@ public class Calculator {
         this.result = number1 + number2;
     }
 
-    // Methode Subtraktion
+    // Method Subtraction
     public void subtraction(int number1, int number2) {
         this.result = number1 - number2;
     }
 
-    // Methode Multiplikation
+    // Method Multiplication
     public int multiplication(int number1, int number2) {
         return number1 * number2;
     }
 
-    // Methode Diffusion
+    // Method Diffusion
     public double division(int number1, int number2) {
         if (number2 == 0) {
             System.out.println("Fehler, durch 0 teilen nicht möglich!");
