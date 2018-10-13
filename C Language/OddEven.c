@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
 	
 	int a;
@@ -8,12 +8,12 @@ void main()
 	scanf("%d",&a);
 	
 	if(a%2==0)
-	printf("The Entered Number is Even");
+	printf(" %d is Even",a); //even number
 	
 	else
-	printf("The Entered Number is Odd");
+	printf(" %d is Odd",a);  //odd number
 	
 		
-	getch();
+	return 0;
 	
 }
