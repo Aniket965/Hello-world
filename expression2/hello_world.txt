@@ -1,0 +1,5 @@
+@name Hello World
+
+if(first()) {
+  print("Hello World")
+}
