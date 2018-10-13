@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Oct 13 00:29:18 2018
+
+@author: Sai Krishna
+"""
+
+import pandas as pd
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.callbacks import EarlyStopping
+from keras.utils import to_categorical
+
+#data can be downloaded here: https://github.com/eijaz1/Deep-Learning-in-Keras-Tutorial/tree/master/data
+train_df = pd.read_csv('diabetes_data.csv')
+
+print(train_df.head())
+
+train_X = train_df.drop(columns = ['diabetes'])
+
+train_Y = to_categorical(train_df.diabetes)
+
+model = Sequential()
+
+n_cols = train_X.shape[1]
+
+model.add(Dense(250, activation = 'relu', input_shape = (n_cols,)))
+model.add(Dense(250, activation = 'relu'))
+model.add(Dense(2, activation = 'softmax'))
+
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+early_stopping_monitor = EarlyStopping(patience=3)
+
+model.fit(train_X, train_Y, validation_split=0.2, epochs = 30,  batch_size=30, callbacks=[early_stopping_monitor])
