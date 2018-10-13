@@ -5,4 +5,13 @@ object HelloWorld {
    def main(args: Array[String]) {
       println("Hello, world!") // prints Hello World
    }
+   
+ /// hellow world its sundus 
+   object Hello extends App {
+  println("Hello, World!")
+}
+
+
+
+
 }
