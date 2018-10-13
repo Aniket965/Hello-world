@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-hello-work",
+  "version": "1.0.0",
+  "description": "Working in nuxt framework",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nuxt": "2.1.0"
+  },
+  "devDependencies": {
+    "pug": "2.0.3",
+    "pug-plain-loader": "1.0.0",
+    "sass-loader": "7.1.0",
+    "sass-resources-loader": "1.3.3"
+  }
+}
