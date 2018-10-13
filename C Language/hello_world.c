@@ -1,6 +1,9 @@
 #include <stdio.h>
-int main(void)
-(
-printf (“Hello World!\n'”) ;
+int main()
+{
+char ch;
+printf("Enter your name:");
+scanf("%c",&ch);
+printf("Hello %c",ch);
 return 0;
-)
+}
