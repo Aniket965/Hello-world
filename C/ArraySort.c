@@ -2,7 +2,7 @@
 main()
 {
     int n[100],m,i,temp,r;
-    printf(" enter the number of values u want to enter : ");
+    printf(" enter the number of values you want to enter : ");
     scanf("%d",&m);
     for(i=0;i<m;i++)
     {
@@ -10,7 +10,7 @@ main()
         scanf("%d",&n[i]);
     }
     for(r=0;r<m;r++)
-    {00  m
+    {
 
     for(i=0;i<m-1;i++)
     {
@@ -22,7 +22,7 @@ main()
         }
     }
     }
-    printf("\n Sorted Array is:" )
+    printf("\n Sorted Array is:" );
     for(i=0;i<m;i++)
     {
       
