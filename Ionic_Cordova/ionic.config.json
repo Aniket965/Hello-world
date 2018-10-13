@@ -1,0 +1,7 @@
+{
+  "name": "Ionic_Cordova",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
