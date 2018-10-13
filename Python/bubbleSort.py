@@ -1,13 +1,12 @@
-import random
+def bubbleSort(alist):
+    for passnum in range(len(alist)-1,0,-1):
+        for i in range(passnum):
+            if alist[i]>alist[i+1]:
+                temp = alist[i]
+                alist[i] = alist[i+1]
+                alist[i+1] = temp
 
-def bubbleSort(lists):
-        for j in range(0, len(lists)-1-i):
-            if(lists[j]>lists[j+1]):
-                lists[j+1], lists[j] = lists[j], lists[j+1]
-                
-lists = random.sample(range(0, 5001), 5000)
-print(lists)
+alist = [54,26,93,17,77,31,44,55,20]
+bubbleSort(alist)
+print(alist)
 
-bubbleSort(lists)
-
-print(lists)

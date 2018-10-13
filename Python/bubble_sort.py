@@ -1,33 +1,26 @@
-#Bubble Sort in Python 3.x
+import random
 
-#Function to swap indices a and b in list arr
+# Function for bubble sorting an array of number
+def bubbleSort(array_of_number):
+    array_len = len(array_of_number)
 
-def swap(arr, a, b):
-    x = arr[a]
-    arr[a] = arr[b]
-    arr[b] = x
-    
-# Function that performs bubble sort
+    for i in range(array_len):
 
-def bubble_sort(li):
-	for i in range(len(li)-1):
-		for j in range(len(li)-i-1):
-			if(li[j]>li[j+1]):
-				swap(li, j, j+1)
+        for j in range(0, array_len - i - 1):
+            
+            if array_of_number[j] > array_of_number[j + 1] :
+                # Check if all numbers are int
+                if (isinstance(array_of_number[j], int) != True \
+                    or isinstance(array_of_number[j + 1], int) != True):
+                    print('Error: Array is not int')
+                    return
+                else:
+                    array_of_number[j], array_of_number[j + 1] = array_of_number[j + 1], array_of_number[j]
 
 
-	return li
-    
-    
-    
-# To check the functioning of the above function :
-
-# 1) Uncomment the next lines
-#lis = [2,9,4,1,6,5,-1]
-#print(bubble_sort(lis))
-
-# 2) Take input from the user, uncomment the following lines to run
-#print("Please enter the list of numbers you want to sort")
-#a = [int(x) for x in input().split()]
-#print(bubble_sort(list(a)))
-
+if __name__ == "__main__":
+    lists = random.sample(range(0, 301), 300)
+    print ("Unsorted list:", lists)
+    print ()
+    bubbleSort(lists)
+    print ("Sorted list: ", lists)
