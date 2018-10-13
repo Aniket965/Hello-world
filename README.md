@@ -1,4 +1,4 @@
-# Welcome to Hacktoberfest 2018 Hello-world :clipboard:
+# Welcome to Hacktoberfest 2018 Hello world :clipboard:
 > This Project aims to help you to get started with using Github. You can find a tutorial [here](https://guides.github.com/activities/hello-world/)
 
 
