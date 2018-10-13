@@ -1,0 +1,12 @@
+// See more at http://morpho.cs.hi.is/examples.html
+
+"hello.mexe" = main in
+{{
+main = fun()
+{
+	writeln("Hello World!");
+};
+}}
+*
+BASIS
+;
