@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main(void)
 {
-int a,b;
-printf("Enter the numbers for addition");
-scanf("%d %d",&a,&b);
-printf("%d",a+b);
-return 0;
+  float a,b;
+  printf("Enter the numbers for addition");
+  scanf("%f %f",&a,&b);
+  printf("%f",a+b);
+  return 0;
 }
 
 
