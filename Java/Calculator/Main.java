@@ -1,21 +1,32 @@
+import java.util.Scanner;
+
 package com.company;
 
 public class Main {
 
     public static void main(String[] args) {
+        
+        int a,b;
+		Scanner in = new Scanner(System.in);
+        
+        System.out.println("Enter First digit");
+        a = in.nextInt();
+        System.out.println("Enter Second digt");
+        b = in.nextInt();
+        System.out.println("You entered integer " + a+" and "+ b);
 
         // Erzeugung des Taschenrechners mit dem Standard-Konstruktor
         Calculator calc = new Calculator();
         // Addition
-        calc.addition(10, 5);
-        System.out.println(calc.getResult());
-        // Subtraktion
-        calc.subtraction(10, 5);
-        System.out.println(calc.getResult());
-        // Multiplikation
-        System.out.println(calc.multiplication(10, 5));
+        calc.addition(a,b);
+	    System.out.println("Addition : "+calc.getResult());
+        // Subtraction
+        calc.subtraction(a,b);
+	    System.out.println("Subtraction : "+calc.getResult());
+        // Multiplication
+        System.out.println("Multiplication : "+calc.multiplication(a,b));
         // Division | Nicht durch null teilen, abfangen durch ==0, abfangen durch Exception wäre Zielführend
-        System.out.println(calc.division(10, 3));
+        System.out.println("Division : "+calc.division(a,b));
     }
 
 }

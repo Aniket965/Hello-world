@@ -119,6 +119,6 @@ if __name__ == '__main__':
     parameters['urls_of_sites'] = ['https://www.google.co.in/alerts/feeds/00658181146524679235/12925205973984843373']
     obj = GetPostFromUrl()
     obj.initialize(parameters)
-    results = obj.get_results()
+    results = obj.get_results()       #Thislinegivesresult
     print(json.dumps(results))
     #obj.store_results(results)

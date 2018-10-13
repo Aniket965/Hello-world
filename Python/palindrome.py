@@ -1,7 +1,7 @@
-def palindrome(n):
-    for i in range(len(n)//2):
-        if n[i]!=n[len(n)-i-1]:
-            return False
-    return True
+//to check if string is a palindrome or not
 
-print("YES") if palindrome(input()) else print("NO")
+string=raw_input("Enter string:") 
+if(string==string[::-1]):
+      print("The string is a palindrome")
+else:
+      print("The string isn't a palindrome")

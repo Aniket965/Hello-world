@@ -6,3 +6,5 @@
 // GITHUB: https://github.com/geriadam
 
 echo 'Hello, World!';
+
+?>
