@@ -1,5 +1,5 @@
 package main
 
-fun main(args: Array<String>) {
-    println("Hello, World!")
+fun Array<String>.main() {
+    println("Hello world!")
 }

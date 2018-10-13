@@ -1,2 +1,1 @@
-# for Hacktoberfest!!!
-print("Hello World!")
+print("Hello World")

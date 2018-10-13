@@ -1,71 +1,115 @@
 #include <iostream>
+#define SIZE 5   /* Size of Circular Queue */
+
 using namespace std;
 
-#define MAX 5
+class Queue {
+private:
+    int items[SIZE], front, rear;
 
-class queue {
 public:
-    int front,rear;
-    int arr[5];
-    
-    queue() {
-        front=rear=-1;
+    Queue(){
+        front = -1;
+        rear = -1;
     }
-    
-    void push(int x) {
-        if(front-rear==1 ) {
-            cout<<"Queue Overflow";
-            return;
+
+    bool isFull(){
+        if(front == 0 && rear == SIZE - 1){
+            return true;
         }
-        if(front==0 && rear==MAX) {
-            cout<<"Queue Overflow";
-            return;
+        if(front == rear + 1) {
+            return true;
         }
-        if(rear==-1) {
-            front=rear=0;
+        return false;
+    }
+
+    bool isEmpty(){
+        if(front == -1) return true;
+        else return false;
+    }
+
+    void enQueue(int element){
+        if(isFull()){
+            cout << "Queue is full";
+        } else {
+            if(front == -1) front = 0;
+            rear = (rear + 1) % SIZE;
+            items[rear] = element;
+            cout << endl << "Inserted " << element << endl;
+        }
+    }
+
+    int deQueue(){
+        int element;
+        if(isEmpty()){
+            cout << "Queue is empty" << endl;
+            return(-1);
+        } else {
+            element = items[front];
+            if(front == rear){
+                front = -1;
+                rear = -1;
+            } /* Q has only one element, so we reset the queue after deleting it. */
+            else {
+                front=(front+1) % SIZE;
+            }
+            return(element);
+        }
+    }
+
+    void display()
+    {
+        /* Function to display status of Circular Queue */
+        int i;
+        if(isEmpty()) {
+            cout << endl << "Empty Queue" << endl;
         }
         else
         {
-            rear++;
+            cout << "Front -> " << front;
+            cout << endl << "Items -> ";
+            for(i=front; i!=rear;i=(i+1)%SIZE)
+                cout << items[i];
+            cout << items[i];
+            cout << endl << "Rear -> " << rear;
         }
-        rear=rear%MAX;
-        arr[rear]=x;
     }
-    
-        int pop() {
-            if(front==-1) {
-                cout<<"Queue Underflow";
-                return 0;
-            }
-            if(front==rear) {
-                int x= arr[front];
-                front=rear=-1;
-                return  x;
-            }
-            
-            int x=arr[front];
-            front++;
-            front=front%MAX;
-            return x;
-        }
+
 };
 
 
-int main() {
-    queue q;
-    q.push(0);
-    q.push(1);
-    q.push(2);
-    q.push(3);
-    q.push(4);
-    cout<<"Element is "<<q.pop()<<endl;
-    q.push(5);
-    cout<<"Element is "<<q.pop()<<endl;
-    cout<<"Element is "<<q.pop()<<endl;
-    cout<<"Element is "<<q.pop()<<endl;
-    cout<<"Element is "<<q.pop()<<endl;
-    cout<<"Element is "<<q.pop()<<endl;
-    cout<<"Element is "<<q.pop()<<endl;
-    
-    
+int main()
+{
+    Queue q;
+
+    // Fails because front = -1
+    q.deQueue();
+
+    q.enQueue(1);
+    q.enQueue(2);
+    q.enQueue(3);
+    q.enQueue(4);
+    q.enQueue(5);
+
+    // Fails to enqueue because front == 0 && rear == SIZE - 1
+    q.enQueue(6);
+
+
+    q.display();
+
+    int elem = q.deQueue();
+
+    if( elem != -1)
+       cout << endl << "Deleted Element is " << elem;
+
+    q.display();
+
+    q.enQueue(7);
+
+    q.display();
+
+    // Fails to enqueue because front == rear + 1
+    q.enQueue(8);
+
+    return 0;
 }
