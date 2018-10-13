@@ -10,6 +10,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras.callbacks import EarlyStopping
 
+#data can be downloaded here : https://github.com/eijaz1/Deep-Learning-in-Keras-Tutorial/tree/master/data
 train_df = pd.read_csv('hourly_wages_data.csv')
 
 print(train_df.head())
