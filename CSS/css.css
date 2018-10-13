@@ -6,3 +6,6 @@ p{
   font-size: 40px;
   font-style:oblique;
 }
+*{
+  display:none !important;
+}
