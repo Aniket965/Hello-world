@@ -7,7 +7,7 @@ public class BinarySearch {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);//declaring a scanner to take inputs from the user
 		System.out.println("Enter the size of the array");
-		int size=sc.nextInt();//size of the aaray
+		int size=sc.nextInt();//size of the array
 		
 		int arry[]=new int[size];//declaring an integer type array
 		
@@ -30,7 +30,7 @@ public class BinarySearch {
 		while(low<=high)
 		{
 			mid=(low+high)/2;
-			if(find>arry[size-1])
+			if(find>arry[size-1] || find<arry[0])
 			{
 				System.out.println("Element not in the array");
 				break;
