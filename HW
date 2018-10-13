@@ -1,0 +1,8 @@
+#include <iostream> // libreria input output (per cout e endl)
+using namespace std; // uso dello spazio dei nomi standard (per evitare di mettere std:: prima di ogni istruzione)
+int main()
+{
+   cout << "Hello World!"<<endl;
+
+   return 0; // valore di ritorno del programma 
+}
