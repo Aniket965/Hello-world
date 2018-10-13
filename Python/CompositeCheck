@@ -1,0 +1,6 @@
+x1 = int(input("enter a number"))
+for i in range(3,int(x1/2)+1):
+    if(x1 % i ==0):
+        print("Composite")
+        break
+        
