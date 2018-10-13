@@ -5,8 +5,8 @@
     function submit()
     {
         var name = document.getElementById("name").value;
-        document.getElementById("info").innerHTML = "Hello "+name+"! Welcome to Hacktoberfest :)";
-        var r = window.confirm("Hello "+name+"! Welcome to Hacktoberfest:)\nClick Ok To Print.");
+        document.getElementById("info").innerHTML = `Hello ${name+}! Welcome to Hacktoberfest :)`;
+        var r = window.confirm(`Hello ${name}! Welcome to Hacktoberfest:)\nClick Ok To Print.`);
         if (r == true) {
             x = window.print();
         }
