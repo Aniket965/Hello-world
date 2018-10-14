@@ -1,10 +1,13 @@
 #include<stdio.h>
-int main(void)
+int main()
 {
-int a,b;
-printf("Enter the numbers for addition");
-scanf("%d %d",&a,&b);
-printf("%d",a+b);
+float a,b,c;
+printf("Enter first number:");
+scanf("%f",&a);
+printf("Enter second number:");
+scanf("%f",&b);
+c=a+b;
+printf("Addition of 2 numbers is %f",c);
 return 0;
 }
 
