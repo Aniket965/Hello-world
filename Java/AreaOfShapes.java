@@ -12,9 +12,9 @@ public class AreaOfShapes
       boolean good = false;
       do
       {
-         System.out.print("Enter a number between 1 and 8: ");
+         System.out.print("Enter a number between 1 and 9: ");
          shape = scan.nextInt();
-         if (shape > 0 && shape < 9)
+         if (shape > 0 && shape < 10)
          {
             good = true;
          }
@@ -54,6 +54,7 @@ public class AreaOfShapes
             System.out.print("Enter the height: ");
             height = scan.nextDouble();
             System.out.println((base * height) / 2);
+            break;
          case 5:
          //Kite
             System.out.print("Enter the length of the first diagonal: ");
@@ -61,6 +62,7 @@ public class AreaOfShapes
             System.out.print("Enther the length of the second diagonal: ");
             di2 = scan.nextDouble();
             System.out.println((di1 * di2) / 2);
+            break;
          case 6:
          //Parallelogram
             System.out.print("Enter the base: ");
@@ -68,6 +70,7 @@ public class AreaOfShapes
             System.out.print("Enther the height: ");
             height = scan.nextDouble();
             System.out.println(base * height);
+            break;
          case 7:
          //Rhombus
             System.out.print("Enter the length of the first diagonal: ");
@@ -75,6 +78,7 @@ public class AreaOfShapes
             System.out.print("Enther the length of the second diagonal: ");
             di2 = scan.nextDouble();
             System.out.println((di1 * di2) / 2);
+            break;
          case 8:
          //Trapezoid
             System.out.print("Enter the length of the bigger base: ");
@@ -84,6 +88,14 @@ public class AreaOfShapes
             System.out.print("Enter the height: ");
             height = scan.nextDouble();
             System.out.println(((biggerBase * smallerBase) * height) / 2);
+            break;
+         case 9:
+            //Cube
+            System.out.print("Enter the length of one side: ");
+            length = scan.nextDouble();
+            System.out.println("Surface Area: " + 6(length * length));
+            break;
+
       }
    }
 }
