@@ -1,2 +1,2 @@
-<?hh
+<?php
 echo 'Hello World';
