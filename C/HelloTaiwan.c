@@ -1,4 +1,5 @@
 #include<stdio.h>
-int main(void){
+void main()
+{
 	printf("Hello Taiwan!!!\n");
 }
