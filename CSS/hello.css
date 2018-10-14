@@ -1,5 +1,6 @@
 body{
     background-color: aqua;
+    top: 0px;
 }
 
 body:after {
