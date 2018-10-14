@@ -63,5 +63,5 @@ int main(){
     g.addEdge(3,5,10);
     g.addEdge(4,6,5);
     g.addEdge(5,6,7);
-    cout<<"The shortest path is "<<endl<<g.dijikstra(0,6)<<endl;
+    cout<<"The shortest path is= "<<endl<<g.dijikstra(0,6)<<endl;
 }
