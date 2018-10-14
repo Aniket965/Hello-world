@@ -8,6 +8,6 @@
   <title>Hello World</title>
  </head>
  <body>
-  <p><?php $text ?></p>
+  <p><?php echo $text; ?></p>
  </body>
 </html>
