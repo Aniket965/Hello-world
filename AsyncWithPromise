@@ -1,0 +1,25 @@
+let add = (a, b) => {
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			if (typeof a !== 'number' || typeof b !== 'number') {
+				return reject(new Error('Must be number'));
+			}
+			resolve(a + b);
+		}, 2000);
+	});
+};
+
+let mul = (a, b) => {
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			if (typeof a !== 'number' || typeof b !== 'number') {
+				return reject(new Error('Must be number'));
+			}
+			resolve(a * b);
+		}, 2000);
+	});
+};
+
+Promise.all([add(4, 5), mul(4, '5')])
+	.then(res => console.log(res))
+	.catch(err => console.log(err + ''));
