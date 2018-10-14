@@ -1,10 +1,5 @@
-//starting server with express
-\const express = require('express');
+'use strict'
 
-const app = express();
-
-app.get('/',(req,res) => {
-res.send('hello world');
-});
-
-app.listen(3000);
+console.log("/**********")
+console.log("Hello World")
+console.log("**********/")
