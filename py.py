@@ -1,1 +1,2 @@
-print("hello world")
+printf("ഭൂമി സ്വാഗതം")
+
