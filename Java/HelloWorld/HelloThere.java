@@ -1,6 +1,6 @@
 package HelloWorld;
 
-public class HelloThere {
+public class Hello {
 
     public static void main(String[] args) {
         System.out.println("Hello world");
@@ -8,7 +8,17 @@ public class HelloThere {
         System.out.println("Hey there is pratikpalashikar ");
         System.out.println("0.0 Here's your gift 0.0 ");
          pattern(7); 
+
+         System.out.println("")
+         System.out.println("Hello World!");
+         System.out.println("This is Nasif Nuha from Sri Lanka");
+         pattern()7;
+
     }
+
+
+
+
     
     
      static void pattern(int n) 
