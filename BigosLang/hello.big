@@ -1,0 +1,4 @@
+#wstaw <messagebox_pl.inc>
+główny:
+messagebox("Hello World","Hello Hacktoberfest 2018!",messagebox.iconinformation)
+zakończ

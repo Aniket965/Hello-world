@@ -1,0 +1,3 @@
+# Integrated Python Easter Egg.
+# When imported automatically prints out: Hello world...
+import __hello__

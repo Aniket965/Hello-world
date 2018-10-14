@@ -1,0 +1,5 @@
+"Hello, World!" is waiting at the Writer's Depot.
+Go to Writer's Depot: west 1st left, 2nd right, 1st left, 2nd left.
+Pickup a passenger going to the Post Office.
+Go to the Post Office: north 1st right, 2nd right, 1st left.
+Go to the Taxi Garage: north 1st right, 1st left, 1st right.
