@@ -1,0 +1,4 @@
+def Hello_word
+puts "Hello World, in Ruby"
+puts "Also my first Hacktoberfest."
+end
