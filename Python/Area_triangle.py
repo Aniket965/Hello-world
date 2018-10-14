@@ -1,4 +1,4 @@
-from math import sqrt, sin, radians
+from math import *
 
 
 # Basic Formula
