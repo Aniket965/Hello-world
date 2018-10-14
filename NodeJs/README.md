@@ -1,3 +1,0 @@
-# run nodeJS
-
-npm start
