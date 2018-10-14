@@ -1,0 +1,76 @@
+#include<stdio.h>
+char stack [50];
+int top=-1;
+void push (char n)
+{ 
+stack[++top]=n;
+}
+float pop()
+{
+return(stack[top--]);
+}
+int prcd( char ch)
+{
+int p;
+switch(ch)
+{
+case '$':
+case '^': p=3;
+          break;
+case '*':
+case '/': p=2;
+          break;
+case '+':
+case '-':p=1;
+         break;
+case '(': p=-1;
+          break;          }
+ return p;
+ }         
+
+void coversion( char infix[], char postfix[])
+  { int i=0,p=0;
+    char ch;
+    while(infix[i]!='\0')
+    { ch=infix[i];
+   switch(ch)
+    { 
+       case '(' : push(ch);
+                    break;
+       case ')' : while( top!= -1 && stack[top]!='(' )
+                    { 
+                    postfix[p++]=pop();
+                    }
+                    pop();
+                    break;
+       case '+':             
+       case '*':
+       case '/':
+       case '-':  while(top != -1 && (prcd(stack[top])>= prcd(ch)))
+                              postfix[p++]=pop();
+                    push(ch);
+                    break;
+        case '$':
+       case '^': while(top != -1 && (prcd(stack[top])>prcd(ch)))
+                    postfix[p++]=pop();
+                    push(ch);
+                    break;
+                    
+                    default: postfix[p++]=ch;
+               break;
+    }
+    
+    i++;
+    }
+    while(top!=-1)
+    {postfix[p++]=pop();
+    }
+    postfix[p]='\0';
+    }        
+int main()
+{ char infix[50], postfix [50];
+  printf("enter the valid infix opertaor");
+  scanf("%s", infix);
+  coversion(infix,postfix);
+  printf("%s\n", postfix);
+  }
