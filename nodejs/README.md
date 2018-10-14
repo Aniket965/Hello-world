@@ -1,4 +1,3 @@
-# HelloWorld with NodeJS
-```
-$ node index.js
-```
+# run nodeJS
+
+npm start
