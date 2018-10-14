@@ -1,1 +1,0 @@
-# Coursera ML course implementation
