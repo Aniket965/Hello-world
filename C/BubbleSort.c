@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define  Length 6 //Define your array length here
+#define  Length 100 //Define your array length here
 
 
 //Decreasing Bubble Sort
