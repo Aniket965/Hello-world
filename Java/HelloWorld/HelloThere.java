@@ -12,7 +12,12 @@ public class Hello {
          System.out.println("")
          System.out.println("Hello World!");
          System.out.println("This is Nasif Nuha from Sri Lanka");
-         pattern()7;
+         pattern(7);
+        
+        System.out.println("")
+         System.out.println("Hello World!");
+         System.out.println("This is Uvaish Zafri from india");
+         pattern(7);
         
          System.out.println("")
          System.out.println("Hello World!");
