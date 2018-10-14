@@ -1,19 +1,19 @@
 #include<stdio.h>
  
 int main() {
-   int amount, rate, time, si;
+   float amount, rate, time, si;
  
    printf("\nEnter Principal Amount : ");
-   scanf("%d", &amount);
+   scanf("%f", &amount);
  
    printf("\nEnter Rate of Interest : ");
-   scanf("%d", &rate);
+   scanf("%f", &rate);
  
    printf("\nEnter Period of Time   : ");
-   scanf("%d", &time);
+   scanf("%f", &time);
  
    si = (amount * rate * time) / 100;
-   printf("\nSimple Interest : %d", si);
+   printf("\nSimple Interest : %f", si);
  
    return(0);
 }
