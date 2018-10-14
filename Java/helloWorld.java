@@ -1,6 +1,26 @@
+/**
+ * Simple Hello World !
+ * @author joaolaranjo
+ * 
+ */
 
-public class HelloWorld {
+package hacktoberfest;
+
+public class helloWorld {
+
 	public static void main(String[] args) {
-		System.out.println("Hello, World");
+		System.out.println("Hello World!");
+
+		/*
+		 * Another Hello World
+		 */
+		String string = "Hello World!";
+		
+		int i = 0;
+		while ( i != string.length() ) {
+			System.out.println(string.charAt(i));
+			i++;
+		}
 	}
+
 }
