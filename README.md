@@ -27,7 +27,7 @@ You can take a look to the [Programming Language List](https://en.wikipedia.org/
 ### 4. Ready, Steady, Go... :turtle: :rabbit2:
 
 Once you have completed these steps, you are ready to start contributing 
-by checking our `Help Wanted` issues and creating [pull requests](https://github.com/Hacktoberfest-2018/Hello-world/pulls).
+by checking our [Help Wanted](https://github.com/Hacktoberfest-2018/Hello-world/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) issues and creating [pull requests](https://github.com/Hacktoberfest-2018/Hello-world/pulls).
 
 ### 5. Give this Project a Star :star:
 
