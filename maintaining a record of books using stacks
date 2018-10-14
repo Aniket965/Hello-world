@@ -1,0 +1,87 @@
+#include<stdio.h>
+#include<string.h>
+#include<malloc.h>
+int i;
+struct book
+{int isbn;
+int price;
+char title[80];
+};
+struct stack
+{struct book b[5];
+ int top;
+ }s; 
+
+int push( char title[], int isbn, int price,int n)
+{
+if(s.top==(n-1))
+{ printf("the stack is full");
+}
+else
+{i=s.top; 
+strcpy((s.b+i)->title, title);
+(s.b+i)->isbn=isbn;
+(s.b+i)->price=price;
+s.top= s.top+1;
+return 1;
+}
+return 1;
+} 
+
+struct stack pop() //see we dont need to pass the structure in here, why because here we are using it globally only
+{
+if(s.top==-1)
+printf("the stack is empty \n");
+else
+printf("the popped items are \n");
+i=s.top;
+printf("%s%d%d", (s.b+i)->title, (s.b+i)->isbn, (s.b+i)->price);
+s.top=s.top-1;
+return(s);
+} 
+
+void display()
+{ if(s.top=-1)
+ { printf(" no elements in the stack to be shown \n");
+ }  
+for(i=s.top;i>=0;i--)
+  { printf("%s \n %d \n %d \n",(s.b+i)->title,(s.b+i)->isbn, (s.b+i)->price);
+   }
+ }  
+void main()
+{ int n,p,z;
+ s.top=-1;
+printf("enter the number of books whose details you want to save \n");
+scanf("%d",&n);
+//s.b =(struct book*)malloc(n*sizeof(struct book));
+char title[80];
+int isbn;
+int price;
+
+while(z!=0)
+{printf("enter the choice \n 1. push details \n 2. pop details \n 3.display details");
+scanf("%d", &p);
+switch(p)
+{
+case 1: printf("enter the ISBN of the book \n");
+        scanf("%d",&isbn);
+        printf("enter the title \n");
+        scanf("%s", title);
+        printf("enter the price \n");
+        scanf("%d",&price);
+        z=push(title,isbn,price,n);            
+          break;       
+case 2: pop();
+          break;
+case 3: display();
+           break;
+//default: printf("invalid input \n");
+}
+printf("want to continue,[1/0] \n");
+scanf("%d", &z);
+           
+}
+}
+
+
+//have a look here, you have to write the code for the pop and siaplay function, i believe the rest part is okay and good only
