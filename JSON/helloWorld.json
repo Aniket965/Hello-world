@@ -1,3 +1,4 @@
 {
-	value: "Hello World!"
+	"value": "Hello World!",
+	"visits": 2
 }
