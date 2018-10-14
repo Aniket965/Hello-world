@@ -1,6 +1,5 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+void main()
 {
 	printf("HELLLO WORLD!! ENJOY LEARNING GIT")
-	return 0;
 }
