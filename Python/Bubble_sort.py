@@ -3,9 +3,9 @@
 #Function to swap indices a and b in list arr
 
 def swap(arr, a, b):
-    y = arr[a]
+    x = arr[a]
     arr[a] = arr[b]
-    arr[b] = y
+    arr[b] = x
     
 # Function that performs bubble sort
 

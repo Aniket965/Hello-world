@@ -1,1 +1,1 @@
-print("Hello world! Have a good Hacktoberfest!")
+print("Hello to Hacktoberfest 2018 from Saint-Petersburg!!!")
