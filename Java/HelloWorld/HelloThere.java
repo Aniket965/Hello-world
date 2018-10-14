@@ -5,7 +5,8 @@ public class HelloThere {
     public static void main(String[] args) {
         System.out.println("Hello world");
 
-        System.out.println("Hey there is pratikpalashikar \n good Morning");
+        System.out.println("Hey there is pratikpalashikar ");
+        System.out.println("0.0 Here's your gift 0.0 ");
          pattern(7); 
     }
     
