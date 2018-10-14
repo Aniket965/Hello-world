@@ -1,3 +1,0 @@
-void helloWorldButInPolish() {
-  std::cout << "Witaj, świecie!" << std::endl;
-}

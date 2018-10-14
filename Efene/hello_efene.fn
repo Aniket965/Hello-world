@@ -1,5 +1,0 @@
-
-fn main @public case _Args:
-    io.format("Hello World\n")
-    erlang.halt(0)
-end
