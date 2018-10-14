@@ -2,6 +2,7 @@
 int main(void)
 {
 float a,b,c;
+//Addition of two numbers
 printf("Enter two numbers for addition");
 scanf("%f %f",&a,&b);
 c=a+b;
