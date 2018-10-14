@@ -1,1 +1,0 @@
-console.log("Que onda Mundo!", "Bienvenidos al Hacktoberfest!", "Saludos desde Guatemala");
