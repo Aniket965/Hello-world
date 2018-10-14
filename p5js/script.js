@@ -16,5 +16,6 @@ function draw() {
   var time = millis();
   rotateX(time / 1000);
   rotateZ(time / 1234);
+  rotateY(time / 1234);
   text('Hello, World!', 0, 0);
 }

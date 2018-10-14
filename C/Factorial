@@ -1,7 +1,7 @@
 #include<stdio.h>
 int factorial(int num);
 int main(){
-  int num;
+  int num,fact;
  
   printf("Enter a number you want to find factorial of: ");
   scanf("%d",&num);
@@ -13,7 +13,7 @@ int main(){
  int factorial(int num)
  {
  int f;
- if(f==1)
+ if(f==0)
  return 1;
  
  else

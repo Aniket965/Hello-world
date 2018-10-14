@@ -14,9 +14,8 @@ public class Solution {
          * Write your code here.
          */
         int sum = 0;
-        for(int i =0; i < ar.length; i++) {
-            sum += ar[i];
-        }
+        for(int x : ar)
+            sum+=x;
         return sum;
     }
 

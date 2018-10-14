@@ -10,7 +10,7 @@ def print_designer_door_mat(hight, width):
     for i in range(pattern_hight):
         print(door_list[i].center(width, "-"))
 
-    print("WELCOME".center(width, "-"))
+    print("WELCOME ALLIENS".center(width, "-"))
 
     for i in range(pattern_hight - 1, -1, -1):
         print(door_list[i].center(width, "-"))

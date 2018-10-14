@@ -1,2 +1,1 @@
-<?php
-print "Hello Hacktoberfest!";
+<?="Hello Hacktoberfest!";?>

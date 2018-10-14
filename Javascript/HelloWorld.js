@@ -1,3 +1,4 @@
-let x=andrew;
+Var name = "Haylim";
+Var greeting = "Hello world!";
 
-console.log("hello " + x + "!");
+document.write(greeting + "," + name);

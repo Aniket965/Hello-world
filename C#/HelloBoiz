@@ -1,1 +1,15 @@
-Console.WriteLine("Hello boiz");
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hello boiz!");
+            Console.ReadKey();
+
+            
+        }
+    }
+}

@@ -1,0 +1,3 @@
+# Axway Appcelerator Hello World (Alloy demo)
+
+Run `appc new --import --no-services` to import the project first. Then you can compile it with `appc`

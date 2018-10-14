@@ -1,1 +1,2 @@
-print "Hello, world!"
+Console.WriteLine "Hello, world!"
+
