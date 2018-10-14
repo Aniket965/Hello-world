@@ -22,6 +22,7 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Text>Hello World</Text>
+        <Text>Adding a random thing</Text>
       </View>
     );
   }
