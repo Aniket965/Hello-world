@@ -6,6 +6,7 @@ try:
     import telegram
 except ImportError:
     print("Library python-telegram-bot not installed")
+    print("pip3 install -r requirements.txt")
     sys.exit(1)
 import logging
 
