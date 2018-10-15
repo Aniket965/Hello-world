@@ -1,0 +1,5 @@
+task hello {
+    dolast {
+        println 'Hello world!'
+    }
+}
