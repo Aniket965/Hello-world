@@ -1,5 +1,5 @@
 import numpy as np
-
+#define tanh activation function
 def tanh(x, deriv=False):
     if deriv:
         return 1 - x**2
@@ -9,7 +9,7 @@ def tanh(x, deriv=False):
 def add_dim(x):
     return np.reshape(x, (len(x), 1))
 
-
+#defining softmax activation 
 def softmax(x):
     e_x = np.exp(x - add_dim(np.max(x, axis=1)))
     return e_x/add_dim(np.sum(e_x, axis=1))
