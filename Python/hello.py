@@ -1,3 +1,2 @@
-py = "Hello in Python!!"
-
-print(py)
+for i in range(10000):
+    print ("Hacktoberfest")
