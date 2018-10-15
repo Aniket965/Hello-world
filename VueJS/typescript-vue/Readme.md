@@ -1,4 +1,4 @@
-# ts-vue
+# This is Your Vue.js + TypeScript App
 
 ## Project setup
 ```
