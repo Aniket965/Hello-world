@@ -1,7 +1,0 @@
-public class Hwolrd{
-  public static void main(String args[]) {
-    int loops = 100;
-    for(int i = 0; i < loops; i++)
-      System.out.println("Hello World");
-  }
-}
