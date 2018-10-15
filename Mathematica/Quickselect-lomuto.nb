@@ -1,0 +1,155 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5344,        145]
+NotebookOptionsPosition[      5098,        132]
+NotebookOutlinePosition[      5445,        147]
+CellTagsIndexPosition[      5402,        144]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"A", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "4", ",", "1", ",", "10", ",", "8", ",", "7", ",", "12", ",", "9", ",", 
+     "2", ",", "15"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"LomutoPartition", "[", 
+     RowBox[{"l_", ",", "r_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"pivot", ",", "temp", ",", "i", ",", "j", ",", "s"}], "}"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"pivot", "=", 
+        RowBox[{"A", "\[LeftDoubleBracket]", "l", "\[RightDoubleBracket]"}]}],
+        ";", "\[IndentingNewLine]", 
+       RowBox[{"s", "=", "l"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"i", "=", 
+          RowBox[{"l", "+", "1"}]}], ",", 
+         RowBox[{"i", "\[LessEqual]", "r"}], ",", 
+         RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+             "A", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], "<",
+              "pivot"}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"s", "++"}], ";", "\[IndentingNewLine]", 
+             RowBox[{"temp", "=", 
+              RowBox[{
+              "A", "\[LeftDoubleBracket]", "s", "\[RightDoubleBracket]"}]}], 
+             ";", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{
+              "A", "\[LeftDoubleBracket]", "s", "\[RightDoubleBracket]"}], 
+              "=", 
+              RowBox[{
+              "A", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}]}], 
+             ";", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{
+              "A", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], 
+              "=", "temp"}], ";"}]}], "\[IndentingNewLine]", "]"}], ";"}]}], 
+        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"temp", "=", 
+        RowBox[{"A", "\[LeftDoubleBracket]", "l", "\[RightDoubleBracket]"}]}],
+        ";", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"A", "\[LeftDoubleBracket]", "l", "\[RightDoubleBracket]"}], 
+        "=", 
+        RowBox[{"A", "\[LeftDoubleBracket]", "s", "\[RightDoubleBracket]"}]}],
+        ";", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"A", "\[LeftDoubleBracket]", "s", "\[RightDoubleBracket]"}], 
+        "=", "temp"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"Return", "[", "s", "]"}], ";"}]}], "\[IndentingNewLine]", 
+     "]"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"QuickSelect", "[", 
+     RowBox[{"l_", ",", "r_", ",", "k_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"{", "s", "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"s", "=", 
+        RowBox[{"LomutoPartition", "[", 
+         RowBox[{"l", ",", "r"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"s", "\[Equal]", "k"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Return", "[", 
+          RowBox[{"A", "\[LeftDoubleBracket]", "k", "\[RightDoubleBracket]"}],
+           "]"}], "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"s", ">", "k"}], ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Return", "[", 
+              RowBox[{"QuickSelect", "[", 
+               RowBox[{"l", ",", 
+                RowBox[{"s", "-", "1"}], ",", "k"}], "]"}], "]"}], ";"}], 
+            "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Return", "[", 
+              RowBox[{"QuickSelect", "[", 
+               RowBox[{
+                RowBox[{"s", "+", "1"}], ",", "r", ",", "k"}], "]"}], "]"}], 
+             ";"}]}], "\[IndentingNewLine]", "]"}], ";"}]}], 
+        "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]}],
+    ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"X", "=", 
+   RowBox[{"QuickSelect", "[", 
+    RowBox[{"1", ",", 
+     RowBox[{"Length", "[", "A", "]"}], ",", "1"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", "X", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.748592489300228*^9, 3.748592498229739*^9}}]
+},
+WindowSize->{1366, 686},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4536, 110, 732, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
