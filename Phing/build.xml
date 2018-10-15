@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-
-<project name="hello-world" description="Hello world with Phing" default="main" >
-    <target name="main" description="Main target for Hello World">
-        <echo msg="Hello world!" />
-    </target>    
-</project>
