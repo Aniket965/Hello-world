@@ -1,10 +1,10 @@
-function isPalindrome(word){
+function isPalindrome(word="racecar"){
     if(typeof word === "string"){
-        let revWord = [...word].reverse().join('');
-        return word.toLowerCase() === revWord.toLowerCase();
+        word = [...word].reverse().join('').toLowerCase();;
+        return `${word} is a palindrome`
     } else {
-        return false;
+        return `${word} is not a palindrome`;
     }
 }
 
-console.log('isPalindrome("dad")::', isPalindrome('dad'));
+console.log(isPalindrome());
