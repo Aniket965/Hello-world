@@ -1,5 +1,0 @@
-#! /usr/bin/env coconut
-greet = (thing -> "Hello, {}!".format(thing) 
-        |> print)
-
-greet('World')

@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
-   "http://www.wapforum.org/DTD/wml_1.1.xml" >
-<wml>
-  <card id="main" title="First Card">
-    <p mode="wrap">Hello world! Wml is a now-obsolete markup language intended for devices that implement the Wireless Application Protocol (WAP) specification, such as mobile phones. Modern browsers doesn't support wml, but in the past it was the most efficient way to develop mobile web sites.</p>
-  </card>
-</wml>

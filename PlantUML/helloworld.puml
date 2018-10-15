@@ -1,7 +1,0 @@
-@startuml
-
-title 'Hello World'
-Bob->Computer : helloWorld();
-Computer --> Bob : Hello Wolrd !
-
-@enduml

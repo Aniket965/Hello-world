@@ -1,1 +1,0 @@
-print("Gegroet wereld")
