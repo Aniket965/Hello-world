@@ -27,7 +27,15 @@ void quickSort(int arr[], int low, int high)
     
     if (low < j) quickSort(arr, low, j); 
     if (i < high) quickSort(arr, i, high); 
-} 
+}
+
+void selectionSort(int arr[], int n)
+{
+    int i, j;
+    for (i=0; i<n; i++)
+        for (j=i+1; j<n; j++)
+            if (arr[i] > arr[j]) swap(&arr[i], &arr[j]);
+}
   
 void printArray(int arr[], int size) 
 { 
@@ -39,12 +47,18 @@ void printArray(int arr[], int size)
   
 int main() 
 { 
-    //Sample: int arr[] = {10, 7, 8, 9, 1, 5}; 
-    int arr[] = { }; 
-    int n = sizeof(arr)/sizeof(arr[0]); 
-    quickSort(arr, 0, n-1); 
-    printf("Sorted array: \n"); 
-    printArray(arr, n); 
+    int arr1[] = {10, 7, 8, 9, 1, 5}; 
+    int n1 = sizeof(arr1)/sizeof(arr1[0]); 
+    quickSort(arr1, 0, n1-1); 
+    printf("Quick sort: "); 
+    printArray(arr1, n1);
+
+    int arr2[] = {10, 7, 8, 9, 1, 5};
+    int n2 = sizeof(arr2)/sizeof(arr2[0]); 
+    selectionSort(arr2, n2);
+    printf("Selection sort: "); 
+    printArray(arr2, n2);
+
     return 0; 
 } 
 
