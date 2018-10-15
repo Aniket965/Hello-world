@@ -37,13 +37,13 @@ body {
   }
   @keyframes shake {
     0% {
-      transform: rotatez(0deg);
+      transform: rotateX(0deg) rotateZ(0deg);
     }
     50% {
-      transform: rotatez(10deg);
+      transform: rotateX(30deg) rotateZ(10deg);;
     }
     100% {
-      transform: rotatez(-5deg);
+      transform: rotateX(60deg) rotateZ(-5deg);;
     }
   }
   .head {
