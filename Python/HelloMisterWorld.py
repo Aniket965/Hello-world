@@ -1,1 +1,0 @@
-print("Hello, mister world")
