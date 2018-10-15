@@ -1,9 +1,0 @@
----
-# YML file to print Hello World in ansible.
-- name: Hello World!
-  hosts: localhost
-  connection: local
-  gather_facts: no
-  tasks: # Debug is used to print Hello World.
-    - debug:
-        msg: "Hello World!"

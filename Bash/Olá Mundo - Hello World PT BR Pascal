@@ -1,6 +1,0 @@
-//FPC 2.6.2
-
-program OlaMundo;
-begin 
-      writeln('Olá Mundo ');
-end.    
