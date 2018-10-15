@@ -1,0 +1,26 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.cross_validation import train_test_split
+from sklearn.preprocessing import LabelBinarizer
+%matplotlib inline
+
+data = pd.read_csv('Iris_Data.csv')
+
+data['species'] = data.species.apply(lambda x: x.replace('Iris-', ''))
+lb = LabelBinarizer()
+
+x = np.array(data.iloc[:,0:4])
+y = np.array(data['species'])
+
+X_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.4, random_state=42)
+
+knn = KNeighborsClassifier(n_neighbors=3)
+
+knn.fit(X_train, y_train)
+
+knn.score(x_test, y_test)
+
+knn.predict([[8.5, 7.5, 5.1, 5.1]])
+
