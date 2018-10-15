@@ -15,5 +15,5 @@ int main() {
    si = (amount * rate * time) / 100;
    printf("\nSimple Interest : %d", si);
  
-   return(0);
+   return 0;
 }

@@ -1,2 +1,5 @@
-#!/bin/bash
-echo "hello world"
+#!/usr/bin/env bash
+#
+# Print "Hello World" and exit
+
+echo "Hello World!"

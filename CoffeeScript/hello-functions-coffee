@@ -1,0 +1,1 @@
+do (-> -> do do do -> do -> do do do do do do do do do do do do -> -> -> -> -> do do do do -> -> -> do do -> -> -> -> -> -> -> -> -> -> -> -> do (do -> -> do -> do -> do do -> -> -> console.log.apply 0, do -> [do -> [do do do -> -> do do -> -> -> 'Hello, world!', do -> do -> [] + [[] + [[]], [[]] + +[]][+[]]][+[]]])())()

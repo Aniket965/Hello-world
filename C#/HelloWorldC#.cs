@@ -6,7 +6,7 @@ namespace Hello
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World in C# Language!");
+            Console.WriteLine("Hello World in C#!");
             Console.ReadKey();
         }
     }

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <title>Humans vs. Machines</title>
 </head>
 <body>
 <h1>Humans vs. Machines: An AI Odyssey</h1>
@@ -43,9 +44,9 @@ ancient game of Go.</p>
 team explained it in their paper <a href="http://airesearch.com/wp-content/uploads/2016/01/deepmind-mastering-go.pdf">Mastering the Game of Go with Deep
 Neural Networks and Tree
 Search:</a>
-<p><i>The game of Go has long been viewed as the most challenging of classic
+<p><i><strong>The game of Go has long been viewed as the most challenging of classic
 games for artificial intelligence due to its enormous search space and
-the difficulty of evaluating board positions and moves.</i></p>
+the difficulty of evaluating board positions and moves.</strong></i></p>
 <p> Put another way,winning at Go is a kind of Holy Grail for those who strive to create
 machines that can “think” on their own, because success at this uniquely
 complex game seems to require something more than just skill, knowledge,
@@ -53,9 +54,12 @@ and experience. It requires intuition. Feel. Style. Characteristics we
 associate with humans, not with machines.</p>
 <hr><p><sup> 1 </sup>Garry Kasparov is a Russian
 chess Grandmaster and former World Chess Champion</p>
+<img src="kaas.jpg" alt="Garry Kasparov">
 <button> <a href="https://www.google.co.in">click here </a> </button>
 <hr><p><sup> 1 </sup>Viswanathan Anand is an Indian
 chess Grandmaster and former World Chess Champion</p>
+<img src="vish.jpg" alt="Viswanathan Anand">
 <button> <a href="https://en.wikipedia.org/wiki/Viswanathan_Anand">click here to know more </a> </button>
+<p> While AlphaGo is stepping back from competitive play, it's certainly not the end of their work with the Go community, to which they owe a huge debt of gratitude for their encouragement and motivation over the past few years. <p> 
 </body>
 </html>
