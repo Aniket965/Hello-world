@@ -9,7 +9,7 @@
  * If the value is outside the min or max the valid pointer is set to zero.
  */
 
-int Float_Sat(int input, int min, int max, uint8_t *valid) {
+int Int_Sat(int input, int min, int max, uint8_t *valid) {
   if (input > max) {
     *valid = 0;
     return max;
