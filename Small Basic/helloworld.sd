@@ -1,1 +1,0 @@
-GraphicsWindow.DrawText(10, 10, "Hello, World")
