@@ -12,5 +12,8 @@
     "helloworld"
   ],
   "author": "Jhon Alexander Perez Valencia <alex16jpv@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.3"
+  }
 }
