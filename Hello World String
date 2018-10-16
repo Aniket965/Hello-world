@@ -1,0 +1,9 @@
+import java.util.*;
+class Hello{
+public static void main(String args[])
+{
+  Scanner s =new Scanner(System.in);
+  String s ="Hello World, i am new to hactoberfest 2018";
+  System.out.println(s);
+  }
+ }
