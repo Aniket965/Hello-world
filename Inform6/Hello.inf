@@ -1,0 +1,8 @@
+Include "Parser";
+Include "VerbLib";
+
+[ Initialise;
+	"^Hello world^";
+];
+
+Include "Grammar";
