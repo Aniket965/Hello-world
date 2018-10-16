@@ -1,1 +1,0 @@
-puts "Geia sou kosme"
