@@ -1,5 +1,0 @@
-n=int(input("Enter the Number till which you want to find Sum)
-Sum=0
-for i in range(1,n):
-    Sum=Sum+i
-print("Sum of N numbers is",Sum)

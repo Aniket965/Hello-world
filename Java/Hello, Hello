@@ -1,5 +1,0 @@
-public class hello{
-  public static void main(args []){
-    System.out.print("Hello, hello");
-  }
-  }

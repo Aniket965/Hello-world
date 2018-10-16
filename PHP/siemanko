@@ -1,6 +1,0 @@
-<?php
-
-$🙋 = isset($_GET['😃']);
-$👋 = $🙋 ? $_GET['😃'] : '🌍';
-
-echo 'Siemanko, ', $👋, '!' , $🙋 ? '' : ' Powitaj wybraną osobę, wywołując skrypt w następujący sposób: `siemanko.php?😃=osoba`';
