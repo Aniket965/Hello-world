@@ -6,12 +6,14 @@
 
 
 # What is Hacktoberfest?
-Hacktoberfest is a program by Digital Ocean and Github, where you can easily win a T-Shirt just by making 5 pull requests in the month of October to any open source projects on Github.
+Hacktoberfest is a program by Digital Ocean and Github, where you can easily win a T-Shirt just by making 5 pull requests in the month of October to any open source projects on Github.Hacktoberfest is all about encouraging meaningful contributions to the open source ecosystem, for beginners and veterans alike.
 
 ## Steps to follow :scroll:
 
 ### 1. Register for Hacktoberfest
 You can register from [here](https://hacktoberfest.digitalocean.com).
+You must have an account on www.github.com.
+Now register on hactoberfest using your github account.
 
 ### 2. Fork it :fork_and_knife:
 
