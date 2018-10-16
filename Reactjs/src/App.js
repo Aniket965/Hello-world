@@ -23,7 +23,7 @@ class App extends Component {
       >
         <header className="App-header">
           <p style={{ color: `${isDark ? "white" : "black"}` }}>
-            Hello World! Happy Halloween!
+            { window.navigator.language.includes('es') ? 'Hola Mundo! Feliz halloween!': 'Hello World! Happy Halloween!' }            
           </p>
           <img
             className="logo"
