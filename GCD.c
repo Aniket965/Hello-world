@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 int main()
 {
     int n1, n2, i, gcd;

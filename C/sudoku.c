@@ -29,6 +29,7 @@ Output:
 */
 
 #include <stdio.h>
+#include <string.h>
 int solveSudoku(int, int);
 void printSudoku(void);
 int sameColumn(int, int, int);
