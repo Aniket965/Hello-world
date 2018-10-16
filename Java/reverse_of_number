@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+       Scanner str = new Scanner(System.in);
+	   int n = str.nextInt();
+       int d = n/10;
+      
+int reverse = 0;
+      while(d!=0){
+         int k= n%10;
+          
+         reverse=(reverse*10)+k;
+         d=n/10;
+         n=d;
+       }
+      System.out.print(reverse);
+      
+      
