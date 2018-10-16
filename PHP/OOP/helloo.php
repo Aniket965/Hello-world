@@ -5,7 +5,7 @@
     public $b = "word";
 
     public function helloword(){
-      return "$this->a $this->b";
+      return "{$this->a} {$this->b}";
     }
 
   }
