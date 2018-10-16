@@ -1,0 +1,10 @@
+{
+	"global": {},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:ios": {},
+	"os:windows": {},
+	"dependencies": {}
+}
