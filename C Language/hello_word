@@ -4,6 +4,7 @@
 int main(){
 
   printf("Hello World!\n");
+  printf("Have fun coding programmers!\n");
 
 
   return 0;
