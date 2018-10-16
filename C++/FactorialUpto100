@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int t;
+	cin>>t; //Enter the number od test cases.
+	while(t--)
+	{
+		char a[200];
+		int m=0,x,temp,carry=0,n,k=199,l=200;
+		cin>>n;  //Enter the number of which you want to find the factorial.
+		x=n;
+		while(n>0)
+		{
+			a[k--]=n%10+48;
+			n/=10;
+			m++;
+		}
+		for(int i=x-1;i>1;i--)
+		{
+			for(int j=l-1;j>=l-m;j--)
+			{
+				temp=(a[j]-48)*i+carry;
+				a[j]=temp%10+48;
+				carry=temp/10;
+			}
+			while(carry>0)
+			{
+				m++;
+				a[l-m]=carry%10+48;
+				carry/=10;
+			}
+		}
+		for(int i=l-m;i<l;i++)
+			cout<<a[i]-48;
+		cout<<endl;	
+	}
+	return 0;
+}
