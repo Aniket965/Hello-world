@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main() 
+void main() 
 {
-    cout << "Hello, World Wanderer!";
-    return 0;
+    printf("Hello World");
 }
