@@ -1,0 +1,3 @@
+#code for writing hello world in python3.6
+#one single piece of code
+print('Hello World !')
