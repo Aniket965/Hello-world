@@ -7,6 +7,7 @@ int main(){
     int n;
     cin >> n;
     double x = sqrt (n);
+    //Convert double to int
     int y = x;
     if (y * y == n){
         cout << "Yes";
