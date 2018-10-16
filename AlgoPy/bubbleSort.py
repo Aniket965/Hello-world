@@ -1,9 +1,9 @@
 
 A = [2,7,4,1,5,3]
-
-for j in range(1,len(A)):
+n = len(A)
+for j in range(1,n):
     swapped = False
-    for i in range(1,len(A)):
+    for i in range(1,n):
         if(A[i] < A[i-1]):
             A[i-1],A[i] = A[i],A[i-1]
             swapped = True
