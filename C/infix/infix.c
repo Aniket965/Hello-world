@@ -18,7 +18,7 @@ typedef struct token {
 enum state { NUMBER, OP, FINISH, ERROR, SPC };
 token gettoken(char *expr, int *reset) {
 	static int i = 0;
-	int no;
+unsigned int no;
 	char currchar;
 	static enum state currstate = SPC;
 	enum state nextstate;

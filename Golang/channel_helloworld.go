@@ -4,10 +4,10 @@ import (
 	"fmt"
 )
 
-func sampleChannel(num string) <-chan string {
-	newNum := make(chan string)
-	go func() { newNum <- num + " World." }()
-	return newNum
+func sampleChannel(word string) <-chan string {
+	newWord := make(chan string)
+	go func() { newWord <- word + " World." }()
+	return newWord
 }
 
 func main() {

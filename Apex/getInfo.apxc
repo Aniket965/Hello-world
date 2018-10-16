@@ -1,0 +1,8 @@
+public class GetInfo(){
+List<Account> acc = new List<Account>();
+
+public static List<Account> getAccounts(){
+acc = [SELECT Id,Name from Account LIMIT 100];
+return acc;
+}
+}
