@@ -1,0 +1,9 @@
+.titles{
+    background-color: #411e2f;
+}
+
+.titles-font{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
