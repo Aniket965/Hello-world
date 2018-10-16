@@ -1,4 +1,0 @@
-nome = "Mundo"
-name = "World"
-escreva "Olá {nome}!"
-escreva "Hello {name}!"

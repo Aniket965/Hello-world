@@ -1,1 +1,0 @@
-puts "Hello world Ruby of programmers, welcome Hacktoberfest"

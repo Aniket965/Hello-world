@@ -1,5 +1,0 @@
-MODULE Hello EXPORTS Main;
-  IMPORT Stdio, Wr;
-  BEGIN
- 	Wr.PutText(Stdio.stdout, "Hello World");
-  END Hello.
