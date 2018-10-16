@@ -1,0 +1,12 @@
+print("enter a number to check whether it is armstrong or not")
+n=int(input())
+copy=n
+rem=0
+while n>0:
+  r=n%10
+  rem=rem+(r*r*r)
+  n=n//10
+if copy==rem:
+  print(copy,"is armstrong")
+else:
+  print(copy,"is not an armstrong")
