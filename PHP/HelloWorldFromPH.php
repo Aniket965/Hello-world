@@ -1,2 +1,4 @@
 <?php
-echo 'Hello world! from Philippines!'
+
+//hacktoberfest-2018
+echo 'Hello world from Manila, Philippines!';
