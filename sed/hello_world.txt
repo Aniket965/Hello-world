@@ -1,4 +1,0 @@
-# Convert input text stream to "Hello, world!"
-# Run sed -f hello_world.txt < any_file
-s/.*/Hello, world!/
-q
