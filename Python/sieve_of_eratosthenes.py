@@ -6,7 +6,7 @@ def sieve_of_eratosthenes(num):
         # If prime[p] is not changed, then it is a prime
         if (prime[p] is True):
             # Update all multiples of p
-            for i in range(p * 2, num + 1, p):
+            for i in range(p * p, num + 1, p):
                 prime[i] = False
         p += 1
     # Print all prime numbers

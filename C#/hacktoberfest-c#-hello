@@ -1,0 +1,12 @@
+using System;
+
+namespace HacktoberfestHello
+{
+    class HelloProgram
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Krolikowskidamian - Hacktoberfest " + DateTime.Today.Year + "!");
+        }
+    }
+}
