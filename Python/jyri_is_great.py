@@ -1,1 +1,0 @@
-print("Jyri is great!")

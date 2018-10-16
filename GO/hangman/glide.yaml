@@ -1,7 +1,0 @@
-package: github.com/hitchnsmile/go-hangman
-import:
-- package: github.com/nsf/termbox-go
-- package: github.com/mattn/go-sqlite3
-  version: ^1.2.0
-- package: github.com/mattn/go-runewidth
-  version: ^0.0.2
