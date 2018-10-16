@@ -1,4 +1,4 @@
-puts "Hello! Welcome to the Super Mario Bros Pyramid!"
+puts "Hello guys! Welcome to the Super Mario Bros Pyramid!"
 print "> "
 userNumber = Integer(gets.chomp)
 puts "Here is the pyramid: "
@@ -12,7 +12,7 @@ userNumber.times do
 		counterEmptySpace.times do
 			print EmptySpace
 		end
-		
+
 		print pyramidBlock
 
 		10.times do
