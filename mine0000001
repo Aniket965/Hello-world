@@ -1,0 +1,38 @@
+#python3
+print("Hello World")
+
+#html
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">...
+
+#java
+System.out.print("\"HelloWorld\"");
+
+#c++
+int main () {
+std::cout << "Hello World! ";
+std::cout << "I'm a C++ program";
+}
+
+#c
+namespace HelloWorld {
+  class Hello {
+    static void Main() {
+      Console.WriteLine("Hello World!");
+      Console.WriteLine("Press any key to exit.");...
+     
+#bootstrap3
+<div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p>
+</div>
+<div class="container">...
+
+#javascript
+<script>
+document.getElementById("demo").innerHTML ="Hello JavaScript!";
+</script>
+
