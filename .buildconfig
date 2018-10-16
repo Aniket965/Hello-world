@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/kaiz/.cache/gnome-builder/install/Hello-world/host
+app-id=
+postbuild=
+prebuild=
+default=true
