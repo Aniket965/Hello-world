@@ -1,0 +1,12 @@
+program Greetings;
+const
+message = 'Hello World in Bosnian!';
+
+var
+greeting: string;
+
+begin
+  writeln(message);
+  greeting:= 'Cao Svijete';
+  writeln(greeting);
+end.
