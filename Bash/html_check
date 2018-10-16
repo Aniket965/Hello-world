@@ -1,0 +1,43 @@
+#!/bin/bash
+
+opening_tags=$( grep -i -o "<\w\+\s*[^>]*>\|</\w\+>" $1 | cut -d' ' -f 1)
+otg=''
+array[0]=1
+i=0
+for v in $opening_tags
+do
+  #echo ${array[@]}
+  v1=''
+  if [ ${v:1:1} == '/' ]
+  then
+    v1=${v:2}
+  else
+    v1=${v:1}
+  fi
+  otg=${v1%>}
+  if [ $i -ne 0 ]
+  then
+    let "new_i = $i - 1"
+    if [ "${array[$new_i]}" == "$otg" ]
+    then
+      #echo 'same
+      unset 'array[$new_i]'
+      ((i--))
+    else
+      #echo 'notsame'
+      array[i]=$otg
+      ((i++))
+    fi
+  else
+    array[i]=$otg
+    ((i++))
+  fi
+done
+len=${#array[*]}
+if [ $len -ne 0 ]
+then
+  echo "There are unbalanced tags in your html script"
+else
+  echo "All the tags are balanced"
+fi
+# Front tags separated by space and stored as a string in variable "otg"
