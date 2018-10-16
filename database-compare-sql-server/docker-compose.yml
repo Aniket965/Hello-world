@@ -1,0 +1,10 @@
+version: '3'
+services:
+    db:
+        image: 'microsoft/mssql-server-linux:2017-latest'
+        environment:
+            SA_PASSWORD: 'Password_020402'
+            PASSWORD: 'Password_020402'
+            ACCEPT_EULA: 'Y'
+        ports:
+            - '1433:1433'

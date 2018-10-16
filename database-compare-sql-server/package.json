@@ -1,0 +1,27 @@
+{
+  "name": "databasecompare",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "node_modules/nodemon/bin/nodemon.js ./bin/www -e js,twig"
+  },
+  "dependencies": {
+    "console.table": "0.10.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.0.0",
+    "excel4node": "^1.5.0",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "lodash": "^4.17.10",
+    "morgan": "~1.9.0",
+    "mssql": "4.1.0",
+    "twig": "~0.10.3"
+  },
+  "devDependencies": {
+    "dd-js": "^0.1.1",
+    "dumper.js": "^1.1.1",
+    "nodemon": "^1.18.4"
+  }
+}

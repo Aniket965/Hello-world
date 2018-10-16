@@ -1,0 +1,26 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<div class="containe row">
+<div class="col-2"></div>
+<div class="block col-8 app">
+    <a href="/" class="btn btn-dark">Atras</a>
+    <h3>Tablas Pendientes en Base de Datos Slave</h3>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Tablas</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for table in tablesNotInB %}
+                <tr>
+                    <td>{{ table.table }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="col-2"></div>
+</div>
+{% endblock %}
