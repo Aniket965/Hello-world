@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+main()
+{
+	char karakter;
+	
+	printf("\nMempelajari penggunaan getche() dengan variabel");
+	printf("\nTekan tombol yang dikehendaki : ");
+	karakter=getche();
+	printf("\n\nAnda menekan tombol %c", karakter);
+	getchar();
+}
