@@ -1,1 +1,2 @@
-print("hello world")
+print("ഭൂമി സ്വാഗതം")
+
