@@ -15,7 +15,7 @@ using namespace std;
 int main()
 {
     fastio;   
-    string hello = "Hello ,",world = "World"!;
+    string hello = "Hello ,",world = "World!";
     cout<<hello<<world<<endl;
     return 0; 
 }
