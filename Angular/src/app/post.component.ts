@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'app-post',
@@ -8,11 +8,11 @@ import { Http } from '@angular/http';
 
 export class PostComponent implements OnInit {
     posts: any[];
-    constructor(private http: Http) { }
+    constructor(private http: HttpClient) { }
 
     ngOnInit() {
-        this.http.get('http://jsonplaceholder.typicode.com/posts').subscribe(response => {
-            this.posts = response.json();
+        this.http.get<any[]>('http://jsonplaceholder.typicode.com/posts').subscribe(response => {
+            this.posts = response;
         });
     }
 }
