@@ -1,0 +1,32 @@
+body,html {
+  background-color:black;
+  
+}
+
+#sun {  width: 90px;  height: 90px; border-radius:100px ;position: absolute;  background: blue;  border-color: blue;left:46.5vw;top:46.5vh; z-index:1;background-image: radial-gradient(yellow, orange,  orange);}
+
+#orbity1 {  width: 10px;  height: 10px; position: absolute;  background: blue;  border-color: blue;left:50vw;top:50vh;}
+#planet1 {  width: 10px;  height: 10px;  border-radius: 50px;  position: absolute;  background-image: radial-gradient(#504E51, #97979F);}
+
+#orbity2 {  width: 10px;  height: 10px; position: absolute;  background: red;  border-color: blue;left:50vw;top:50vh;}
+#planet2 {  width: 20px;  height: 20px;  border-radius: 50px;  position: absolute;  background-image: radial-gradient(#BBB7AB, orange);}
+
+#orbity3 {  width: 10px;  height: 10px; position: absolute;  background: blue;  border-color: blue;left:50vw;top:50vh;}
+#planet3 {  width: 20px;  height: 20px;  border-radius: 50px;  position: absolute;  background-image: radial-gradient( green, blue);}
+
+#orbity4 {  width: 10px;  height: 10px; position: absolute;  background: red;  border-color: blue;;left:50vw;top:50vh;}
+#planet4 {  width: 15px;  height: 15px;  border-radius: 50px;  position: absolute;  background-image: radial-gradient(#E27B58, #C67B5C);}
+
+#orbity5 {  width: 10px;  height: 10px; position: absolute;  background: blue;  border-color: blue;left:50vw;top:50vh;}
+#planet5 {  width: 40px;  height: 40px;  border-radius: 50px;  position: absolute;  background-image: linear-gradient(#90614D,#C88B3A,#90614D,#C88B3A);}
+
+#orbity6 {  width: 10px;  height: 10px; position: absolute;  background: red;  border-color: blue;;left:50vw;top:50vh;}
+#planet6 {  width: 40px;  height: 40px;  border-radius: 50px;  position: absolute;  background-image: linear-gradient( #c3924f, #e2bf7d,#c3924f, #e2bf7d);}
+
+#orbity7 {  width: 10px;  height: 10px; position: absolute;  background: blue;  border-color: blue;left:50vw;top:50vh;}
+#planet7 {  width: 30px;  height: 30px;  border-radius: 50px;  position: absolute;  background-image: radial-gradient( #D5FBFC, blue);}
+
+#orbity8 {  width: 10px;  height: 10px; position: absolute;  background: red;  border-color: blue;;left:50vw;top:50vh;}
+#planet8 {  width: 30px;  height: 30px;  border-radius: 50px;  position: absolute;  background-image: radial-gradient(#3E66F9, #212354);}
+
+
