@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{	
+	int t;
+	cin >> t;
+	while(t--)
+	{
+	int n = 0;
+	cin >> n;
+	int arr[n+1]={0}, arr2[n+1]={0};
+	for(int i=0;i<n;i++)
+	{
+		cin >> arr[i];
+	}
+	for(int i=0;i<n;i++)
+	{
+		cin >> arr2[i];
+	}
+	int i=0,j=1,sum1=0,sum2=0;
+	while(i<n || j<n)
+	{
+		sum1 = sum1 + arr[i] + arr2[j];
+		j = j+2;
+		i = i+2;
+	}
+	j = 0;
+	i = 1; 
+	while(j<n || i<n)
+	{
+		sum2 = sum2 + arr[i] + arr2[j];
+		j = j+2;
+		i = i+2;
+	}
+	sum1>=sum2?cout<<sum2:cout<<sum1;
+	cout << "\n";
+}
+}
