@@ -1,0 +1,16 @@
+How to Write Hello World in C++
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+string s;
+s = "Hello World";
+cout << s << endl;
+
+return 0;
+}
+
+well done !!. Now you now how to write "Hello World" in c++
