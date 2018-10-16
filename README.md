@@ -1,4 +1,4 @@
-# Welcome to Hacktoberfest 2018 Hello-world :clipboard:
+# Welcome to Hacktoberfest 2018 Hello-world :clipboard: ![terminal emoji](https://github.com/scitronboy/Hello-world/raw/795c9e7dda81f460e8f8126f9e0426eeb1b54408/terminal-icon.png "terminal emoji")
 > This Project aims to help you to get started with using Github. You can find a tutorial [here](https://guides.github.com/activities/hello-world/)
 
 
