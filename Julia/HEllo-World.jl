@@ -1,1 +1,1 @@
-println("Hello World!!")
+println("I'm excited to learn Julia!")

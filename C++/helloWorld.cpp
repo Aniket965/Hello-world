@@ -1,8 +1,13 @@
-#include <iostream>
-using namespace std;
+#include<iostream.h>
+#include<conio.h>
 
-int main()
+void main()
 {
-  cout << "Hello, world!" << endl;
-  return 0; 
+  char ch = "helloo everyone";
+  for(int i=0;i<10;i++)
+  {
+    cout<<ch;
+  }
+  getch();
 }
+   
