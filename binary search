@@ -1,0 +1,73 @@
+#include<stdio.h>
+void sort(int a[20], int n)
+{ int temp;
+int i,j;
+ for(i=0;i<n-1;i++)
+{ 
+     for( j=0;j<n-i-1;j++)
+     { 
+      if(a[j]>a[j+1])
+      { temp=a[j+1];
+        a[j+1]=a[j];
+        a[j]=temp;
+       }
+      }
+ }    
+}
+int bsearch(int a[20], int ele, int low, int mid, int high)
+{/* int mid,low,high;
+low=0;
+high=n-1;
+int k;
+mid=(high+low)/2;*/
+if( a[mid]==ele)
+{ return (mid);
+}
+
+else if( ele>a[mid])
+{ 
+low=mid+1;
+mid=(low+high)/2;
+return( bsearch(a,ele,low,mid,high));
+} 
+
+else
+{high= mid-1;
+mid=(low+high)/2;
+return(bsearch(a,ele,low,mid,high));
+} 
+
+} 
+void main()
+{ int a[20];
+int i,n,ele;
+printf("enter the no of elements im the array");
+scanf("%d",&n);
+printf("enter the elements of the array");
+
+for(i=0;i<n;i++)
+{ 
+scanf("%d",&a[i]);
+}
+
+
+sort(a,n);
+
+printf("\n the elements in the arrays are");
+
+for(i=0;i<n;i++)
+{ 
+printf("%d \n",a[i]);
+}
+
+
+printf(" \nenter the element to be found");
+scanf("%d", &ele);
+int high,low,mid;
+high=n-1;
+low=0;
+mid=(low+high)/2;
+int p=bsearch(a,ele,low,mid,high);
+p=p+1;
+printf(" \n element found at %d", p);
+}
