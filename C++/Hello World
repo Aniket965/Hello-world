@@ -1,9 +1,8 @@
 #include<iostream.h>
-void main(){
+using namespace std;
+int main(){
 
-cout<<"Hello World";
+cout<<"hello";
 
-
+return 0;
 }
-
-output:Hello World

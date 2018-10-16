@@ -14,9 +14,8 @@ bool BinarySearch(int arr[], int n, int k){
     return false;
 }
 
-int main()
-{
-        int n,target;
+int main(){
+    int n,target;
 	cout<<"Enter the size of the array"<<endl;
 	int arr[n];
 	cout<<<"Enter elements of the array"<<endl;
@@ -25,5 +24,3 @@ int main()
 	cin>>target;
 	if(BinarySearch(arr,n,target) cout<<"The number exists"<<endl;
 	else cout<<"The number doesn't exists"<<endl;
-        return 0;
-)
