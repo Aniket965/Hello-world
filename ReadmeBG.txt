@@ -36,3 +36,5 @@ main branch, Ако няма такава папка,Направете една
 
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
+:tada: :smiley ---all contibtion
+
