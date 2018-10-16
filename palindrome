@@ -1,0 +1,14 @@
+def reverse(n):
+  rev=0
+  while n>0:
+    rev=(n%10)+(rev*10)
+    n=n//10
+  return rev
+print("enter a number")
+n=int(input())
+copy=n
+r=reverse(n)
+if r==copy:
+  print ("palindrome")
+else:
+  print("not a palindrome")
