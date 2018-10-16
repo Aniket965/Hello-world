@@ -1,4 +1,0 @@
-a <- c("H", "e", "l", "l", "o")
-b <- c("W", "o", "r", "l", "d")
-c <- c(a, " ", b)
-paste(c,collapse="")

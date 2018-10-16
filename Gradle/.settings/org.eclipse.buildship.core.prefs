@@ -1,8 +1,0 @@
-auto.sync=false
-build.scans.enabled=false
-connection.gradle.distribution=GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(C\:\\Program Files\\Android\\Android Studio\\gradle\\gradle-4.6))
-connection.project.dir=
-eclipse.preferences.version=1
-gradle.user.home=
-offline.mode=false
-override.workspace.settings=true

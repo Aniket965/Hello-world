@@ -1,2 +1,0 @@
-# Linux Terminal
-echo Hello World | hexdump -C
