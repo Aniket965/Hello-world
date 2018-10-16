@@ -1,0 +1,19 @@
+IT'S SHOWTIME
+    HEY CHRISTMAS TREE isLessThanMax
+        YOU SET US UP @NO PROBLEMO
+    HEY CHRISTMAS TREE max
+        YOU SET US UP 10
+    HEY CHRISTMAS TREE n
+        YOU SET US UP 0
+    STICK AROUND isLessThanMax
+        GET TO THE CHOPPER n
+            HERE IS MY INVITATION n
+            GET UP 1
+        ENOUGH TALK
+        TALK TO THE HAND "Hello, world!"
+        GET TO THE CHOPPER isLessThanMax
+            HERE IS MY INVITATION 10
+            LET OFF SOME STEAM BENNET n
+        ENOUGH TALK
+    CHILL
+YOU HAVE BEEN TERMINATED
