@@ -1,2 +1,0 @@
-const hello = "Hello, world!\n"
-print(hello)
