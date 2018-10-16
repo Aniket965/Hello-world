@@ -5,7 +5,7 @@
             <template>
                 <random>
                     <li>Hello World!</li>
-                    <li>Hey!</li>
+                    <li>Yeah Bruh!</li>
                     <li>This is a list of responses which will be chosen randomly when the input matches "HELLO WORLD"</li>
                 </random>    
             </template>
