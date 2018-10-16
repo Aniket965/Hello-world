@@ -1,0 +1,62 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <div class="containe row">
+        <div class="col-2"></div>
+        <div class="block col-8 app">
+            <a href="/" class="btn btn-dark">Atras</a>
+            <a href="/report" class="btn btn-outline-primary btn-lg">Exportar</a>
+            <h3>Columnas Pendientes por Tabla en Base de Datos Slave</h3>
+
+            {% for table, group in columnsPendingOnB %}
+                <div class="alert alert-primary" role="alert">
+                    Tabla: {{ table }}
+                </div>
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>Tabla</th>
+                        <th>Columna</th>
+                        <th>Tipo de Dato</th>
+                        <th>Nullable</th>
+                        <th>Length</th>
+                        <th>Column Default</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for column in group %}
+                        <tr>
+                            <td>{{ column.table }}</td>
+                            <td>{{ column.column }}</td>
+                            <td>{{ column.dataType }}</td>
+                            <td>{{ column.nullable }}</td>
+                            <td>{{ column.length }}</td>
+                            <td>{{ column.default }}</td>
+                        </tr>
+                    {% endfor %}
+                    <tr>
+                        <td class="bg-success text-light">Commands to Execute:</td>
+                        <td colspan="5">
+                            <ul class="list-group">
+                                {% for alter in group.commands %}
+                                    <li class="list-group-item">{{ alter }}</li>
+                                {% endfor %}
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            {% endfor %}
+
+
+            <div class="p-3 mb-2 bg-primary text-white">
+                <ul class="list-group">
+                    {% for alter in commandsAll %}
+                        <li class="list-group-item">{{ alter }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+{% endblock %}
