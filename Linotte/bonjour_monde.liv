@@ -1,4 +1,0 @@
-principale :
-	t est un texte valant "Hello World!"
-	début
-		affiche t

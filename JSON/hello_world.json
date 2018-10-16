@@ -1,9 +1,0 @@
-{
-  status: 'OK',
-  _route: {url: '/api/v1/demo',
-  data: {
-      _id: '5bc59757f463a62fec91eb3b',
-      message: 'Hello world'
-  }
-  
-}
