@@ -1,25 +1,32 @@
 #include<iostream>
 using namespace std;
-class factorial{
-    int f,n;
-    public:
-    int fact();
-};
-int factorial::fact()
+class tempConv
 {
-    f=1;
-    std::cout<<"\nEnter a Number:";
-    std::cin>>n;
-    for(int i=1;i<=n;i++)
-    {
-        f=f*i;
-    }
-    return f;
+private:
+    int fahre,cal;
+public:
+    void enterData();
+    int conversion();
+};
+
+void tempConv::enterData()
+{
+  std::cout << "Enter temprature in Fahrenheit: ";
+  std::cin >> fahre;
 }
+
+int tempConv::conversion()
+{
+  cal=(fahre-32)/1.8;
+  return cal;
+}
+
 int main()
-{   int fact;
-    factorial ob;
-    fact=ob.fact();
-    std::cout << "factorial is: "<<fact<<endl;
-    return fact;
+{
+  int data;
+  tempConv temp;
+  temp.enterData();
+  data=temp.conversion();
+  cout <<"temprature in Celsius: "<<data<<endl;
+  return data;
 }
