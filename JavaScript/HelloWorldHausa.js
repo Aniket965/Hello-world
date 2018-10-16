@@ -1,1 +1,0 @@
-Const helloHausa = "Alo Duniya";
