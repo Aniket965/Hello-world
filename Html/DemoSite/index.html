@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<!--html is derived by XML
+    XML has root element = html
+    Head ->  1) give nstructions to browser
+             2) give instructions to serach engines
+
+    XSD = XML Schema decleration
+     XML - extensible markup lanugauge
+
+
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is  Responsie tag . viewpoint > broweser eke page eka. initial-scale=1.0 > is dont change the resulution accoding to the device.-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <style>
+        .container {
+            max-width: 1200px;
+            border: 1px solid rgb(173, 177, 179);
+        }
+
+        .nav {
+            background-color: rgb(184, 184, 184);
+            width: 100%;
+            border: 1px solid rgb(202, 74, 23);
+        }
+
+        #Save { 
+            position: fixed;
+            right: 100px;
+            bottom: 50px;
+            z-index: 1;
+
+
+        }
+        #pen{
+            padding-left: 6px;
+        }
+
+        .btn:hover{
+            background-color: red;
+           
+
+        }
+    </style>
+
+    <title>Boostrap Demo </title>
+
+
+</head>
+
+<body>
+    <div class="container" style="padding:0px;">
+
+
+        <nav class="nav">
+
+            </br>
+            <i class="fas fa-pen" id="pen"> </i>
+            <p>Customer Information (Fields in red are required)</p>
+
+
+        </nav>
+    </div>
+    <div class="container">
+        <button class="btn btn-primary" type="Save" id="Save">Save</button>
+
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>First name:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword" placeholder="Firstname">
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Last name:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword" placeholder="Lastname">
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Email:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword" placeholder="Email">
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Phone Number:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword" placeholder="Phone number">
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>choose File:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <img src="images/avatar.png">
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Address 1:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword">
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Address 2:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword">
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>City:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword">
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>State/Province</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword">
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Zip</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword">
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Country</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword">
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Comments</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Store Account Balance:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword" placeholder="0.00">
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Credit Limit:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword">
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Company Name:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword">
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12">
+                </br>
+
+                <label>Account #:</label>
+            </div>
+
+            <div class="col col-lg-10 col-md-12 ">
+                </br>
+                <input type="text" class="form-control" id="inputPassword">
+
+            </div>
+
+
+        </div>
+        </br>
+        <div class="row">
+            <div class="col col-lg-2 col-md-12 ">
+
+                <label>Override Default Tax For Sale:</label>
+            </div>
+            <div class="col col-lg-10 col-md-12 ">
+
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-2 col-md-12 ">
+
+                <label>Taxable:</label>
+            </div>
+            <div class="col col-lg-10 col-md-12 ">
+
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
