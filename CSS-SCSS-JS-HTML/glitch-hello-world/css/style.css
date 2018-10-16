@@ -1,0 +1,18 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  background: #191a1d;
+  font-family: 'VT323', monospace;
+  color: #FFF;
+  height: 100%;
+}
+
+canvas {
+  background: none;
+  margin: auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
