@@ -1,3 +1,1 @@
-let x=andrew;
-
-console.log("hello " + x + "!");
+document.write("Hello, World!");
