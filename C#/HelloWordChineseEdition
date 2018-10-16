@@ -1,0 +1,9 @@
+using System;
+					
+public class HelloWordChineseEdition
+{
+	public static void Main()
+	{
+		Console.WriteLine("你好，世界!");
+	}
+}

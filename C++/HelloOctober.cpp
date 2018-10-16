@@ -1,14 +1,9 @@
 #include <iostream>
+using namespace std;
 
-int main(){
-  bool isHacktoberfestNeat = true;
-
-  if (!isHacktoberfestNeat) {
-	  std::cout << "But Hacktoberfest is neat tho" << std::endl;
-	  return 1;
-  }
-
-  std::cout << "Hello world!" << std::endl;
+int main()
+{
+  cout << "Hello world! Welcome to Hacktoberfest" << endl;
   return 0;
 }
 
