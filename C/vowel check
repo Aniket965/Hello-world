@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+{
+
+char alp;
+puts("please enter a aphabet");
+scanf("%c",&alp);
+if(alp=='a'||alp=='e'||alp=='i'||alp=='o'||alp=='u')
+{
+ printf("the given alphabet is a vowel");
+}
+else
+{
+ printf("the given alphabet is not a vowel");
+}
+return 0;
+}
