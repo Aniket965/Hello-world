@@ -1,0 +1,31 @@
+//Enter string to replace it with "pi"
+#include<iostream>
+using namespace std;x
+void pi(char str[]){
+    int i=0;
+    while(str[i]!='\0'){
+        if(str[i]=='p'&&str[i+1]=='i'){
+            
+              cout<<"3.14";
+              i=i+2;
+                
+        
+        }
+        else {
+            cout<<str[i];
+            i++;   
+        }
+    }
+}
+int main() {
+    int n;
+    cin>>n;
+    char str[1000];
+    cin.get();
+    for(int i=0;i<n;i++){
+       cin.getline(str,1000); 
+       pi(str);
+       cout<<endl;
+    }
+	return 0;
+}
