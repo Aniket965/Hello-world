@@ -1,4 +1,8 @@
-Var name = "Haylim";
-Var greeting = "Hello world!";
-
-document.write(greeting + "," + name);
+<!DOCTYPE html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>

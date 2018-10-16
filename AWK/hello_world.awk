@@ -1,2 +1,2 @@
-#!/usr/bin/awk -f
-BEGIN { print "Hello World" }
+# !/usr/bin/awk -f
+BEGIN { print "Hello, World!" }

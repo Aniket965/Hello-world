@@ -1,9 +1,4 @@
-#Assignment in R cand be done in many ways
+names <- "Alaburda"
+greeting <- paste0("Hello, ",names,"!")
 
-HelloWorldstring1 = "Hello World"
-HelloWorldstring2 <- "Hello World)
-
-print(HelloWorldstring1)
-print(HelloWorldstring2)
-
-#Results are the same
+print(greeting)
