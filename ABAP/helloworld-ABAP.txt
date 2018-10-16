@@ -1,2 +1,0 @@
-REPORT first_programm.
-WRITE / 'Hello, World!'.

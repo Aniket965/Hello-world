@@ -1,9 +1,0 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main()
-{
-    bool inBigClassroom = 0; //
-    const int classSize = inBigClassroom ? 30 : 20; //using conditional operator
-    std::cout << "The class size is: " << classSize;
-    return 0;
-}

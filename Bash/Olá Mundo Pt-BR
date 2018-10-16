@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-#
-# Print "Olá Mundo
-
-echo "Olá Mundo!"
