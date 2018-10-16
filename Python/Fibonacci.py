@@ -1,7 +1,6 @@
-
-fibonacci = [0, 1] #initialising base case
-n = int(input("Enter a number: ")) #accepting input in Variable n
+fibonacci = [0, 1]
+n = int(input("Enter a number: "))
 while len(fibonacci) < n:
-    fibonacci.append(fibonacci[-1] + fibonacci[-2]) # recurssion function of fibo[n-1= + fibo[n-2] = fibop[n]
+    fibonacci.append(fibonacci[-1] + fibonacci[-2])
 for i in range(n):
-    print(i + 1, ":", fibonacci[i]) #print fibonacci
+    print(i + 1, ":", fibonacci[i])
