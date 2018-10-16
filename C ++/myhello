@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+  int x = 'H';
+  std::cout << char(x);
+  std::cout << char(x - ('A' - 'a') - 3);
+  std::cout << char(x - ('A' - 'a') + 4);
+  std::cout << char(x - ('A' - 'a') + 4);
+  std::cout << char(x - ('A' - 'a') + 7);
+  std::cout << char(32);
+  std::cout << char(x + 15);
+  std::cout << char(x - ('A' - 'a') + 7);
+  std::cout << char(x - ('A' - 'a') + 10);
+  std::cout << char(x - ('A' - 'a') + 4);
+  std::cout << char(x - ('A' - 'a') - 4);
+  std::cout << char(1 + int(' '));
+  std::cout << std::endl;
+  return 0;
+}
