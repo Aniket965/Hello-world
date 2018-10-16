@@ -2,9 +2,6 @@
 '''
 Israel Zuniga de la Mora
 '''
-import optparse
-import jaydebeapi as jdb
-
 
 def main():
     world = 'World!'
