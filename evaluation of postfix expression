@@ -1,0 +1,69 @@
+#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+#include<math.h>
+float stack[50];
+int top=-1;
+void push(float n)
+      {  top=top+1;
+      stack[top]=n;
+
+      }
+      float pop()
+      {  
+     int c=stack[top];
+      top= top-1;
+      return(c);
+      }
+
+float eval(char postfix[])
+{ int i=0;
+float op1,op2;
+char ch;
+float rev;
+ while(postfix[i]!='\0')
+    {
+      ch=postfix[i];
+     //printf("%c", ch); 
+   if(isdigit(ch))
+   
+    {
+    //printf("%c\n",ch);
+     push(ch-'0');
+    }
+    else 
+    {//printf("%c",ch);
+    op2=pop();
+    op1=pop();
+    printf("\n%f", op2);
+    printf("\n%f", op1);
+    switch(ch)
+    { case '$':
+     case '^': rev =pow(op1,op2);
+               break;
+     case '*': rev= op1*op2;
+               break;
+     case '/': rev= op1/op2;
+               break;
+     case '+': rev= op1+op2;
+               break;
+     case '-': rev= op1-op2;
+               break;
+      }
+      push(rev);
+    }
+      
+i++;
+      }
+      
+ return (rev);      
+ }
+ int main()
+{ 
+char postfix[50];
+float res;
+printf("enter the postfix expression \n");
+scanf("%s",postfix);
+res=eval(postfix);
+printf("the output is \n %g", res);
+}

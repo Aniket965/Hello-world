@@ -1,0 +1,47 @@
+#include<stdio.h>
+void main()
+{
+int (*p)[10];
+int m;
+int n;
+printf("enter the order of the matrix");
+scanf("%d%d",&m,&n);
+
+if(m!=n)
+{ printf("the matrix is not a square matrix");
+}
+ int sump=0;
+ int sumnp=0;
+ int sume=0;
+ p=(int*)malloc(m*n* sizeof(int));
+ 
+ if(p==NULL)
+ {
+ printf("allocation has failed");
+ }
+ int i,j;
+ printf("enter the elements of the matrix");
+  for(i=0;i<m;i++)
+{ for(j=0;j<n;j++)
+  { scanf("%d",*(p+i)+j);
+        if(i==j)
+        { sump=sump+*(*(p+i)+j);
+        }
+     sume=sume+*(*(p+i)+j);   
+    }
+    }
+    
+ 
+ { for(j=n-1,i=0;j>=0,i<n;j--,i++)
+        { sumnp= sumnp+*(*(p+i)+j);
+        }
+   }
+        
+    printf("the sum of principal elements of the matrix is %d \n", sump);
+    printf("the sum of the non principle elements of the mattrix is %d \n", sumnp);
+    printf("the sum of the elements of the matrix is %d \n", sume);
+    
+   }
+    
+  
+
