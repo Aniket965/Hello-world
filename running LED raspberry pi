@@ -1,0 +1,32 @@
+# import library WiringPi-Python
+import ???
+# import library sleep
+from time import sleep
+
+# Must be called before using IO Function
+wiringpi.???()
+
+# Set pin 0-6 to become an OUTPUT / 1
+# and write HIGH / 1 to pin 0-6 for the first time
+for y in range (0,???):
+# Set pin 0-6 to become an OUTPUT / 1
+        wiringpi.???(y,???)
+# write HIGH / 1 to pin 0-6 for the first time
+        wiringpi.digitalWrite(y,1)
+
+# endless loop
+while True:
+		#for -> count up (0 - 6)
+        for y in range (???,6):
+				# write HIGH / 1 to pin 0-6
+                wiringpi.digitalWrite(y,???)
+				# delay for 200 ms
+                sleep(0.2)
+
+		#for -> count down (5 - 0)
+        for y in range (5,???,-1):
+				# write LOW / 0 to pin 0-6
+                wiringpi.digitalWrite(y,???)
+				# delay for 200 ms
+                sleep(???)
+
