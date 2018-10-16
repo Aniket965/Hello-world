@@ -12,5 +12,9 @@
     "helloworld"
   ],
   "author": "Jhon Alexander Perez Valencia <alex16jpv@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "flatiron": "^0.4.3",
+    "union": "^0.4.6"
+  }
 }
