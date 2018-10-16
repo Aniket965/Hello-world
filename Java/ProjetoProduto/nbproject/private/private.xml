@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/util/Conversoes.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/util/ConnectionFactory.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/CarregarProduto.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/ListarProduto.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/web/cadastrarProduto.jsp</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/CadastrarCategoria.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/web/alterarProduto.jsp</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/web/index.jsp</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/AlterarProduto.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/web/cadastrarCategoria.jsp</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/AlterarCategoria.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/CadastrarProduto.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/dao/CategoriaDAOImpl.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/ListarCategoria.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/web/listarCategoria.jsp</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/model/Categoria.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/dao/GenericDAO.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/dao/ProdutoDAOImpl.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/CarregarCategoria.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/ExcluirProduto.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/model/Produto.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/src/java/br/com/ProjetoProduto/controller/ExcluirCategoria.java</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/web/alterarCategoria.jsp</file>
+            <file>file:/C:/Users/VINICIUSEDUARDODASIL/Documents/NetBeansProjects/ProjetoProduto/web/listarProduto.jsp</file>
+        </group>
+    </open-files>
+</project-private>
