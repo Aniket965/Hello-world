@@ -20,7 +20,6 @@ def monkeyTyping(textToFind):
                 print(index - 1)
                 lastMax = index - 1
             index = 0
-            
     return text
 def monkeyCrypting(textToFind):
     """the objective is to have a monkey adding random characters into
