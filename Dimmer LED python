@@ -1,0 +1,14 @@
+import wiringpi						            	# import library WiringPi-Python
+from time import sleep                  # import library sleep
+
+wiringpi.wiringPiSetup()			        	# Must be called before using IO Function
+wiringpi.softPwmCreate(0,0,100)		    	# Set PWM on pin 0, start value 0, max value 100
+while True :						              	# endless loop
+	for i in range(0,101,1):		        	# range min 0, max 101, (0-100)
+		wiringpi.softPwmWrite(0,i)	      	# PWM pulse on pin 0
+		sleep(0.02)                        	# delay for 20ms
+	sleep(0.1)							              # delay for 100ms
+	for i in range(100,-1,-1):			      # range min 100, max 0, (100-0)
+		wiringpi.softPwmWrite(0,i)	      	# PWM pulse on pin 0
+		sleep(0.02)				              		# delay for 20ms
+	sleep(0.1)							              # delay for 100ms
