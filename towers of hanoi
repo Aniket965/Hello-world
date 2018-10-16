@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+void towers(int n, char frompeg, char topeg , char auxpeg)
+{ if(n==1)
+ {printf(" move disk %d from %c to %c \n",n,frompeg,topeg);
+ return;
+ }
+ //move top n-1 disks from a to b using c as auxiliary 
+ 
+ towers(n-1,frompeg,auxpeg,topeg);
+ //move remaining disks from a to c
+ printf("move disk %d from %c to %c \n",n,frompeg,topeg);
+ 
+ //move n-1 disks from b to c using a as auxiliary 
+ towers(n-1,auxpeg,topeg,frompeg);
+ }
+void main()
+{ int n;
+printf("enter the no of elements \n");
+scanf("%d", &n);
+towers(n,'a','b','c');
+}
