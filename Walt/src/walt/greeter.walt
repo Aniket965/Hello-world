@@ -1,6 +1,0 @@
-type Greet  = () => void;
-import { greet: Greet } from 'env';
-
-export function greeter(): void {
-  greet();
-}
