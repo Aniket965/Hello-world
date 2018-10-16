@@ -1,0 +1,1 @@
+echo "OMG Hi there~"
