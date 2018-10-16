@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+void main()
 {
     unsigned int n, i, range;
 
@@ -13,6 +13,4 @@ int main()
     {
         printf("%d * %d = %d \n", n, i, n*i);
     }
-
-    return 0;
 }
