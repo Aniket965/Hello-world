@@ -1,0 +1,37 @@
+/* prints pattern
+****1
+**121
+**12321
+*1234321
+123454321
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,j,k,n;
+    puts("please enter number of lines");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        k=n-i;
+        for(j=1;j<=k;j++)
+        {
+            printf("*");
+        }
+        k=i-1;
+        for(j=1;j<=k;j++)
+        {
+            printf("%d",j);
+        }
+        printf("%d",i);
+        for(j=k;j>0;j--)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+
+    }
+    return 0;
+}
