@@ -4,8 +4,7 @@ main:
 	move $t0 $v0
 	
 	move $t1 $t0
-	addu $t2 $zero 1
-	
+	addu $t2 $zero 
 	loop:
 		beq $t0 $t2 exit
 		mul $t1 $t1 $t2
