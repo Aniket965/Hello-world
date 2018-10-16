@@ -34,6 +34,11 @@ th, td {
     <td>BCM</td>
     <td>2</td>
   </tr>
+  <tr>
+    <td>Priya</td>
+    <td>GKSM</td>
+    <td>4</td>    
+  </tr>
 </table>
 
 </body>
