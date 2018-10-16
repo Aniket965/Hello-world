@@ -1,7 +1,6 @@
 extends Node
 
-onready var childNode_label = null
+onready var childNode_label = $Label
 
 func _ready():
- childNode_label = $Label
  childNode_label.text = "Hello World!"
