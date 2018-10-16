@@ -1,3 +1,0 @@
-= Hello my dear world
-
-Bonjour le monde en *AsciiDoc*.

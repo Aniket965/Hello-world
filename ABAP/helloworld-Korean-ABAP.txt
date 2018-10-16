@@ -1,2 +1,0 @@
-REPORT first_programm.
-WRITE / '여보세요 세계!'.

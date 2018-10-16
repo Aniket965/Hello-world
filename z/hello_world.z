@@ -1,9 +1,0 @@
-function main()
-{
-    hello()
-}
-
-function hello()
-{
-    print("Hello world.\n")
-}

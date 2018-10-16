@@ -1,5 +1,0 @@
-// Hello world in skip language
-
-fun main(): void {
-  print_string("Hello world")
-}
