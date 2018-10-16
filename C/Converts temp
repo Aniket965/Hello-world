@@ -25,7 +25,7 @@ int main()
        printf("Enter temperature in Fahrenheit: ");
        scanf("%f", &Fahrenheit);
        
-       celsius = (fahrenheit − 32) x 5/9 
+       celsius = (fahrenheit − 32) x 5/9 ;
        
        printf("The conversion is /n");
        printf("%.5f Fahrenheit = %.5f Celsius ", fahrenheit, celsius);
