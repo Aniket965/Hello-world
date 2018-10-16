@@ -24,7 +24,32 @@ def are_anagrams(a,b):
     if any(letters.values()): 
         return 0 # they not anagrams 
     else:
-        return 1 # they do 
+        return 1 # they do
+
+# Another way
+
+def areAnagrams(string1, string2):
+    inc = 1
+    if len(string1) == len(string2):
+        val = 0
+        for i in string1:
+            pos = len(string2) - inc
+            if i == string2[pos]:
+                val +=1
+                return val
+            else:
+                return 0
+            inc += 1
+        if val == len(string1):
+            return True
+        else:
+            return  0
+    else:
+        return 0
 		
 print are_anagrams("SOMA", "AMOS")
 print are_anagrams("SOMA", "AMOSS")
+print("---------------")
+string1 = input("First Word ! ")
+string2 = input("Second Word ! ")
+print(areAnagramsTrue(string1, string2))
