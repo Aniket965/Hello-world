@@ -1,0 +1,156 @@
+\documentclass[a4paper,5pt]{article}
+
+%A Few Useful Packages
+\usepackage{fontawesome}
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom 
+\addtolength{\voffset}{-2.3cm}
+\section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\hyphenation{im-pre-se}
+
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Rishabh \textbf{Baghel}
+	}\\
+	&\centering{ \textsc{Indian Institute of Information Technology, Guwahati}\\
+	\bigskip
+	&\text{ \faEnvelope\space\href{baghelrishabha@gmail.com}{baghelrishabha@gmail.com}    \space\space\space \faMedium \space\href{https://medium.com/@Rshbh_}{Blogs}  \space\space\space   \faGlobe\space \href{https://sites.google.com/view/rishabhbaghel}{Website}    \space\space\space    \faGithub\space \href{https://github.com/Iamnotabear}{Github}}
+	
+	}
+	
+	\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+ \emph{2017-Present} &  \textbf{Indian Institute of Information Technology, Guwahati},\\
+&\textsc{B.Tech. in Computer Science and Engineering }\\
+&\footnotesize{GPA: 7.75}\\
+
+\end{tabular}
+
+
+
+%Section: Skills
+\section{Skills}
+
+\begin{tabular}{rl}
+    \textsc{Programming:} & Python,\space JAVA, C++, C, Shell Scripting , HTML / CSS, \LaTeX.  
+    \vspace{0.0625cm}\\
+    \textsc{Tools:}   & TensorFlow, Keras, Pytorch, OpenCV,  Pandas / Numpy / Scipy, \href{https://drive.google.com/open?id=1ojBHtMhwjCHly8aPzV19NOi9QXrqYnj_}{Arduino and IOT}. 
+    \vspace{0.0625cm}\\
+    \textsc{Specialization:}     & Deep Learning, Computer Vision, Natural Language Processing.
+    
+\end{tabular}
+
+%Section: Work Experience at the top
+\section{Work Experience}
+\begin{tabular}{r|p{11cm}}
+ \textsc{Dec 2017 - Jan 2018} &  Design Intern at \textsc{Ndimensions}, Guwahati \footnotesize{\href{https://drive.google.com/open?id=1Msnd6OmNwTnTXd-VSazmc9ETyv-g6dd4}{CERTIFICATE}}\\
+ &\footnotesize{ Work included making web graphics, logos, posters. }\\
+
+\end{tabular}
+
+%Section: Projetcs and research
+\section{Projects and Research}
+\begin{tabular}{rl}	
+ \textsc{sept.} 2018 & \textbf{Segmentation of Salt beneat the earth's surface}\\
+ &\footnotesize{\textsc{-}Used U-net for semantic segmantation of salt, to find the crude petroleum for drilling. }\\
+ &\footnotesize{\textsc{-}Implemented in PyTorch}
+ \vspace{0.0625cm}\\
+ \textsc{sept.} 2018 & \textbf{Mixed neural style transfer }\footnotesize{\href{https://github.com/Iamnotabear/Neural-Style-Transfer/blob/master/neural_style_mix_transfer.ipynb}{LINK}}\\
+ &\footnotesize{\textsc{-}Used pre-trained VGG-19 to mix two different painting styles and transfer them into another photograph.}\\
+ &\footnotesize{\textsc{-}Implemented in TensorFlow with Keras functional APIs.}
+ \vspace{0.0625cm}\\
+\textsc{sept.} 2018 & \textbf{Google Deep-Dream}\footnotesize{\href{https://github.com/Iamnotabear/Deep_dream/blob/master/deep_dream_keras.ipynb}{ LINK}}\\
+ &\footnotesize{\textsc{-}Used Google's Inception CNN model for synthesizing and visualising Deep-Dreams. }\\
+ &\footnotesize{\textsc{-}Implemented in Keras with TensorFlow as backend.}
+ \vspace{0.0625cm}\\
+ \textsc{sept.} 2018 & \textbf{Researched the effect of small and large batches training over generalization} \\
+& \textbf{and training time.}
+ \vspace{0.0625cm}\\
+\textsc{July} 2018 & \textbf{Name Synthesizer using Deep Learning }\footnotesize{\href{https://github.com/Iamnotabear/old_repos/blob/master/female-name-generator-CNN_and_LSTM--master/rnn_model.ipynb}{LINK}}\\
+ &\footnotesize{\textsc{-}Used Recurrent Neural Networks and character level language modelling to generate names. }\\
+ &\footnotesize{\textsc{-}Implemented in Python.}
+ \vspace{0.0625cm}\\
+\textsc{July} 2018 & \textbf{Boxing match winner predictor }\footnotesize{\href{https://github.com/Iamnotabear/old_repos/blob/master/deep_neural_net-for-Boxing_match-master/deep_model.ipynb}{LINK}}\\
+ &\footnotesize{\textsc{-}Used Neural Networks to predict the winner of boxing match based on previous fights and physique. }\\
+ &\footnotesize{\textsc{-}Implemented in Python.}\\
+
+\end{tabular} 
+
+
+%Section: Courses
+\section{Courses}
+\begin{tabular}{rl}
+\textit{Present}  & \textbf{MA203: Random Processes and Statistics} at IIITG.
+\vspace{0.0625cm}\\
+\textsc{Sept.} 2018 & Convolutional Neural Networks for Visual Recognition, \textbf{Stanford University}.
+\vspace{0.0625cm}\\
+\textsc{Sept.} 2018 & \textbf{Improving Deep Neural Networks: Hyperparameter tuning, Regularization }\\
+& \textbf{and Optimization} by deeplearning.ai on Coursera. \footnotesize{\href{https://www.coursera.org/account/accomplishments/certificate/7EUJX4WNZYFU}{ CERTIFICATE}}
+\vspace{0.0625cm}\\
+\textsc{May} 2018 & \textbf{Neural Networks and Deep Learning} by deeplearning.ai on Coursera.\footnotesize{\href{https://www.coursera.org/account/accomplishments/certificate/NQD4P6ERR659}{CERTIFICATE}}
+\vspace{0.0625cm}\\
+\textsc{Oct.} 2017 & \textbf{MA101: Linear Algebra} at IIITG
+\vspace{0.0625cm}\\
+\textsc{april.} 2018 & \textbf{MA102: Multi-variable Calculus and Real Analysis} at
+IIITG\\
+
+\end{tabular}
+
+%Section: POR
+\section{Position of Responsibility}
+\begin{tabular}{r|p{11cm}}
+ \textsc{Sept.} 2018 & \textbf{Design Head} of E-cell at \textbf{IIITG}\\
+ &\footnotesize{ Work included organizing events for E-cell, social media marketing, making posters, web graphics, and brain storming.}\\
+\end{tabular}
+
+%Section : Interests
+\section{Interests and Activities}
+Technology, Neuroscience, Mythology, Medieval History and Art.\\
+I create my own art on my \href{https://sites.google.com/view/rishabhbaghel/art}{website}.
+
+\end{document}
