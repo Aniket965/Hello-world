@@ -22,9 +22,8 @@ class App extends Component {
         style={{ backgroundColor: `${isDark ? "black" : "orange"}` }}
       >
         <header className="App-header">
-          <p style={{ color: `${isDark ? "white" : "black"}` }}>
-            Hello World! Happy Halloween!
-          </p>
+          <p style={{ color: `${isDark ? "white" : "black"}` }} className="rainbow">
+            Hello world !<br /> Happy Halloween!</p>
           <img
             className="logo"
             src={isDark ? orangePumpkin : brownPumpkin}
