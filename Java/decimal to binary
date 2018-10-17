@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+      
+      Scanner str = new Scanner(System.in);
+      int decimal = str.nextInt();
+      long binary = 0;
+      long k =1;
+      while ( decimal > 0) {
+        binary = binary + (decimal%2)*k ;
+      
+        k=k*10;
+        decimal = decimal/2;
+        
+      }
+      System.out.println(binary);
+
+	}
+}
