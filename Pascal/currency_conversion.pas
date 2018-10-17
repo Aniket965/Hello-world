@@ -22,7 +22,7 @@ begin
 	if converted > 0 then
 		begin
 
-		write(chf:0:2,' CHF is equal to ',converted:0:2,' ',currency);
+		write(round(chf),' CHF is equal to ',converted:0:2,' ',currency);
 		end
 	else
 		if chf <> 0 then
