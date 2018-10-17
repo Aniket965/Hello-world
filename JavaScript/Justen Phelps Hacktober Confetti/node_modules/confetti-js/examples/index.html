@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../site/site.css" />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      section {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        white-space: nowrap;
+      }
+      section > * {
+        z-index: 9;
+        position: relative;
+        top: 0;
+      }
+      section > canvas {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+      }
+
+      .spacing {
+        width: 100%;
+        min-height: 20%;
+        background: -moz-linear-gradient(-45deg, #1f6bd3 0%, #2c44c9 100%);
+        background: -webkit-linear-gradient(-45deg, #1f6bd3 0%, #2c44c9 100%);
+        background: linear-gradient(135deg, #1f6bd3 0%, #2c44c9 100%);
+        background: linear-gradient(to right bottom,#2c44c9,#2c44c9,#5955bd,#8280ce);
+        background: -webkit-linear-gradient(to right bottom,#2c44c9,#2c44c9,#5955bd,#8280ce);
+      }
+
+      a {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        z-index: 99;
+        border: none;
+      }
+      a img {
+        max-width: 50px;
+        border-radius: 50px;
+        border: 1px solid #efefef;
+        -webkit-box-shadow: 0 0 5px 0 rgba(55,55,55,.3);
+        box-shadow: 0 0 5px 0 rgba(55,55,55,.3);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://github.com/Agezao/confetti-js" target="_blank">
+      <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="gitlogo" />
+    </a>
+
+    <section class="example-2">
+      <div class="content l" style="padding:25% 0 0 5%;">
+        <h1 style="font-size: 3.2em;letter-spacing: -.02em;">Make it subtle</h1>
+        <p style="font-size: 1.3em;">So it can complement your white background</p>
+      </div>
+      <div class="content r" style="padding:28% 0 0 5%;">
+        <input type="text" style="font-size: 1.2em;height: 45px;vertical-align: top;" placeholder="e-mail" />
+        <input type="button" style="height: 45px;vertical-align: top;font-size: 1em;" value="subscribe" />
+      </div>
+      <canvas id="canvas3"></canvas>
+    </section>
+
+    <div class="spacing"></div>
+
+    <section class="example-1">
+      <div class="content" style="padding:25% 10%;">
+        <h1 style="font-size: 4em;text-transform: uppercase;letter-spacing: -.05em;">Try New experiences.</h1>
+        <p style="font-size: 1.6em;text-transform: uppercase;">You know, be creative and stuff.</p>
+      </div>
+      <canvas id="canvas1"></canvas>
+    </section>
+
+    <div class="spacing"></div>
+
+    <section class="example-2">
+      <div class="content" style="padding:25% 0;text-align: center;">
+        <h1 style="font-size: 4em;text-transform: uppercase;letter-spacing: -.05em;">Foster Creativity</h1>
+        <p style="font-size: 1.5em;text-transform: uppercase;">Put words that have no meaning but look cool</p>
+      </div>
+      <canvas id="canvas2"></canvas>
+    </section>
+
+    <!-- Importing generator -->
+    <script type="text/javascript" src="../dist/index.min.js"></script>
+    <!-- Starting site logic -->
+    <script type="text/javascript">
+
+      //First example
+      var canvas1Settings = {
+        target: 'canvas1',
+        max: 100,
+        props: ['square', 'triangle', 'line'],
+        colors: [[80,80,80]],
+        clock: 3
+      };
+      var canvas1 = new ConfettiGenerator(canvas1Settings);
+      canvas1.render();
+
+      //Second example
+      var canvas2Settings = {
+        "target":"canvas2",
+        "max":"180",
+        "animate":false,
+        "props":["circle","square","triangle","line"],
+        "colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],
+        "clock":"25"
+      };
+      var canvas2 = new ConfettiGenerator(canvas2Settings);
+      canvas2.render();
+
+      //Third example
+      var canvas3Settings = {
+        target: 'canvas3',
+        max: 30,
+        animate: false,
+        props: ['circle'],
+        colors: [[165,104,246],[230,61,135],[0,199,228],[253,214,126]],
+        clock: 25
+      };
+      var canvas3 = new ConfettiGenerator(canvas3Settings);
+      canvas3.render();
+      
+    </script>
+  </body>
+</html>
