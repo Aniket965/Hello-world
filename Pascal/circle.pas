@@ -12,7 +12,7 @@ begin
 	writeln;
 	r:=c/2/Pi;
 	d:=2*r;
-	a:=Pi*r^2;
+	a:=round(Pi*r^2);
 	writeln('For a circle with circumference ',c:0:2,':');
 	writeln('Radius: ',r:0:2);
 	writeln('Diameter: ',d:0:2);
