@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.lang.*;
+
+public class HelloWorldVietnamese  {
+
+    Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("What language do you want me to say Hello World in?");
+        String input = sc.nextLine();
+        
+            if (input.equalsIgnoreCase("Vietnamese")) {
+                System.out.println("Xin chào thế giới");
+            }
+            else if (!input.equalsIgnoreCase("Vietnamese")) {
+                System.out.println("Sorry, I only know how to say Hello World in Vietnamese");
+
+
+            }
+        }
+    }
+
