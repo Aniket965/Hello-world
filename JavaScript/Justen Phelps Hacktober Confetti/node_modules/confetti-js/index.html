@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="site/site.css" />
+  </head>
+  <body>
+
+    <canvas id="confetti-holder"></canvas>
+    
+    <div id="settings">
+      <h2>Settings</h2>
+      <div class="l">
+          <form>
+            <div>
+              <label>Target canvas Id</label>
+              <input type="text" id="canvas-id" />
+            </div>
+            <div>
+              <label>Max confetti</label>
+              <input type="number" id="max-confetti" />
+            </div>
+            <div>
+              <label>Type of confetti</label>
+              <ul>
+                <li><input type="checkbox" id="square" value="square" /> <label for="square">Square</label></li>
+                <li><input type="checkbox" id="triangle" value="triangle" /> <label for="triangle">Triangle</label></li>
+                <li><input type="checkbox" id="line" value="line" /> <label for="line">Lines</label></li>
+                <li><input type="checkbox" id="circle" value="circle" /> <label for="circle">Circle</label></li>
+                <li><input type="checkbox" id="rotate" value="rotate" /> <label for="rotate">Rotate</label></li>
+                <li><input type="checkbox" id="svg" value="svg" /> <label for="svg">SVG (site/hat.svg)</label></li>
+                  <ul>
+                    <li><label for="svg-size">SVG size:</label> <input type="text" id="svg-size" value="25" /></li>
+                    <li><label for="svg-weight">SVG rarity:</label> <input type="text" id="svg-weight" value="0.2" /></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <label>Colors (RGB, [r,g,b],[r,g,b] ...)</label>
+              <input type="text" id="colors" value="" />
+            </div>
+            <div>
+                <label>Clock</label>
+                <input type="text" id="clock" value="" />
+            </div>
+            <div>
+                <label>Prop size</label>
+                <input type="number" id="size" value="" />
+            </div>
+            <div>
+              <label>Canvas Width (defaults is window width)</label>
+              <input type="number" id="width" value="" />
+            </div>
+            <div>
+              <label>Canvas Height (defaults is window height)</label>
+              <input type="number" id="height" value="" />
+            </div>
+            <div>
+              <div><input type="checkbox" id="animate" value="animate" /><label for="animate">Animate</label></div>
+            </div>
+            <div>
+              <br />
+              <input type="button" onclick="app.render()" id="btnRender" value="Render" />
+
+              <input type="button" onclick="app.clear()" id="btnClear" value="Clear" />
+            </div>
+          </form>
+          <div>
+            <hr />
+            <a href="examples" target="_blank" class="hollow" />Examples</a>
+            <a href="https://github.com/Agezao/confetti-js" target="_blank" class="hollow" />Github</a>
+          </div>
+      </div>
+      <div class="r">
+        <h4>Json config output</h4>
+        <div>
+          <pre id="json-output">
+            {}
+          </pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Importing generator -->
+    <script type="text/javascript" src="dist/index.min.js"></script>
+    <!-- Starting site logic -->
+    <script type="text/javascript" src="site/site.js"></script>
+  </body>
+</html>
