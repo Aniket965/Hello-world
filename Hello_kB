@@ -1,0 +1,18 @@
+import time
+
+def hello():
+    person = input('Are you the real_kB? (Yes/No): ')
+    if person != 'Yes':
+        time.sleep(2)
+        print("Then Perish.")
+        time.sleep(2)
+        SystemExit
+    else:
+        print('\n')
+        time.sleep(2)
+        print("Verifying...")
+        time.sleep(2)
+        print('\n')
+        print("Hello World!")
+        input("Press ENTER to exit.")
+hello()
