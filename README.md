@@ -1,4 +1,4 @@
-# Welcome to Hacktoberfest 2018 Hello-world :clipboard:
+# Welcome to  the Hacktoberfest 2018 Hello-world :clipboard:
 > This Project aims to help you to get started with using Github. You can find a tutorial [here](https://guides.github.com/activities/hello-world/)
 
 
@@ -6,7 +6,7 @@
 
 
 # What is Hacktoberfest?
-Hacktoberfest is a program by Digital Ocean and Github, where you can easily win a T-Shirt just by making 5 pull requests in the month of October to any open source projects on Github.
+Hacktoberfest is a program organised by Digital Ocean and Github, where you can easily win a T-Shirt just by making 5 pull requests in the month of October to any open source projects on Github.
 
 ## Steps to follow :scroll:
 
@@ -35,7 +35,7 @@ by checking our `Help Wanted` issues and creating [pull requests](https://github
 ### 5. Give this Project a Star :star:
 
 If you liked working on this project, please share this project as much 
-as you can and star this project to help as many people in opensource as you can.
+as you can and star this project to help as many people in open source as you can.
 
 
 :tada: :confetti_ball: :smiley: _**Happy Contributing**_ :smiley: :confetti_ball: :tada:
