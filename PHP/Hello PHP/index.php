@@ -5,6 +5,10 @@
   <style>
    h3{
     text-align:center;
+    color: blue;
+   }
+   html {
+    background: linear-gradient(to top, #ffffff 0%, #00ffff 100%);
    }
   </style>
  </head>
