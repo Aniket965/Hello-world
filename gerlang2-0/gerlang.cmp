@@ -1,0 +1,10 @@
+//compiler : https://github.com/Wittmaxi/GerCompiler
+neuevariable (Hallo = "HELLO") //Adds a new Variable //The compiler recognizes the type of Variable
+//strings need to be encapsulated in Quotes
+
+
+haupt //The main-function
+anfang
+    schreiben (Hallo + nzeile)
+    schreiben (Hallo + nZeile)
+ende
