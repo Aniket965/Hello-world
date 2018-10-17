@@ -2,6 +2,6 @@
 
 User Function HelloWorld()
 
-Alert("Hello World")
+	Alert("Hello World")
 
-Return .t.
+	Return .t.
