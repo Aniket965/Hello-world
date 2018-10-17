@@ -1,3 +1,3 @@
 <%
-  Response.write "Hello World in ASP!"
+  Response.write "Hello World in ASP for Hacktoberfest!"
 %>
