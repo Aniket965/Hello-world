@@ -1,13 +1,11 @@
+def bubbleSort(alist):
+    for passnum in range(len(alist)-1,0,-1):
+        for i in range(passnum):
+            if alist[i]>alist[i+1]:
+                temp = alist[i]
+                alist[i] = alist[i+1]
+                alist[i+1] = temp
 
-A = [2,7,4,1,5,3]
-n = len(A)
-for j in range(1,n):
-    swapped = False
-    for i in range(1,n):
-        if(A[i] < A[i-1]):
-            A[i-1],A[i] = A[i],A[i-1]
-            swapped = True
-    if(not swapped): 
-        break
-print(A)
-        
+alist = [54,26,93,17,77,31,44,55,20]
+bubbleSort(alist)
+print(alist)
