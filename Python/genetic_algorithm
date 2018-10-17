@@ -1,0 +1,158 @@
+import math
+import random
+
+POPULATION = 200
+NVARS = 5
+MAXGENS = 10000
+PCROSS = 0.7
+PMUTATION = 0.3
+PMUTATESP = 0.3
+counter = 0
+generation = 0
+
+population = []
+newpopulation = []
+temppopulation = []
+
+'''luu gen va fitness'''
+
+
+class genotype:
+    def __init__(self):
+        self.gene = []
+        self.fitness = 100000
+
+
+def main():
+
+    initialization()
+    for i in range(MAXGENS):
+        global generation
+        generation += 1
+        evolution()
+        selector()
+        if i % 10 == 0:
+            print("generation",i,"fitness",population[0].fitness)
+    for gen in range(NVARS):
+        print("var[", gen, "]=", population[0].gene[gen])
+    print("the min after ", MAXGENS, "times =", population[0].fitness)
+
+
+'''khoi tao quan the'''
+
+
+def initialization():
+
+    for i in range(POPULATION):
+        population.append(genotype())
+        newpopulation.append(genotype())
+        temppopulation.append(genotype())
+        temppopulation.append(genotype())
+
+    for indi in range(POPULATION):
+        for gen in range(NVARS):
+            population[indi].gene.append(random.uniform(-50.0, 50.0))
+            newpopulation[indi].gene.append(random.uniform(-50.0, 50.0))
+
+    for i in range(POPULATION):
+        population[i].fitness = evaluate(population[i])
+
+
+'''evaluate fitness'''
+
+
+def evaluate(indi):
+
+    evaluate = 0
+    for gen in range(NVARS):
+        evaluate = evaluate + indi.gene[gen]*indi.gene[gen]
+    return evaluate
+
+
+def evolution():
+
+    global counter
+    counter = 0
+
+    ''' crossover'''
+    for indi in range(POPULATION-1):
+
+        randCross = random.random()
+
+        if randCross < PCROSS:
+
+            one = indi
+            two = random.randrange(one + 1, POPULATION)
+            crossover(one, two)
+            counter += 1
+
+    ''' mutate'''
+    for indi in range(POPULATION):
+
+        randMutation = random.random()
+        if randMutation < PMUTATION:
+            mutation(indi)
+
+    ''' mutate special '''
+    if generation > MAXGENS//2:
+
+        for indi in range(POPULATION):
+
+            randSP = random.random()
+            if randSP < PMUTATESP:
+
+                mutateSp2(indi)
+
+
+'''3 function con cua evolution'''
+
+
+def crossover(one, two):
+
+    pointCross = random.randrange(1, NVARS-1)
+
+    for indione in range(pointCross):
+        newpopulation[counter].gene[indione] = population[one].gene[indione]
+
+    for inditwo in range(pointCross, NVARS):
+        newpopulation[counter].gene[inditwo] = population[two].gene[inditwo]
+
+    newpopulation[counter].fitness = evaluate(newpopulation[counter])
+
+
+def mutation(indi):
+
+    pointMutate = random.randrange(NVARS)
+
+    newpopulation[indi].gene[pointMutate] = random.uniform(-50.0, 50.0)
+    newpopulation[indi].fitness = evaluate(newpopulation[indi])
+
+
+''' change here ''' 
+def mutateSp2(indi):
+
+    for pointmutatrsp in range(NVARS):
+
+        lbound = newpopulation[indi].gene[pointmutatrsp] - 0.01
+        ubound = newpopulation[indi].gene[pointmutatrsp] + 0.01
+
+        newpopulation[indi].gene[pointmutatrsp] = random.uniform(
+            ubound, lbound)
+    newpopulation[indi].fitness = evaluate(newpopulation[indi])
+
+
+def selector():
+
+    for indi in range(POPULATION):
+        temppopulation[indi] = population[indi]
+        temppopulation[indi+POPULATION] = newpopulation[indi]
+
+    temppopulation.sort(key=lambda geno: geno.fitness)
+
+    for indi in range(POPULATION):
+        population[indi] = temppopulation[indi]
+        newpopulation[indi] = temppopulation[indi+POPULATION]
+
+
+if __name__ == '__main__':
+    main()
