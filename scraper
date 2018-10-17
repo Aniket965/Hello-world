@@ -1,0 +1,27 @@
+import requests
+from bs4 import BeautifulSoup as bs
+from googlesearch import search
+
+def getIMDBLink():
+	query_string = input("The series name:")
+	query_string = "imdb" + query_string
+	search_object = search(query_string, num= 5, stop= 1, pause=2)
+	link = list(search_object)
+	link = link[0]
+	act_link = link[0:38]
+	return act_link
+
+
+def create_scrape(string1):
+
+	
+    response = requests.get(string1)
+    soup = bs(response.text, 'lxml')
+    iterator1 = soup.find_all('div', {"class": "article"})
+    for i in iterator1:
+    	print(i)
+    	
+
+
+string1 = getIMDBLink()
+create_scrape(string1)
