@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello worlds</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+
+</head>
+<body>
+	<script>
+		var player;
+		var viewport;
+		var items = [];
+		var helloPosition;
+
+		function setup() {
+		    createCanvas(windowWidth, windowHeight).position(0, 0);
+		    textFont('Consolas');
+		    textSize(40);
+		    textAlign(CENTER);
+
+		    player = new Character(0, 0, 40);
+		    viewport = new Viewport(0, 0, player);
+		    helloPosition = {x: 0, y: 0};
+
+		    for (var i = 0; i < 100; i++) {
+		        items.push({
+		            x: random(-width, width),
+		            y: random(-height, height)
+		        })
+		    }
+		}
+
+		function draw() {
+		    background(10);
+
+		    viewport.update();
+		    translate(-viewport.pos.x + width / 2, -viewport.pos.y + height / 2);
+
+		    player.move();
+		    player.update();
+		    player.show();
+
+		    fill(255);
+		    noStroke();
+		    text('Hello World.\n\n Arrow key to move.', helloPosition.x, helloPosition.y);
+
+		    fill(0, 50, 100);
+		    for(var i of items) {
+		    	ellipse(i.x, i.y, 10 + random(2));
+		    }
+		}
+		// ====================================================
+		function Character(x, y, r) {
+		    this.pos = createVector(x, y);
+		    this.vel = createVector(0, 0); // velocity
+		    this.maxSpeed = 7;
+		    this.radius = r;
+		}
+		Character.prototype.update = function() {
+		    this.pos.add(this.vel);
+		    this.vel.mult(0.92);
+
+		    this.vel.limit(this.maxSpeed);
+		};
+		Character.prototype.move = function() {
+		    if (keyIsDown(LEFT_ARROW)) this.vel.x -= 1;
+		    if (keyIsDown(RIGHT_ARROW)) this.vel.x += 1;
+		    if (keyIsDown(UP_ARROW)) this.vel.y -= 1;
+		    if (keyIsDown(DOWN_ARROW)) this.vel.y += 1;
+
+		    if(mouseIsPressed) {
+		    	var mouse = convert(mouseX, mouseY);
+		    	this.vel = p5.Vector.lerp(this.vel, p5.Vector.sub(mouse, this.pos), 0.1).limit(this.maxSpeed);
+		    }
+		};
+		Character.prototype.show = function() {
+		    fill(200);
+		    stroke(0, 40, 150);
+		    ellipse(this.pos.x, this.pos.y, this.radius);
+		};
+
+		// ====================================================
+		function Viewport(x, y, target) {
+		    this.pos = createVector(x, y);
+		    this.target = target;
+		}
+		Viewport.prototype.update = function() {
+		    this.pos = p5.Vector.lerp(this.pos, this.target.pos, 0.1);
+		};
+		
+		// =====================================================
+		function convert(posx, posy) {
+			return createVector(posx + viewport.pos.x - width / 2, 
+								posy + viewport.pos.y - height / 2);
+		}
+	</script>
+</body>
+</html>
