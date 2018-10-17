@@ -1,0 +1,24 @@
+#----------------------------------------------------------------------------
+# MISC
+#----------------------------------------------------------------------------
+.*cache
+*.log
+cache/*
+
+# OS X Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.lnk
+*~
+
+# BOWER & BUILD TOOLS
+/build/*
+/bower_components/*
+
+# NODE
+.node_modules
+node_modules
+*/node_modules
+/node_modules/*
