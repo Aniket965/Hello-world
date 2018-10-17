@@ -574,19 +574,20 @@ def player_setup_board():
     # Starts the game.
     start_game()
 
-# Actual start of the game.
-print("Battleships")
-print("You have to find the enemies battleships and sink them before")
-print("they sink yours!")
-print("")
-print("The key: ")
-print("    nothing: water")
-print("    M = missed in water")
-print("    S = ship")
-print("    X = hit ship")
-print("")
-sleep(2)
-print(LINE)
-        
-# Sets up the player board.
-player_setup_board()
+if __name__ == '__main__':
+    # Actual start of the game.
+    print("Battleships")
+    print("You have to find the enemies battleships and sink them before")
+    print("they sink yours!")
+    print("")
+    print("The key: ")
+    print("    nothing: water")
+    print("    M = missed in water")
+    print("    S = ship")
+    print("    X = hit ship")
+    print("")
+    sleep(2)
+    print(LINE)
+
+    # Sets up the player board.
+    player_setup_board()
