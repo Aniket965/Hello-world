@@ -14,24 +14,42 @@
                 .special{
                     font-size: 50px;
                 }
-                .specail2{
-                    font-size: 110px;
+        
+                .topHeading{
+                    font-size: 20px;
+                }
+                ol.heading{
+                    list-style-type: decimal-leading-zero;
+                }
+                
+                ol.sub-heading{
+                    list-style-type: lower-greek;
+                }
+                
+                img{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
                 }
             </style>
         </head>
         <body>
-            <img src="Mainjpg.jpeg" width="150px" height="150px"/>
+            <div>
+                <img src="Mainjpg.jpeg">
+            </div>
+            
             <table border="1">
                 <thead>
                     <tr>
-                        <th style= "background-color:blue;font-size:20px"> Column 1</th>
-                        <th>Column 2</th>
-                        <th>Column 3</th>
+                        <th class ="topHeading" style= "background-color:blue;font-size:20px"> Column 1</th>
+                        <th class ="topHeading">Column 2</th>
+                        <th class ="topHeading">Column 3</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class ="special specail2"> row data1</td>
+                        <td class ="special"> row data1</td>
                         <td class ="special"> row data2</td>
                         <td class ="special"> row data3</td>
                     </tr>
@@ -44,50 +62,54 @@
                     </tr> 
                 </tfooter>
             </table>
-
+            <br>
+            <br>
             <table border="2">
                 <thead>
                     <tr>    
                             
                             
-                        <th>cus name</th>
-                        <th>Cus ID</th>
-                        <th>Cus Address</th>
+                        <th>Customer name</th>
+                        <th>Customer ID</th>
+                        <th>Customer Address</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>A</td>
-                        <td>ABC</td>
-                        <td>DEF</td>
+                        <td>A<sub>1</sub></td>
+                        <td>ABC<sub>1</sub></td>
+                        <td>DEF<sub>1</sub></td>
                     </tr>
                     <tr>
-                        <td>A</td>
-                        <td>ABC</td>
-                        <td>DEF</td>
+                        <td>A<sub>2</sub></td>
+                        <td>ABC<sub>2</sub></td>
+                        <td>DEF<sub>2</sub></td>
                     </tr>
                     <tr>
                             
-                        <td>A</td>
-                        <td>ABC</td>
-                        <td>DEF</td>
+                        <td>A<sub>3</sub></td>
+                        <td>ABC<sub>3</sub></td>
+                        <td>DEF<sub>3</sub></td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>ABC</td>
-                        <td>DEF</td>
+                        <td>A<sub>4</sub></td>
+                        <td>ABC<sub>4</sub></td>
+                        <td>DEF<sub>4</sub></td>
                      </tr>
                         
                 </tbody>
             </table>
-            <video width="200px" height="200px" controls>
+            
+            
+            <!--<video width="200px" height="200px" controls>
                     <source src="D:\TV Series\Tin tin\Tin Tin - Broken Ear (Full) -Sinhala Dubed.mp4" type="video/mp4">
-            </video>
-                
-            <ol>
+            </video> -->
+                <br>
+            <br>
+            <ol class = "heading">
                     
                 <li>item 1</li>
-                    <ol>
+                    <ol class = "sub-heading">
                         <li>Ordered list item 1</li>
                         <li>Ordered list item 2</li>
                     </ol>                   
