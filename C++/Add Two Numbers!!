@@ -3,15 +3,12 @@ using namespace std;
 
 int main()
 {
-//declare variable a,b,c as of type Integer
-	int a , b , c;
+//declare variable a,b as of type Integer
+	int a , b;
 // input value of variable a and b
 	cin >> a;
 	cin >> b;
-//sum values of a and b and assign in c
-	c = a + b;
-//show the value of c on the console.
-	cout << c;
-
-
+//show the value of a+b on the console.
+	cout << (a+b);
+	return 0;
 }
