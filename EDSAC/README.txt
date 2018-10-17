@@ -1,9 +1,9 @@
-***********************************************************************************
-* HELLO WORLD written in EDSAC - Initial Orders 2.
+***************************************************************************************
+* HELLO WORLD! written in EDSAC - Initial Orders 2.
 *
 * Code is gathered from Computherphile, courtesy of University of Nottingham.
 * https://www.youtube.com/watch?v=rf6oFSEdbKI
-***********************************************************************************
+***************************************************************************************
 
 Required: An EDSAC simulator. ( https://www.youtube.com/watch?v=lXJ-tYqPARg )
 
