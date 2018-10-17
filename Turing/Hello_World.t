@@ -1,0 +1,1 @@
+put "Merhaba, Dünya!"
