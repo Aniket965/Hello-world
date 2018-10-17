@@ -1,0 +1,12 @@
+''' program for checking prime number in range(100)'''
+
+
+import math
+
+for number in range(100):
+  count = 0
+  for num in range(1,int(math.sqrt(number))):
+    if (number % num == 0):
+      count+=1
+  if count == 1:
+    print(number)
