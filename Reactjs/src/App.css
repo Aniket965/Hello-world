@@ -45,3 +45,14 @@ button.button {
   background-color: none;
   margin: 5px;
 }
+
+.rainbow {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ffd89b 0%, #19547b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+font: {
+  size: 30vw;
+  family: $font;
+};
+}
