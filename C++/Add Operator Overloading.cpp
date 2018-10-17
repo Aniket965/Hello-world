@@ -53,7 +53,7 @@ time time::operator+(time t2){
 }
 time time::operator-(time t2){
 	if(t2.hrs<hrs){
-		cout<<"\nCant Subtract try chaning t1 and t2!!!!\n";
+		cout<<"\nCant Subtract try changing t1 and t2!!!!\n";
 		exit(1);
 	}
 	
