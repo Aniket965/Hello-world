@@ -1,0 +1,40 @@
+/*
+ * Adding Styles to the page
+*/
+
+body {
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940');
+    /* Above image is taken from pexels page and credit goes to Mr.Miguel Á. Padriñán */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+
+
+h1 {
+    font-family: 'Kavivanar', cursive;
+    font-size: 60px;
+    color: darkmagenta;
+    padding: 30px 0 0 0;
+}
+
+h2 {
+    font-family: 'Kavivanar', cursive;
+    font-size: 30px;
+    color: darkmagenta;
+    padding: 30px 0 0 0;
+}
+
+h3 {
+    font-family: cursive, Comic Sans MS;
+    padding-bottom: 30px;
+    color: green;
+}
+
+p {
+    font-family: cursive, Comic Sans MS;
+    font-style: italic;
+    color: maroon;
+    font-size: 18px;
+}
