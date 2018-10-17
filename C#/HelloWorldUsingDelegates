@@ -1,0 +1,11 @@
+using System;
+class HelloWorld
+{
+  static void writeHelloWorld() {
+    Console.WriteLine("HelloWorld");
+  }
+  static void Main() {
+    SimpleDelegate d = new SimpleDelegate(writeHelloWorld);
+    d();
+  }
+}
