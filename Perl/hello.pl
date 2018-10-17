@@ -17,7 +17,7 @@ sub my_date {
     my ( $sec, $min, $hrs, $day, $mon, $year ) = (localtime)[ 0 .. $YEARINDEX ];
     $year += $ERA;
     $mon  += 1;
-    return sprintf '%04d.%02d.%02d-%02d.%02d.%02d',
+    return sprintf '%04d-%02d-%02dT%02d:%02d:%02d',
       $year, $mon, $day, $hrs, $min, $sec;
 }
 my $opt = $ARGV[0] || 'x';
