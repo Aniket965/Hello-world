@@ -1,3 +1,3 @@
  'BEGIN'
-     OUTSTRING(2,'('HALLO WELT')');
+     OUTSTRING(2,'('HELLO WORLD')');
  'END'
