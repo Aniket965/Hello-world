@@ -3,4 +3,5 @@
 program HelloWorld;
 begin 
       writeln('Hello World');
+      readlnl;
 end.      

@@ -1,0 +1,3 @@
+(#
+do ’Hello world!’->PutLine
+#)
