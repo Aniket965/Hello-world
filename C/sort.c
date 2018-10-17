@@ -36,6 +36,20 @@ void selectionSort(int arr[], int n)
         for (j=i+1; j<n; j++)
             if (arr[i] > arr[j]) swap(&arr[i], &arr[j]);
 }
+
+void insertionSort(int arr[], int n)
+{
+    int i, j, temp;
+    for (i=1; i<n; i++) {
+        temp = arr[i];
+        j = i - 1;
+        while (j >= 0 && arr[j] > temp) {
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = temp;
+    }
+}
   
 void printArray(int arr[], int size) 
 { 
@@ -58,6 +72,12 @@ int main()
     selectionSort(arr2, n2);
     printf("Selection sort: "); 
     printArray(arr2, n2);
+
+    int arr3[] = {10, 7, 8, 9, 1, 5};
+    int n3 = sizeof(arr3)/sizeof(arr3[0]); 
+    insertionSort(arr3, n3);
+    printf("Insertion sort: "); 
+    printArray(arr3, n3);
 
     return 0; 
 } 
