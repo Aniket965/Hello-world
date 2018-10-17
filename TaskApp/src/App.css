@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.app {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+}
+
+.button {
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  outline: 0;
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+
+.buttonSuccess {
+  composes: button;
+  background-color: #27ae60;
+}
+
+.buttonPrimary {
+  composes: button;
+  background-color: #2980b9;
+}
+
+.inputAdd{
+  border: 1px solid #a9a9ef;
+    margin: 15px auto;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #a9a9ef;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
