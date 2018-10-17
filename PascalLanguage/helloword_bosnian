@@ -6,7 +6,7 @@ var
 greeting: string;
 
 begin
-  writeln(message);
+  write(message);
   greeting:= 'Cao Svijete';
   writeln(greeting);
 end.
