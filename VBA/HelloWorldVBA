@@ -1,0 +1,6 @@
+//This function will print hello world to the immediate window
+//Code must be ran in a VBA supported application (Excel, Access, Word, Outlook, PowerPoint)
+
+Public Function HelloWorld()
+  Debug.Print "Hello World!"
+End Function
