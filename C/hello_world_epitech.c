@@ -33,4 +33,5 @@ int main(int ac, char **av)
 
     my_putstr("Hello World\n");
     my_putstr_wptr("Hello World\n");
+    return (0);
 }
