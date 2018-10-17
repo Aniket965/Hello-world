@@ -1,8 +1,7 @@
 package com.company;
 
 public class Calculator {
-    private double number1, number2;
-    private double result;
+    private double number1, number2,result;
 
     public Calculator(double number1, double number2) {
         this.number1 = number1;
@@ -37,7 +36,7 @@ public class Calculator {
             System.out.println("Fehler, durch 0 teilen nicht möglich!");
             return 0;
         } else {
-            return (double) number1 / (double) number2;
+            return (double) (number1/number2);
         }
     }
 
