@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    position: relative;
+}
+
+.header {
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container {
+    width: 55vw;
+    height: 55vh;
+    margin: 8rem 0 8rem 2%;
+    border: 4px solid saddlebrown;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+}
+.container--search {
+    padding: 10px 5px;
+    width: 45%;
+    border: none;
+    border-radius: 2px;
+    background-color: blueviolet;
+}
+.container--search::placeholder {
+    color: white;
+}
+.container--img {
+    width: 26vw;
+    height: 30vh;
+    border: 2px solid salmon;
+    display: block;
+    margin: 4rem auto;
+}
+.container--img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.container--text {
+    width: 45%;
+    padding: 5px;
+    display: block;
+    margin: 4rem auto 1rem auto;
+}
+
+.output {
+    width: 35vw;
+    height: 41vh;
+    /* margin: 1rem; */
+    border: 4px solid saddlebrown;
+    position: absolute;
+    top: 15rem;
+    right: 2rem;
+    
+}
+.output--img {
+    display: block;
+    width: 70%;
+    height: 70%;
+    border: 2px solid red;
+    margin: 2rem auto 1rem auto;
+}
+.output--download {
+    padding: 4px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 2rem;
+    background-color: aquamarine;
+    border-radius: 10px;
+    
+}
