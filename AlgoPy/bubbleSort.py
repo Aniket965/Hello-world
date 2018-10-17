@@ -1,11 +1,17 @@
-def bubbleSort(alist):
-    for passnum in range(len(alist)-1,0,-1):
-        for i in range(passnum):
-            if alist[i]>alist[i+1]:
-                temp = alist[i]
-                alist[i] = alist[i+1]
-                alist[i+1] = temp
 
-alist = [54,26,93,17,77,31,44,55,20]
-bubbleSort(alist)
-print(alist)
+# Python program for implementation of Bubble Sort
+ 
+def bubbleSort(arr):
+    n = len(arr)
+ 
+    # Traverse through all array elements
+    for i in range(n):
+ 
+        # Last i elements are already in place
+        for j in range(0, n-i-1):
+ 
+            # traverse the array from 0 to n-i-1
+            # Swap if the element found is greater
+            # than the next element
+            if arr[j] > arr[j+1] :
+                arr[j], arr[j+1] = arr[j+1], arr[j]
