@@ -1,97 +1,156 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
 
-//Size of chess board
-int N;
 
-//chessboard
-char board[100][100];
+void output(char **arr,int rows,int cols);
+char* check(char **board,int rows,int cols);
 
-//function to check if the cell is attacked or not
-int is_attack(int i,int j)
-{
-    int k,l;
-    //checking if there is a queen in row or column
-    for(k=0;k<N;k++)
-    {
-        if((board[i][k] == '?') || (board[k][j] == '?'))
-            return 1;
+
+int main(){
+    unsigned int rows = 8, cols = 8;
+    unsigned int row_input = 4, col_input = 4;
+
+
+    char **chessboard = malloc(rows * sizeof(char *));
+
+    if(chessboard == NULL){
+        printf("Error Allocating Memory for Chessboard");
+        return 1;   //exit error 1
     }
-    //checking for diagonals
-    for(k=0;k<N;k++)
-    {
-        for(l=0;l<N;l++)
-        {
-            if(((k+l) == (i+j)) || ((k-l) == (i-j)))
-            {
-                if(board[k][l] == '?')
-                    return 1;
-            }
+
+    for(int i = 0; i < rows; i++){
+        chessboard[i] = malloc(cols * sizeof(char));
+        if(chessboard[i] == NULL){
+            printf("Error Allocating Memory for Chessboard[%d]", i);
+            return 2;
         }
     }
-    return 0;
+
+    //print_chessboard();
+
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < cols; j++){
+            chessboard[i][j] = '-';     //*(*chessboard + i) + j)
+        }
+    }
+
+    for(int i = 1; i <= 8; i++){
+        do{
+            if(row_input < 1 || row_input > 8 || col_input < 1 || col_input > 8) printf("Unsupported Input, Try Again\n");
+            printf("Enter position of Queen_%d (1-8)\n", i);
+            scanf(" %u,%u", &row_input, &col_input);
+        } while(row_input < 1 || row_input > 8 || col_input < 1 || col_input > 8);
+        chessboard[row_input-1][col_input-1] = 'Q';
+    }
+
+    output(chessboard,rows, cols);
+
+    printf("\n");
+
+    printf("%s\n", check(chessboard, rows, cols));
+
 }
 
-int N_queen(int q)
-{   
-    //if no. of queens are greater than No. of rows
-    if (q>N)
-        return 0;
 
-
-    int i,j;
-    //if Q is 0, solution found
-    if(q==0)
-        return 1;
-    for(i=0;i<N;i++)
-    {
-        for(j=0;j<N;j++)
-        {
-            //checking if we can place a queen here or not
-            //queen will not be placed if the place is being attacked
-            //or already occupied
-            if((!is_attack(i,j)) && (board[i][j]!='?'))
-            {
-                board[i][j] = '?';
-                //recursion
-                //wether we can put the next queen with this arrangment or not
-                if(N_queen(q-1)==1)
-                {
-                    return 1;
-                }
-                board[i][j] = '*';
-            }
-        }
-    }
-    return 0;
-}
-
-int main()
-{
-    int Q;
-    //taking the value of N
-    printf("Enter the value of N for NxN chessboard\n");
-    scanf("%d",&N);
-    printf("Enter value No. of queens\n");
-    scanf("%d",&Q);
-
-    int i,j;
-    //setting all elements to '*'s
-    for(i=0;i<N;i++)
-    {
-        for(j=0;j<N;j++)
-        {
-            board[i][j]='*';
-        }
-    }
-    //calling the function
-    N_queen(Q);
-
-    //printing the matix
-    for(i=0;i<N;i++)
-    {
-        for(j=0;j<N;j++)
-            printf("%c ",board[i][j]);
+void output(char **arr,int rows,int cols){
+    for(int i = 0; i <  rows; i++) {
         printf("\n");
+        for(int j = 0; j < cols; j++)
+            printf("%c ", arr[i][j]);
     }
-    return 0;
+}
+
+
+char* check(char **board,int rows,int cols){
+    for(int i = 0; i < rows; i++) {                             //rows
+        for(int j = 0; j < cols; j++){
+            if(board[i][j] == 'Q'){
+                int l = j;
+                if(l != 0){
+                    l--;
+                    while(l >= 0){
+                        if(board[i][l] == 'Q') return "Loss";
+                        l--;
+
+                    }
+                }
+                l = j;
+                if(l != cols){
+                    l++;
+                    while(l < cols){
+                        if(board[i][l] == 'Q') return "Loss";
+                        l++;
+                    }
+                }
+            }
+        }
+    }
+
+    for(int i = 0; i < rows; i++) {                             //cols
+        for(int j = 0; j < cols; j++){
+            if(board[j][i] == 'Q'){
+                int k = j;
+                if(k != 0){
+                    k--;
+                    while(k >= 0){
+                        if(board[k][i] == 'Q') return "Loss";
+                        k--;
+
+                    }
+                }
+                k = j;
+                if(k != rows){
+                    k++;
+                    while(k < rows){
+                        if(board[k][i] == 'Q') return "Loss";
+                        k++;
+
+                    }
+                }
+            }
+        }
+    }
+
+
+    for(int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++){
+            if(board[i][j] == 'Q'){
+                int a = i + 1;
+                int b = j + 1;
+
+
+                while(a < rows && b < cols){
+                    if(board[a][b] == 'Q') return "Loss";
+                    a += 1;
+                    b += 1;
+                }
+
+                a = i - 1;
+                b = j - 1;
+                while(a >= 0 && b >= 0){
+                    if (board[a][b] == 'Q') return "Loss";
+                    a -= 1;
+                    b -= 1;
+                }
+
+                a = i - 1;
+                b = j + 1;
+                while(a >= 0 && b < cols){
+                    if (board[a][b] == 'Q') return "Loss";
+                    a -= 1;
+                    b += 1;
+                }
+
+                a = i + 1;
+                b = j - 1;
+                while(a < rows && b >= 0){
+                    if(board[a][b] == 'Q') return "Loss";
+                    a += 1;
+                    b -= 1;
+                }
+
+            }
+        }
+    }
+    return "Victory!";
 }
