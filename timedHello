@@ -1,0 +1,34 @@
+import time
+
+def hacktober():
+    hacktober = input("Do you want to print 'Hello World'? (Y/N): ")
+    if hacktober == 'Y':
+        time.sleep(.2)
+        print('H')
+        time.sleep(.2)
+        print('E')
+        time.sleep(.2)
+        print('L')
+        time.sleep(.2)
+        print('L')
+        time.sleep(.2)
+        print('O')
+
+        time.sleep(.2)
+        print('W')
+        time.sleep(.2)
+        print('O')
+        time.sleep(.2)
+        print('R')
+        time.sleep(.2)
+        print('L')
+        time.sleep(.2)
+        print('D')
+        print('\n')
+        input("Press ENTER to exit.")
+    else:
+        time.sleep(1)
+        print('Goodbye.')
+        time.sleep(2)
+        SystemExit
+hacktober()
