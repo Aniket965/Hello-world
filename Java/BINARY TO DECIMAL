@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+      Scanner str = new Scanner(System.in);
+      int binary = str.nextInt();
+      int decimal = 0;
+      int r = 1;
+      while (binary > 0) {
+        decimal = decimal + ((binary)%10)*r;
+        r=r*2;
+        binary = binary/10;
+      }
+      
+      System.out.println(decimal);
+	}
+}
