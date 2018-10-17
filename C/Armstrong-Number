@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+int noofdigits(int n);
+int main(void)
+{
+	int n,i,digits,dig,k,pro=1,sum=0,j;
+	scanf("%d",&n);
+	//This loop selects every number from 1 to provided number.
+	for(i=1;i<=n;i++)
+	{
+		digits=noofdigits(i);
+
+		k=i;//selected number is assigned to k because its value changes.
+
+		while(k>0)
+		{
+			dig=k%10;//each digit is found.
+			k=k/10;
+			//each digit is multiplied by itself till its number of digits as found by noofdigits() function
+			for(j=1;j<=digits;j++)
+			{
+				pro=pro*dig;
+			}
+			sum=sum+pro;//adds the product to the sum.
+			pro=1;
+		}
+		if(sum==i)//if sum is equal to selected number than that number is printed.
+		{
+			printf("\n%d",i);
+		}
+		sum=0;
+	}
+return 0;
+}
+//This function finds the no of digits in provided number
+	int noofdigits(int n)
+	{
+		int d=0;
+		while(n>0)
+	{
+		d++;
+		n=n/10;
+
+	}
+	return d;
+}
