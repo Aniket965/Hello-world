@@ -1,0 +1,22 @@
+using System;
+
+interface IHelloWorld
+{
+    void writeHelloWorld();
+}
+
+public class HelloWorld : IHelloWorld
+{
+    public void writeHelloWorld()
+    {
+        Console.WriteLine("Hello World");
+    }
+
+    public static void Main()
+    {
+        HelloWorld hw = new HelloWorld();
+
+        hw.writeHelloWorld();
+        Console.ReadKey();
+    }
+}
