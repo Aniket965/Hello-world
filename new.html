@@ -1,0 +1,37 @@
+<html>
+    <head><title>your life story</title></head>
+    <body style=background-color:darkgray; onload="lifeStory()">
+        <h1>your life story</h1>
+        <div style=background-color:springgreen;border-radius:25px;display:block;>
+        <br>
+        <p>      your life might be like this:</p>
+        <br>
+        </div>
+        <br>
+        <div style=background-color:red;display:block;border-radius:25px;>
+        <br>
+        <p>      CAUTION!this may be sheer rubbish!if the story is really bad then it is not your life.you will have an awesome life</p>
+        <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div style=background-color:lawngreen;border-radius:25px;display:block; id="id1">
+        </div>
+        <script>
+            function lifeStory(){
+                var deathAge=Math.floor(Math.random()*115);
+                var i;
+                var lifeEvents=['you are fired from your previous job','you are bullied','you graduate from an awesome university ','you become bankrupt','you become rich','you start a business','you get a job','you get a dream job ','google hires you','you go to jail ','you travel the world','you go to harvard','you are involved in an accident','you buy loads of stocks','you buy a new house','you start living in a cave','you start living in bungalow','you sell your stocks','you almost die','you eat lots of food','you become a wizard','your prticipate in sumo-wrestling with voldemort','you become a death eater','you study english','you become a blacksmith','you eat vvery little food','you sing nursery rhymes with voldemort','you invent nursery rhymes with voldemort','you almost die ','you learn how to use idioms'];
+                var content="<ol>";
+                for (i=0;i<deathAge;i++){
+                    content+="<li>"+lifeEvents[Math.floor(Math.random()*lifeEvents.length)]+"</li>";
+                }
+                content+='<li><i><b>you finally die</b></i></li>';
+                content+='</ol>';
+                document.getElementById("id1").innerHTML=content;
+            }
+        </script>
+    </body>
+</html>
