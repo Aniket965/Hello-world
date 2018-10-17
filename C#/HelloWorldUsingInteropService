@@ -1,0 +1,15 @@
+using System;
+using System.Runtime.InteropServices;
+
+class Class1
+{
+    [DllImport("kernel32")]
+    private static extern int Beep(int dwFreq, int dwDuration);
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World");
+        Beep(1000, 2000);
+        Console.ReadKey();
+    }
+}
