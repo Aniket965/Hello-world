@@ -1,0 +1,55 @@
+#include <iostream> 
+using namespace std;
+ 
+class Shape {
+   protected:
+      int width, height;
+
+   public:
+      Shape(int a = 0, int b = 0) {
+         width = a;
+         height = b;
+      }
+      
+      // pure virtual function
+      virtual int area() = 0;
+};
+class Rectangle: public Shape {
+   public:
+      Rectangle( int a = 0, int b = 0):Shape(a, b) { }
+      int area () { 
+         cout << "Rectangle area :" <<(width*height)<<endl;
+         cout << "area of triangle devided from rectangle :" <<(width*height)/2<<endl;
+         cout << "area of triangle devided from previous triangle :" <<(width*height)/4<<endl;
+         return (width*height)/4; 
+      }
+};
+
+class Triangle: public Shape {
+   public:
+      Triangle( int a = 0, int b = 0):Shape(a, b) { }
+      int area () { 
+         cout << "larger Triangle area :" <<(width * height / 2)<<endl;
+         return (width * height / 2); 
+      }
+};
+int main() {
+   Shape *shape;
+   int r1,r2,t1,t2;
+   cout<<"Enter length and breadth of rectangle"<<endl;
+   cin>>r1>>r2;
+   cout<<"Enter length of base and height of a triangle"<<endl;
+   cin>>t1>>t2;
+   Rectangle rec(r1,r2);
+   Triangle  tri(t1,t2);
+   shape = &rec;
+   int p=shape->area();
+   shape = &tri;
+   int q=shape->area();
+   //check whether the right angled triangle derived from from initial triangle is similar to the right angles triagle derived from rectangle 
+   if(p==q)
+   cout<<"Triangles are similar";
+   else
+   cout<<"Both triangles are different";
+   return 0;
+}
