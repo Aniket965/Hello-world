@@ -1,4 +1,4 @@
-10 PRINT "HELLO AMERICA";
+10 PRINT "HELLO AMERICA!";
 15 REM (Obviously optional, but included 99.9999% of the time...)
 20 GOTO 10
 30 REM RUN (AWAY, LAUGHING)
