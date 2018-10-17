@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	int n, temp, sum = 0;
+
+	// Recieve input for number of values being added
+	cout << "Enter the number of values to add: ";
+	cin >> n;
+
+	// Only accept positive numbers
+	if (n < 0) {
+		cout << "Please only add positive numbers." << endl;
+		return 1;
+	}
+	
+	for (int i = 0; i < n; i++) {
+		cout << "Please enter value " << i + 1 << ": ";
+		cin >> temp;
+		sum += temp;
+	}
+
+	cout << "Sum of " << n << " number(s) is " << sum << endl;
+	return 0;
+}
