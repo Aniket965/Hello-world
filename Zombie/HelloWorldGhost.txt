@@ -1,0 +1,6 @@
+HelloWorldGhost is a ghost
+summon
+	task SayHelloGhost
+		say "Hello World!"
+	animate
+disturb
