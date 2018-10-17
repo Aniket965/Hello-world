@@ -20,7 +20,7 @@ public class GutenTagWelt{
             case "de":
                 return "Guten Tag Welt!";
             case "en":
-                return "Hallo World!";
+                return "Hello World!";
             case "hu":
                 return "Szia!";
             default:
