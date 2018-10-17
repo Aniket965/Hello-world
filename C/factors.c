@@ -3,20 +3,16 @@
 int main(){
 
     // Factors of a value
-    int num,i=2,l=1;
+    int num,i;
 
     printf("Enter a value to calculate ");
     scanf("%d",&num);
-    if(l==1){
-        while(i<num)
+        for(i=1;i<=num;i++)
         {
-            if(num%i==0)
-            {
-                printf("%d ",i);
-            }
-            i++;
+        	if(num%i==0)
+        	printf("%d  ",i);
         }
-    } 
+    
     printf("\n");
     return 0;
 }
