@@ -1,3 +1,135 @@
-PROC main()
-     WriteF('Hello, World!')
-  ENDPROC
+Function H ()
+    up
+    left 90
+    Down
+    Forward 10
+    Backward 5
+    right 90
+    Forward 5
+    right 90
+    Backward 5
+    Forward 10
+    left 90
+    Up
+    forward 5
+    
+Function E()
+    Down
+    forward 5
+    Backward 5
+    left 90
+    Forward 5
+    right 90
+    Forward 3
+    Backward 3
+    left 90
+    Forward 5
+    right 90
+    Forward 5
+    Up
+    right 90
+    Forward 10
+    left 90
+    forward 5
+    
+Function L()
+    Forward 5
+    Down
+    Backward 5
+    Left 90
+    Forward 10
+    Up
+    Right 90
+    Forward 10
+    Right 90
+    Forward 10
+    Left 90
+    Up
+
+Function O()
+    Down
+    Repeat 2
+        Forward 5
+        Left 90
+        Forward 10
+        Left 90
+    up
+    forward 10
+    
+function D()
+    Down
+    Forward 3
+    Left 45
+    forward 1.5
+    left 45
+    Forward 8
+    left 45
+    forward 1.5
+    left 45
+    forward 3
+    left 90
+    forward 10
+    up
+    left 90
+    forward 10
+    
+function W()
+    left 90
+    forward 10
+    down
+    backward 10
+    right 45
+    forward 5
+    right 90
+    forward 5
+    left 135
+    forward 10
+    up
+    right 90
+    forward 5
+    right 90
+    forward 10
+    left 90
+    
+
+Function R()
+    down
+    left 90
+    forward 10
+    right 90
+    forward 3
+    right 45
+    forward 1.5
+    right 45
+    forward 2
+    right 45
+    forward 1.5
+    right 45
+    forward 3
+    left 135
+    forward 8.5
+    up
+    left 45
+    forward 5
+
+straight
+y=0
+repeat 10  
+    up
+    y=y-15
+    goto 0,y,0
+    forward 10
+    right 90
+    forward 10
+    left 90
+    H()
+    E()
+    L()
+    L()
+    O()
+    Forward 5
+    W()
+    O()
+    R()
+    L()
+    D()
