@@ -1,0 +1,69 @@
+
+<html>
+    <head><title>original</title></head>
+    <body>
+        <header>
+            <h1>chatbot beta</h1>
+        </header>
+        <input id="question" type="text"><br>
+        <button onclick="answer()">hear answer</button>
+        <br>
+        <span id="ans"></span>
+        <script>
+            var greetings=['hi','hello','how are you?','hiya','yo','what up?','hallo','namaste','hola','ni hao','ca va bien?'];
+            var greetingsAnswer=['hi','hello','how are you?','hiya','yo','what up?','hallo','namaste','hola','ni hao','ca va bien?'];
+            var badWords=["bye",'goodbye','gtg'];
+            var badWordsAnswer=["bye",'goodbye','gtg'];
+            var unknown=[];
+                
+            function answer(){
+                var ans;
+                var i;
+                var questionTag=document.getElementById("question").value;
+                if(questionTag!=""){
+                for(i in greetings){
+                    if(  new RegExp(greetings[i]).test(questionTag)){ 
+                        ans=greetingsAnswer[Math.floor(Math.random()*greetingsAnswer.length)];
+                    } 
+                }
+                if(ans===undefined){
+                for(i in greetingsAnswer){
+                    if(  new RegExp(greetingsAnswer[i]).test(questionTag)){ 
+                        ans=greetings[Math.floor(Math.random()*greetings.length)];
+                    } 
+                }
+                if(ans===undefined){
+                for(i in badWords){
+                    if(  new RegExp(badWords[i]).test(questionTag)){ 
+                        ans=badWordsAnswer[Math.floor(Math.random()*badWordsAnswer.length)];
+                    } 
+                }
+                if(ans===undefined){
+                for(i in badWordsAnswer){
+                    if( new RegExp( badWordsAnswer[i]).test(questionTag)){ 
+                        ans=badWords[Math.floor(Math.random()*badWords.length)];
+                    } 
+                }
+                if(ans===undefined){
+                for(i in unknown){
+                    if( new RegExp(unknown[i]).test(questionTag)){ 
+                        ans=unknown[Math.floor(Math.random()*unknown.length)];
+                    } 
+                }
+                if(ans===undefined){
+                        unknown.push(questionTag);
+                        ans=unknown[Math.floor(Math.random()*(unknown.length-1))];
+                if(ans===undefined){
+                        ans="indeed";
+                   }
+                }
+                }
+                }
+                }
+                }
+                }
+                document.getElementById("ans").innerHTML=ans;
+            }
+        </script>
+    </body>
+</html>
