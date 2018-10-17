@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>=b && a>=c)
+    {
+        printf("%d is the greatest number among the three",a);
+    }
+    else if(b>=c)
+    {
+        printf("%d is the greatest number among the three",b);
+    }
+    else if(c>=b)
+    {
+        printf("%d is the greatest number among the three",c);
+    }
+    
+  
+     return 0;
+}
