@@ -6,5 +6,6 @@ public class HelloVietnameJava {
         System.out.println("Xin Chào Hà Nội");
         System.out.println("Xin Chào Bách Khoa Hà Nội");
         System.out.println("Xin Chào Cầu Giấy District ");
+        System.out.println("Xin Chào Hoàn Kiếm ");
     }
 }
