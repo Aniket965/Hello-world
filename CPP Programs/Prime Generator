@@ -1,0 +1,37 @@
+#include<iostream>
+#include<stdio.h>
+
+using namespace std ;
+
+int main()
+{
+    int s = 0, t;
+    double a, b, n[10] , m[10] ;
+    cin >> t ;
+    for (int i = 0; i < t; i++)
+    {
+        scanf("%lf %lf", &n[i], &m[i]);
+    }
+     for (int i = 0; i < t; i++)
+     {
+         a = n[i] ;
+         b = m[i] ;
+
+        for (int i = a; i <= b; i++)
+         {  
+             s = 0;
+            for(int j = 2; j <= i / 2; ++j)
+            {  
+                 if(i % j == 0)
+                {
+                    s++ ;
+                    break;
+                }
+
+            }
+            if(s == 0 && i != 1)
+                cout << i << endl ;
+        }    
+        cout << endl ;   
+     }
+}
