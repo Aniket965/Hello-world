@@ -1,0 +1,10 @@
+HAI
+  VISIBLE "HAI I WILL SUM NUMBERS"      BTW Prints statement
+  I HAS A FIRSTVAL                      BTW Initialize firstval
+  I HAS A SECONDVAL                     BTW Initialize secondval
+  VISIBLE "GIVE FIRST VALUE"            BTW Prompt for firstval
+  GIMMEH FIRSTVAL                       BTW Accept user input
+  VISIBLE "GIVE SECOND VALUE"           BTW Prompt for secondval
+  GIMMEH SECONDVAL                      BTW Accept user input
+  VISIBLE SUM OF FIRSTVAL AN SECONDVAL  BTW Print the sum
+KTHXBYE                
