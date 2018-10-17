@@ -1,5 +1,7 @@
-#include <iostream>
-int main() {
-    std::cout << "Eae, mundo!";
-    return 1;
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	cout<<"HELLO WORLD:)";
+	return 0;
 }
