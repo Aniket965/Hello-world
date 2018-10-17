@@ -1,0 +1,7 @@
+#fibonacci sequence
+num=int(input('enter how many terms: '))
+l=[0,1]
+for i in range(2,num+1):
+    l.append(l[i-1]+l[i-2])
+for i in range(len(l)):
+    print(l[i], end='  ')
