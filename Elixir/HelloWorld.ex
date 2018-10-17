@@ -25,7 +25,20 @@ defmodule SayHello do
         Ciao Mondo!
         :ok
   """
-  def in_english do
+  def in_italian do
     IO.puts "Ciao Mondo!"
+  end
+  
+  @doc """
+  Spanish implementation of an hello world.
+
+    ## Examples
+
+        iex> SayHello.in_spanish
+        Ciao Mondo!
+        :ok
+  """
+  def in_spanish do
+    IO.puts "Hola Mundo!"
   end
 end
