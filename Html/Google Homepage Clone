@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+  <link rel="icon" href="img/google.png" type="image/gif" sizes="16x16">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Google</title>
+  
+  <style>
+    *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: inherit; }
+
+body {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+html {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 3.5rem 1fr repeat(2, 3.5rem); }
+  .container__btn {
+    margin-bottom: 2rem; }
+    .container__btn .btn {
+      background-color: #F2F2F2;
+      font-size: 1.2rem;
+      font-weight: 500;
+      border: none;
+      border-radius: 2px;
+      padding: .7rem 1.6rem;
+      color: #666666; }
+      .container__btn .btn:first-child {
+        margin-right: .5rem; }
+
+.nav {
+  padding: 1rem; }
+  .nav__ul {
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .nav__item {
+    padding: 0 .8rem; }
+  .nav__link {
+    color: #777777; }
+  .nav__secondary {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2.7rem;
+    background-color: #F2F2F2;
+    border: 1px solid #E4E4E4; }
+    .nav__secondary-item {
+      font-size: 1.1rem;
+      color: #6F6F6F; }
+  .nav__tertiary {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F2F2F2;
+    padding-left: 2.7rem; }
+    .nav__tertiary-item {
+      font-size: 1rem;
+      color: #6F6F6F; }
+      .nav__tertiary-item:not(:last-child) {
+        margin-right: 1.8rem; }
+      .nav__tertiary-item:nth-child(3) {
+        margin-right: auto; }
+
+.circle-big {
+  font-size: 3rem; }
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  padding-top: 3rem; }
+  .main__container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .main__img {
+    display: block;
+    width: 40%;
+    margin-bottom: 2rem; }
+  .main__search {
+    border: 1px solid rgba(119, 119, 119, 0.3);
+    width: 85%;
+    padding: 1.2rem 1rem;
+    box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.7rem; }
+
+.container__text-sm {
+  font-size: 1rem; }
+  .container__text-sm a {
+    color: #1A62CF; }
+  .container__text-sm a:hover {
+    text-decoration: underline; }
+
+  </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="nav__item"><a href="#" class="nav__link">Gmail</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Images</a></li>
+          <li class="nav__item"><a href="#" class="nav__link"><i class="fas fa-th"></i></a></li>
+          <li class="nav__item"><a href="#" class="nav__link"> <i class="fas fa-bell"></i></a></li>
+          <li class="nav__item"><a href="#" class="nav__link"> <i class="fas fa-user-circle circle-big"></i></a></li>
+        </ul>
+      </nav>
+
+      <main class="main">
+        <div class="main__container">
+            <img src="img/logo.png" class="main__img">
+            <input type="text" class="main__search">
+
+            <div class="container__btn">
+              <button class="btn">Google Search</button>
+              <button class="btn">i'm feeling lucky</button>
+          </div>
+    
+          <div class="container__text-sm">
+            Google offered in:  <a href="#">বাংলা</a>
+          </div>
+        </div>
+
+        
+
+
+      </main>
+
+    
+      <nav class="nav__secondary">
+        <div class="nav__secondary-item">Bangladesh</div>
+      </nav>
+
+      <nav class="nav__tertiary">
+          <div class="nav__tertiary-item">Advertising</div>
+          <div class="nav__tertiary-item">Business</div>
+          <div class="nav__tertiary-item">About</div>
+          <div class="nav__tertiary-item">Privacy</div>
+          <div class="nav__tertiary-item">Terms</div>
+          <div class="nav__tertiary-item">Settings</div>
+        </nav>
+
+    </div>
+
+
+</body>
+</html>
