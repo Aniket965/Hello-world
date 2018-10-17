@@ -1,0 +1,79 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  color: white;
+
+  font-family: 'Mali', cursive;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0250c5), to(#d43f8d));
+  background-image: -webkit-linear-gradient(bottom, #0250c5 0%, #d43f8d 100%);
+  background-image: -o-linear-gradient(bottom, #0250c5 0%, #d43f8d 100%);
+  background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+  padding: 20px 10px;
+}
+
+svg {
+  -webkit-animation: levitate 6s ease-in-out infinite;
+          animation: levitate 6s ease-in-out infinite;
+}
+
+path#Body {
+  fill: transparent;
+  stroke: transparent;
+  -webkit-animation-name: levitate;
+          animation-name: levitate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+path#Body:hover {
+  fill: white;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+@-webkit-keyframes levitate {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-10px);
+            transform: translatey(-10px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+
+@keyframes levitate {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-10px);
+            transform: translatey(-10px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
