@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>PostMessageBetweenFrames</title>
+</head>
+<body>
+<h1>Post Message Between Frames</h1>
+<p> This will write in the below row the infamous developer quote, using post message between frames</p>
+<div id="here"></div>
+<script>
+    const iframe = document.createElement('iframe');
+    iframe.style.visibility = 'hidden';
+    iframe.onload = function(){
+      window.addEventListener('message', function(message){
+        document.getElementById('here').innerText = message.data;
+      });
+      iframe.contentWindow.postMessage('Ready!', '*');
+    }
+    iframe.src = './iframe.html';
+    document.body.appendChild(iframe);
+</script>
+</body>
+</html>
