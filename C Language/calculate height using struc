@@ -1,0 +1,62 @@
+struct height{
+int m;
+int cm;
+};
+int main(){
+struct height h1,h2,h3;
+int n=0,temp1,temp2,temp3;
+printf("enter h1:\n");
+scanf("%d%d",&h1.m,&h1.cm);
+printf("enter h2:\n");
+scanf("%d%d",&h2.m,&h2.cm);
+printf("enter 1 to add 2 heights and display result\nenter 2 to subtract 2 heights and display result\nenter 3 to display both the heights in meters\nenter 4 to exit\n");
+temp1=h1.m*100+h1.cm;
+temp2=h2.m*100+h2.cm;
+scanf("%d",&n);
+printf("%d",n);
+while(n!=4){
+//switch condition
+switch(n){
+case 1: 
+h3.m=h1.m+h2.m;
+h3.cm=h1.cm+h2.cm;
+while(h3.cm>100)
+{
+h3.m=h3.m+1;
+h3.cm=h3.cm-100;
+}
+printf("after addition height will be : %d m %d cm\n",h3.m,h3.cm);
+break;
+
+case 6:
+printf("fuhf");
+if(temp1>temp2)
+temp3=temp1-temp2;
+else
+temp3=temp2-temp1;
+while(temp3>100){
+h3.m=h3.m+1;
+h3.cm=h3.cm-100;
+}
+printf("after subtraction height will be : %d m %d cm\n",h3.m,h3.cm);
+break;
+
+
+case 3:
+printf("%d %d\n",h1.m,h1.cm);
+printf("%d %d\n",h2.m,h2.cm);
+break;
+
+case 4:
+return 0;
+break;
+
+default:
+printf("something wrong is entered\n");
+}
+scanf("%d",&n);
+printf("%d",n);
+}
+return 0;
+}
+
