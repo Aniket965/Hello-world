@@ -1,0 +1,43 @@
+print (" Hi, I am Heimdall- Born to protect Asgard. ")
+UserName = input("What is your name?")
+print ("Well {}, due to security risks, you will have to answer my 3 riddles." .format(UserName))
+print ("If you are able to answer all of them correctly, only then you will be able to go through BIFROST. ")
+print ("But, BEWARE! If you answer even 1 incorrectly, then you will be sent to rot in Jotunheim!")
+print ("SO, {} , BE READY AS I PRESENT MY 3 RIDDLES." .format(UserName))
+print ("(GIVE ALL ANSWERS ONLY WITHOUT CAPS LOCK AND WITHOUT ANY SPACE!!)")
+print ("Here is the first riddle:")
+Ans = input("A 5 letter word becomes shorter if you add 2 more letters to it. What is the word?")
+if Ans == "short":
+  print ("Well, that surely was an easy one, wasn't it {}" .format(UserName))
+  print ("Here is the next riddle:")
+  ans = input("I have a bed, but I don't sleep in it. I have a mouth but I don't eat anything through it. Who am I?")
+  if ans == "river":
+    print ("Well, you are almost through.")
+    print ("Here is the last riddle and it won't be easy:")
+    Last = input("I was carried into a dark room and set on fire. I wept and then my head was cut off. Who am I ?")
+    if Last == "candle":
+      print ("Well done, {}!! I will happily open the Bifrost for you and You will now be admitted to Asgard properly." .format(UserName))
+      exit = input("Please press any number to enter the Bifrost. Thank you for your cooperation.")
+    else :
+      print ("HA!! I knew you were a spy, YOU FOOL! The answer is : 'candle'")
+      print ("You have polluted the sanctity of Asgard and Bifrost. You will have to go to JOTUNHEIM.")
+      print ("I regret horribly that I won't be able to see you rot there. ")
+      print ("But to make it a little soothing, I have added a tiny feature for you. ")
+      Exit = input("You can press any number to go to Jotunheim instead of being dragged there by us. WELL, GO ON!!")
+
+  else :
+     print ("HAHAHAHAHAHAHA!!! YOU ARE SUCH A FOOL , {}! You weren't even able to answer such an easy riddle?! The answer is : 'river' " .format(UserName))
+     print ("You have polluted the sanctity of Asgard and Bifrost. You will have to go to JOTUNHEIM.")
+     print ("I regret horribly that I won't be able to see you rot there. ")
+     print ("But to make it a little soothing, I have added a tiny feature for you. ")
+     Exit = input("You can press any number to go to Jotunheim instead of being dragged there by us. WELL, GO ON!!")
+
+else :
+  print ("HAHAHAHAHAHAHA!!! YOU ARE SUCH A FOOL , {}! You weren't even able to answer such an easy riddle?! The answer is : 'short' " .format(UserName))
+  print ("You have polluted the sanctity of Asgard and Bifrost. You will have to go to JOTUNHEIM.")
+  print ("I regret horribly that I won't be able to see you rot there. ")
+  print ("But to make it a little soothing, I have added a tiny feature for you. ")
+  Exit = input("You can press any number to go to Jotunheim instead of being dragged there by us. WELL, GO ON!!")
+
+  
+  
