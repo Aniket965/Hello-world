@@ -18,4 +18,5 @@ function draw() {
   rotateZ(time / 1234);
   rotateY(time / 1234);
   text('Hello, World!', 0, 0);
+  sphere(mouseX, mouseY, random(250), random(250));
 }
