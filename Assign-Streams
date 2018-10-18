@@ -1,0 +1,96 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<conio.h>
+
+class student
+{
+	private:
+		char name[25];
+		int rolln;
+		float marks[5];
+		float avg;
+		
+	public:
+		void takedata();
+		void showdata();
+		void assign();
+};
+
+void student :: takedata()
+{
+	int sum=0;
+	cout<<"Name: ";
+	fflush(stdin);
+	gets(name);
+	cout<<"Roll Number: ";
+	cin>>rolln;
+	cout<<"Enter the marks: "<<endl;
+	for(int i=0;i<5;i++)
+	{
+		cout<<"Subject "<<i+1<<": ";
+		cin>>marks[i];
+		sum=sum+marks[i];
+	}
+	avg=sum/5;
+}
+
+void student :: showdata()
+{
+	cout<<endl;
+	cout<<"The details you entered are: "<<endl;
+	cout<<"Name: "<<name<<endl;
+	cout<<"Roll Number: "<<rolln<<endl;
+	for(int i=0;i<5;i++)
+	{
+		cout<<"Subject "<<i+1<<": "<<marks[i]<<endl;
+	}
+	cout<<"Average: "<<avg<<endl;
+}
+
+void student :: assign()
+{
+	cout<<endl;
+	if(avg>=96)
+	{
+		cout<<"Stream: Computer Science"<<endl;
+	}
+	
+	else
+	if(avg>=91)
+	{
+		cout<<"Stream: Electronics"<<endl;
+	}
+	
+	else
+	if(avg>=86)
+	{
+		cout<<"Stream: Mechanical"<<endl;
+	}
+	
+	else
+	if(avg>=81)
+	{
+		cout<<"Stream: Electrical"<<endl;
+	}
+	
+	else
+	if(avg>=76)
+	{
+		cout<<"Stream: Chemical"<<endl;
+	}
+	
+	else
+	if(avg>=71)
+	{
+		cout<<"Stream: Civil"<<endl;
+	}
+}
+
+void main()
+{
+	student s;
+	s.takedata();
+	s.showdata();
+	s.assign();
+	getch();
+}
