@@ -1,1 +1,1 @@
-print("Namaste Duniya form India")
+print("Namaskar Sansar from India")
