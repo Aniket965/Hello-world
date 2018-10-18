@@ -19,14 +19,14 @@ num1 = int(input('enter the value\n'))
 num2 = int(input('enter the value\n'))
 num3 = int(input('enter the value\n'))
 num4 = int(input('enter the value\n'))
-num5 = int(input('enter the value\n'))
+#num5 = int(input('enter the value\n'))
 
 #For putting the values in list arr:-
 arr.append(num1)
 arr.append(num2)
 arr.append(num3)
 arr.append(num4)
-arr.append(num5)
+#arr.append(num5)
 
  
 bubbleSort(arr)
