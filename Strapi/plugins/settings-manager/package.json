@@ -1,0 +1,80 @@
+{
+  "_from": "strapi-plugin-settings-manager@alpha",
+  "_id": "strapi-plugin-settings-manager@3.0.0-alpha.12",
+  "_inBundle": false,
+  "_integrity": "sha512-5YcAofcpvi08e3OUz5lcbXbm99UFqhHwv1zmArIRjC5Rk0sOEcQtSJc8GlUBvbiPd9yDbBMSn7yfyU5+FAyK4g==",
+  "_location": "/strapi-plugin-settings-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "strapi-plugin-settings-manager@alpha",
+    "name": "strapi-plugin-settings-manager",
+    "escapedName": "strapi-plugin-settings-manager",
+    "rawSpec": "alpha",
+    "saveSpec": null,
+    "fetchSpec": "alpha"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.12.tgz",
+  "_shasum": "484cc73c78d813cec6c637cd9eaf7f71b5878c09",
+  "_spec": "strapi-plugin-settings-manager@alpha",
+  "_where": "/Users/jimlaurie/Documents/WORKSPACE/Strapi/examples/cheesecakes/test",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "http://strapi.io"
+  },
+  "bugs": {
+    "url": "https://github.com/strapi/strapi/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Strapi plugin to manage settings.",
+  "devDependencies": {
+    "flag-icon-css": "^2.8.0",
+    "react-select": "^1.0.0-rc.5",
+    "strapi-helper-plugin": "3.0.0-alpha.12"
+  },
+  "engines": {
+    "node": ">= 9.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "homepage": "https://github.com/strapi/strapi#readme",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "http://strapi.io"
+    }
+  ],
+  "name": "strapi-plugin-settings-manager",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strapi/strapi.git"
+  },
+  "scripts": {
+    "analyze": "node ./node_modules/strapi-helper-plugin/lib/internals/scripts/analyze.js",
+    "analyze:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf stats.json",
+    "build": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=production node node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "build:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf admin/build",
+    "build:dev": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "generate": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/plop --plopfile ./node_modules/strapi-helper-plugin/lib/internals/generators/index.js",
+    "lint": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/eslint --ignore-path .gitignore --ignore-pattern '/admin/build/' --config ./node_modules/strapi-helper-plugin/lib/internals/eslint/.eslintrc.json admin",
+    "preanalyze": "npm run analyze:clean",
+    "prebuild": "npm run build:clean && npm run test",
+    "prepublishOnly": "npm run build",
+    "prettier": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/prettier --single-quote --trailing-comma es5 --write \"{admin,__{tests,mocks}__}/**/*.js\"",
+    "start": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/lib/server",
+    "test": "npm run lint"
+  },
+  "strapi": {
+    "name": "Settings Manager",
+    "icon": "wrench",
+    "description": "settings-manager.plugin.description"
+  },
+  "version": "3.0.0-alpha.12"
+}

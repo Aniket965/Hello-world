@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hello",
+      "handler": "Hello.world"
+    },
+    {
+      "method": "GET",
+      "path": "/hello/:name",
+      "handler": "Hello.sayHello"
+    },
+    {
+      "method": "GET",
+      "path": "/hello/world/:name",
+      "handler": "Hello.sayInternationalHello"
+    }
+  ]
+}
