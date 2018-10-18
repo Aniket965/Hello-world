@@ -1,0 +1,5 @@
+# https://www.codewars.com/users/Kueen
+# https://www.codewars.com/kata/simple-pig-latin
+
+def pig_it(text):
+    return ' '.join(t[1:] + t[0] + 'ay' if t.isalpha() else t for t in text.split(' '))

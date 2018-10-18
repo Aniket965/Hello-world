@@ -2,28 +2,16 @@
 
 int main()
 {
-    int n;
-    int i;
-    int a;
-    int b;
-    int hold;
-    a=0;
-    b=1;
-    printf("Enter the n value ");
-    scanf("%d",&n);
-
-    i=2;
-    hold =0;
-    printf("0 ");
-    while(i<=n)
+    int a=0,b=1,c,n,i;
+    printf("Enter the length of series:");
+    scanf("%d ",&n);
+    printf("The series is ");
+    for(i=1;i<=n;i++)
     {
-        hold = a+b;
-        printf("%d ",hold);
+        printf("%d ",a);
+        c=a+b;
         a=b;
-        b=hold;
-        i++;
+        b=c;
     }
-
-    printf("\n");
     return 0;
 }

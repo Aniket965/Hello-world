@@ -6,4 +6,4 @@ int main()
 	return 0;
 }
 
-output: Hello World!
+// output: Hello World!

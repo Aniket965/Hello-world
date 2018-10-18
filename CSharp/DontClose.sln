@@ -1,0 +1,28 @@
+using System;
+ namespace DontClose
+{
+  public partial class DontClose : Form
+	{
+  
+    public DontClose()
+		{
+			InitializeComponent();
+			this.FormClosing += new FormClosingEventHandler(DontClose_FormClosing);
+		}
+  
+    private void DontClose_FormClosing(object sender, System.Windows.Forms.FormClosingEventArgs e)
+		{
+      string textExit = "Do not leave us :(";
+		  string exitTab = "Are you sure?";
+    
+			if (MessageBox.Show(textExit, exitTab, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.Yes)
+			{
+ 			}
+			else
+			{
+				e.Cancel = true;
+			}
+		}
+    
+  }
+}

@@ -1,5 +1,7 @@
 // CODING IN TURBO C++ //
-**  PRINTING OF �HELLO WORLD !!� **
+
+**  PRINTING OF “HELLO WORLD !!” **
+
 ( USING LOWER & UPPER TRAINGLE OF A MATRIX)
 
 #include<iostream.h>
@@ -24,7 +26,7 @@ void main()
   }
   cout<<"                                                                           ";
  }
- cout<<"      HELLO WORLD !! \n";
+ cout<<"\n      HELLO WORLD !! \n";
  cout<<"                                         ";
   for(i=0;i<r;i++)
  { for(j=0;j<c;j++)
