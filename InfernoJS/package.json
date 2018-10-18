@@ -1,0 +1,44 @@
+{
+  "name": "inferno-typescript-example",
+  "version": "1.0.0",
+  "description": "A basic example of Inferno with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "lint": "tslint src/*.ts{,x} src/**/*.ts{,x}",
+    "start": "webpack-dev-server --inline"
+  },
+  "keywords": [
+    "inferno",
+    "typescript"
+  ],
+  "author": "Dominic Gannaway",
+  "license": "MIT",
+  "dependencies": {
+    "inferno": "^5.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-jsx": "^7.0.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-inferno": "^4.0.0",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.23.0",
+    "ts-loader": "^5.1.0",
+    "tslint": "^5.9.1",
+    "typescript": "^3.0.0",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.0.0"
+  }
+}

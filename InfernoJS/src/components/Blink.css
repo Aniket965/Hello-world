@@ -1,0 +1,9 @@
+.blink {
+    font-size: 40px;
+    padding: 20px;
+    color: blue;
+}
+
+.blink__off {
+    color: lightblue;
+}
