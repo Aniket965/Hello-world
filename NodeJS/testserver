@@ -1,7 +1,0 @@
-const http = require('http');
-const port = process.env.PORT || 3000;
-http.createServer((req, res)=>{
-    res.write('Hello World Hacktoberfest');
-    res.end();
-})
-.listen(port);
