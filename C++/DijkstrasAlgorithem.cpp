@@ -1,67 +1,57 @@
-#include<iostream>
-#include<list>
-#include<queue>
+#include<bits\stdc++.h>
 using namespace std;
-typedef pair<int,int> pii;
-
-class comp{ /// comparission in priority queue
-public:
-    bool operator()(pii a, pii b){
-        return a.second>b.second;
-    }
-};
-
-class Graphs{
-private:
-    list<pii> *adjList;
-    int V;
-public:
-    Graphs(int n){
-        V=n;
-        adjList=new list<pii>[V];
-    }
-    void addEdge(int s, int d, int wt){
-        adjList[s].push_back(make_pair(d,wt)); 
-    }
-    int dijikstra(int s, int d){ ///algorigthm to find shortest distance
-        priority_queue<pii,vector<pii>,comp> pq;
-        int * distance=new int[V];
-        for (int i=0;i<V;i++) distance[i]=100000; 
-        distance[s]=0;
-        pq.push(make_pair(s,0));
-        while (!pq.empty()){
-            pii f=pq.top();
-            pq.pop();
-            int curVer=f.first;
-            int curDist=f.second;
-            if (distance[curVer]!=curDist) continue;
-                 it!=adjList[curVer].end();it++){
-                int childDist=it->second+curDist;
-                if (childDist<distance[it->first]){ ///check the distance shortest ahi tabhi update krna
-                    pq.push(make_pair(it->first,childDist));
-                    distance[it->first]=childDist;
-                }
-            }
-        }
-        for (int i=0;i<V;i++){
-            cout<<"Distance of vertex - "<<i<<" is "<<distance[i]<<endl;
-        }
-        cout<<endl;
-        return distance[d];
-    }
-};
-
-int main(){
-    Graphs g(7);
-    g.addEdge(0,1,20);
-    g.addEdge(0,2,10);
-    g.addEdge(1,4,20);
-    g.addEdge(1,3,10);
-    g.addEdge(2,3,25);
-    g.addEdge(2,5,27);
-    g.addEdge(3,4,5);
-    g.addEdge(3,5,10);
-    g.addEdge(4,6,5);
-    g.addEdge(5,6,7);
-    cout<<"The shortest path is= "<<endl<<g.dijikstra(0,6)<<endl;
+int min_1(int a[],bool b[],int v)
+{
+	int p=INT_MAX;int min_index=0;
+	for(int i=0;i<v;i++)
+	{
+		if(a[i]<p && b[i]==false)
+		{
+			p=a[i];min_index=i;
+		}
+	}
+	return min_index;
+}
+void print_distance(int d[],int s,int v)
+{
+	for(int i=0;i<v;i++)
+	{
+		cout<<s<<" "<<i<<" "<<d[i]<<endl;
+	}
+}
+void dijkshas(int g[9][9],int v,int s)
+{
+	int d[v];bool m[v];
+	for(int i=0;i<v;i++)
+	{
+		d[i]=INT_MAX;m[i]=false;
+	}
+	d[s]=0;
+	for(int i=0;i<v-1;i++)
+	{
+		int u=min_1(d,m,v);
+		m[u]=true;
+	for(int j=0;j<v;j++)
+	{
+		if(g[u][j] && m[j]==false && d[u]+g[u][j]<d[j])
+		{
+			d[j]=d[u]+g[u][j];
+		}
+	}
+	}
+	print_distance(d,s,v);
+}
+int main()
+{
+	int g[9][9] = {{0, 4, 0, 0, 0, 0, 0, 8, 0},
+                      {4, 0, 8, 0, 0, 0, 0, 11, 0},
+                      {0, 8, 0, 7, 0, 4, 0, 0, 2},
+                      {0, 0, 7, 0, 9, 14, 0, 0, 0},
+                      {0, 0, 0, 9, 0, 10, 0, 0, 0},
+                      {0, 0, 4, 14, 10, 0, 2, 0, 0},
+                      {0, 0, 0, 0, 0, 2, 0, 1, 6},
+                      {8, 11, 0, 0, 0, 0, 1, 0, 7},
+                      {0, 0, 2, 0, 0, 0, 6, 7, 0}
+                     };
+ 	dijkshas(g,9,1);
 }
