@@ -12,7 +12,7 @@ int palindrome(int n)
 int main()
 {
     int a,n,b,s=0;
-    cout << "Please enter a number" << endl;
+    cout << "enter a number" << endl;
     cin >> n;
     b = n;
    s=palindrome(n);
