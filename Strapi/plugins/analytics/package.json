@@ -1,0 +1,79 @@
+{
+  "_from": "strapi-plugin-analytics@alpha",
+  "_id": "strapi-plugin-analytics@3.0.0-alpha.11.1",
+  "_inBundle": false,
+  "_integrity": "sha512-2XzV8TfRSYyrbncPJEWIj7CdpxqCwdl8EJZg7YCUjXM2E2IXwF/304o1dNHyfGrWzKX2uRYn86u6K596l0oc1g==",
+  "_location": "/strapi-plugin-analytics",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "strapi-plugin-analytics@alpha",
+    "name": "strapi-plugin-analytics",
+    "escapedName": "strapi-plugin-analytics",
+    "rawSpec": "alpha",
+    "saveSpec": null,
+    "fetchSpec": "alpha"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-analytics/-/strapi-plugin-analytics-3.0.0-alpha.11.1.tgz",
+  "_shasum": "eaa83394f93f7a82411a318768771cca38695514",
+  "_spec": "strapi-plugin-analytics@alpha",
+  "_where": "/Users/jimlaurie/Documents/WORKSPACE/Strapi/examples/cheesecakes/test",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "http://strapi.io"
+  },
+  "bugs": {
+    "url": "https://github.com/strapi/strapi-plugin-analytics/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "This is the description of the plugin.",
+  "devDependencies": {
+    "strapi-helper-plugin": "3.0.0-alpha.11.1"
+  },
+  "engines": {
+    "node": ">= 9.0.0",
+    "npm": ">= 5.3.0"
+  },
+  "homepage": "https://github.com/strapi/strapi-plugin-analytics#readme",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "http://strapi.io"
+    }
+  ],
+  "name": "strapi-plugin-analytics",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strapi/strapi-plugin-analytics.git"
+  },
+  "scripts": {
+    "analyze": "node ./node_modules/strapi-helper-plugin/lib/internals/scripts/analyze.js",
+    "analyze:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf stats.json",
+    "build": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=production node node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "build:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf admin/build",
+    "build:dev": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "generate": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/plop --plopfile ./node_modules/strapi-helper-plugin/lib/internals/generators/index.js",
+    "lint": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/eslint --ignore-path .gitignore --ignore-pattern '/admin/build/' --config ./node_modules/strapi-helper-plugin/lib/internals/eslint/.eslintrc.json admin",
+    "preanalyze": "npm run analyze:clean",
+    "prebuild": "npm run build:clean && npm run test",
+    "prepublishOnly": "npm run build",
+    "prettier": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/prettier --single-quote --trailing-comma es5 --write \"{admin,__{tests,mocks}__}/**/*.js\"",
+    "start": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/lib/server",
+    "test": "npm run lint"
+  },
+  "strapi": {
+    "name": "Analytics",
+    "icon": "area-chart",
+    "description": "analytics.plugin.description"
+  },
+  "version": "3.0.0-alpha.11.1"
+}

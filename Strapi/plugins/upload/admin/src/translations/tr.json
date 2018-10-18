@@ -1,0 +1,34 @@
+{
+  "ConfigPage.title": "Upload - Settings",
+  "ConfigPage.description": "Configure the upload plugin",
+
+  "EditForm.Input.number.label": "Maximum size allowed (in MB)",
+  "EditForm.Input.select.label": "Providers",
+  "EditForm.Input.select.inputDescription": "Files can either be uploaded on your server or on external providers.",
+  "EditForm.Input.toggle.label": "Enable file upload",
+
+  "EmptyLi.message": "Yüklenmiş dosya bulunmamaktadır.",
+
+  "EntriesNumber.number": "{number} dosya bulundu",
+  "EntriesNumber.number.plural": "{number} dosya bulundu",
+
+  "HomePage.title": "Yükle",
+  "HomePage.description": "Yüklenen dosyalar",
+  "HomePage.InputSearch.placeholder": "Dosya ara...",
+
+  "Li.linkCopied": "Bağlantı, panoya kopyalandı",
+
+  "ListHeader.type": "Tip",
+  "ListHeader.hash": "Hash",
+  "ListHeader.name": "İsim",
+  "ListHeader.updated": "Yüklendi",
+  "ListHeader.size": "Boyut",
+  "ListHeader.related": "İlişkili",
+
+  "PluginInputFile.text": "Dosyanızı bu alana sürükleyip bırakın ya da dosya yüklemek için {link}",
+  "PluginInputFile.link": "gözat",
+
+  "notification.delete.success": "Dosya silindi",
+  "notification.dropFile.success": "Dosyanız yüklendi",
+  "notification.dropFiles.success": "{number} dosyalar yüklendi"
+}
