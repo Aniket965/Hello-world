@@ -1,0 +1,29 @@
+body {
+  background-color: #eceeef
+}
+
+#frame {
+  width: 50%;
+  margin: 0 auto
+}
+
+#quote {
+  margin-bottom: 30px
+}
+
+#author {
+  padding: 0 0 0 25px;
+  margin-bottom: 50px
+}
+
+#new {
+  cursor: pointer
+}
+
+#twitter {
+  
+}
+
+#tweet>img {
+  height: 40px
+}
