@@ -10,7 +10,7 @@ int main()
   {
     s.push(i);
   }
-  while(s.empty() !=1)
+  while(s.size()==0)
   {
     int t=s.top();
     s.pop();
