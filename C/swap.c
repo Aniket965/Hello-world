@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 int main()
 {
@@ -8,13 +9,13 @@ int main()
     printf(" Enter Second Number : ");
     scanf("%d" , &m);
     
-    c=a;
-    a=m;
-    m=c;
+    a=a+m;
+    m=a-m;
+    a=a-m;
     
     printf(" After swapping ...\n\n");
     printf(" First Number:%d",a);
-    printf("\n Second Number:%d",m);
+    printf("\n Second Number:%d\n",m);
 
 return 0;
 }
