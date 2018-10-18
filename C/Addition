@@ -1,16 +1,19 @@
 #include<stdio.h>
-#include<conio.h>
+
 int main()
 {
 float a,b,c;
-//Addition of two numbers
-printf("Enter two numbers for addition");
-scanf("%f %f",&a,&b);
+
+printf("Enter first numbers:");
+printf("Enter second numbers:");
+
+scanf("%f",&a);
+
+scanf("%f",&b);
+
 c=a+b;
-printf("%f",c);
-getch();
+
+printf("%f + %f = %f",a,b,c);
+
 return 0;
 }
-
-
-
