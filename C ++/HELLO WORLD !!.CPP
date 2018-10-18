@@ -1,5 +1,5 @@
 // CODING IN TURBO C++ //
-**  PRINTING OF “HELLO WORLD !!” **
+**  PRINTING OF ï¿½HELLO WORLD !!ï¿½ **
 ( USING LOWER & UPPER TRAINGLE OF A MATRIX)
 
 #include<iostream.h>
@@ -10,9 +10,9 @@ void main()
  int i,j,a[10][10],r,c;
  cout<<"                       ### Showing Hello World !!!  ###\n";
  cout<<"                  ---XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX---";
- cout<<"\n Enter Rows:";
+ cout<<"\n Enter Rows: ";
  cin>>r;
- cout<<"\n Enter Columns:";
+ cout<<"\n Enter Columns: ";
  cin>>c;
  cout<<"--------------------------------------------------------------------------------\n";
  cout<<"                          ";
