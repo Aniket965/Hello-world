@@ -1,0 +1,11 @@
+class sum
+{
+public static void main(String ar[])
+{
+int a,b,sum;
+a=8;
+b=9;
+sum=8+9;
+System.out.print(sum);
+}
+}
