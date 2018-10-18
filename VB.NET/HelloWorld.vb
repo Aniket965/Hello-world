@@ -1,7 +1,11 @@
 Imports System
 
-Public Class HelloWorld
-  Public Sub New()
+Public Module HelloWorld
+  Public Sub Main()
+    HelloWorld()
+  End Sub
+  
+  Sub HelloWorld()
     Console.WriteLine("Hello, world!")
   End Sub
-End Class
+End Module
