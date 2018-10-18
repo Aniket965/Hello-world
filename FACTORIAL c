@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+void fact(int n)
+{int l=1;
+while(n!=1)
+{
+l=n*l
+n--;
+}
+printf("%d",l);
+}
+return 0;}
