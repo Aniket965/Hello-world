@@ -1,4 +1,4 @@
-# Ron Swanson Quote Generator
+# Ron Swanson from "Parks and Rec" Quote Generator
 
 import urllib
 import json
