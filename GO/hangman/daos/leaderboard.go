@@ -7,7 +7,7 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-// Passes Database struct pointer. In multi-user case should pass only transactions.
+// Leaderboard passes Database struct pointer. In multi-user case should pass only transactions.
 type Leaderboard struct {
 	Database *sql.DB
 }
