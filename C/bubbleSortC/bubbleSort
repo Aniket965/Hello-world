@@ -1,6 +1,6 @@
 #include <stdio.h>
  
-void main()
+int main()
 {
   int array[100], n, c, d, swap;
  
@@ -30,5 +30,5 @@ void main()
   for (c = 0; c < n; c++)
      printf("%d\n", array[c]);
  
-
-}
+//it is habit to write return 0 .
+return 0;}

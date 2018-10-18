@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inside Iframe</title>
+    <script>
+        window.addEventListener('message', function(){
+          parent.postMessage('Hello World!','*')
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

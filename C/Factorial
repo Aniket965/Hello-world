@@ -1,24 +1,44 @@
-#include <stdio.h>
+//THIS METHOD WILL WORK IF YOU WANT FACTORIAL OF LARGE NUMBERS.
+//THIS IS JUST HOW WE DO IN MULTIPLICICATION.  
+#include<stdio.h>
+int a[2000],f[2000],g[2000],c[2000];
+
 int main()
 {
-    int n, i;
-    unsigned long long factorial = 1;
-
-    printf("Enter an integer: ");
-    scanf("%d",&n);
-
-    // show error if the user enters a negative integer
-    if (n < 0)
-        printf("Error! Factorial of a negative number doesn't exist.");
-
-    else
-    {
-        for(i=1; i<=n; ++i)
-        {
-            factorial *= i;              // factorial = factorial*i;
+PRINTF("ENTER ANY POSITIVE INTEGER:")
+	int n,d,b,e,a1,f1,g1,c1,i,j,q;
+	scanf("%d",&n);
+	a[0]=1;
+for(i=2;i<=n;i++)
+{
+c1=0;f1=0;g1=0;a1=0;
+	d=i%10;b=(i/10)%10;e=(i/100)%10;
+for(j=0;j<2000;j++)
+	{
+    c[j]=a[j]*d+c1;
+		c1=c[j]/10;
+		c[j]=c[j]%10;
+		f[j+1]=a[j]*b+f1;
+		f1=f[j+1]/10;
+		f[j+1]=f[j+1]%10;
+		g[j+2]=a[j]*e+g1;
+		g1=g[j+2]/10;
+		g[j+2]=g[j+2]%10;
+		a[j]=c[j]+f[j]+g[j]+a1;
+		a1=a[j]/10;
+		a[j]=a[j]%10;
         }
-        printf("Factorial of %d = %llu", n, factorial);
-    }
 
-    return 0;
+
+}
+for(j=2000;j>=0;j--)
+if(a[j]>0)
+{
+q=j;
+break;
+}
+printf("FACTORIAL OF %d IS:"n);
+for(j=q;j>=0;j--)
+printf("%d",a[j]);
+return 0;
 }
