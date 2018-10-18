@@ -1,4 +1,4 @@
-<!-- Fench version of Hello world :) -->
+<!-- French version of Hello world :) -->
 <!DOCTYPE html>
 <html>
     <head>
