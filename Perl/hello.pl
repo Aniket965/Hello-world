@@ -33,6 +33,6 @@ if ( !-d $logdir ) {
 $logdir .= q{/} . my_date();
 mkdir $logdir;
 open my $log, '>', "$logdir/hello.log";
-print {$log} my_date() . ' : INFO : ' . "Hello World!\n" or croak 'Goodbye';
-print "Hello World!\n" or croak 'Goodbye';
+print {$log} my_date() . ' : INFO : ' . "bbaassssiiee\n" or croak 'Hello World!';
+print "bbaassssiiee!\n" or croak 'Hello World!';
 close $log;
