@@ -1,7 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep  2 15:13:33 2018
 
-fibonacci = [0, 1] #initialising base case
-n = int(input("Enter a number: ")) #accepting input in Variable n
-while len(fibonacci) < n:
-    fibonacci.append(fibonacci[-1] + fibonacci[-2]) # recurssion function of fibo[n-1= + fibo[n-2] = fibop[n]
-for i in range(n):
-    print(i + 1, ":", fibonacci[i]) #print fibonacci
+@author: Karan Randhir
+"""
+#Print fibonacci series upto a range input by user
+first = 0 
+second = 1
+n=input("Enter the range of fibbonaci series")
+try :
+    n=int(n)
+
+    print("Required fibonacci series is ")    
+    for i in range (0,n) :
+        if i <=1 :
+            fibonacci = i 
+        else :
+            fibonacci = first + second 
+            first = second 
+            second = fibonacci 
+        print(fibonacci)    
+except :
+    print("please enter an integer")    
